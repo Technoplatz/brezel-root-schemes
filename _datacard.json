@@ -1,0 +1,191 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "dca_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]+$",
+            "title": "ID",
+            "description": "Datacard ID",
+            "style": "min-width: 120px;",
+            "index": 1
+        },
+        "dca_title": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Title",
+            "description": "Datacard Title",
+            "style": "min-width: 120px;",
+            "index": 2
+        },
+        "dca_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Description",
+            "description": "Datacard description",
+            "style": "min-width: 120px;",
+            "index": 3
+        },
+        "dca_collection_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Collection ID",
+            "description": "Collection ID",
+            "style": "min-width: 100px;",
+            "index": 4
+        },
+        "dca_function": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 16,
+            "title": "Function",
+            "description": "Function",
+            "enum": [
+                "count",
+                "sum",
+                "average",
+                "variance",
+                "stdev",
+                "value",
+                "static"
+            ],
+            "style": "min-width: 120px;",
+            "index": 5
+        },
+        "dca_static_value": {
+            "bsonType": "string",
+            "maxLength": 64,
+            "title": "Static",
+            "description": "Static value",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "dca_target": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Target",
+            "description": "Target field",
+            "style": "min-width: 120px;",
+            "index": 7
+        },
+        "dca_api_key": {
+            "bsonType": "string",
+            "minLength": 32,
+            "maxLength": 32,
+            "title": "API Key",
+            "description": "API key",
+            "secret": true,
+            "style": "min-width: 120px;",
+            "index": 8
+        },
+        "dca_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 120px;",
+            "index": 9
+        },
+        "dca_dashboard": {
+            "bsonType": "bool",
+            "title": "Dashboard",
+            "description": "On the dashboarded",
+            "style": "min-width: 120px;",
+            "index": 10
+        },
+        "dca_icon": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 16,
+            "title": "Icon",
+            "description": "Icon name",
+            "enum": [
+                "accessibility",
+                "bug",
+                "cube",
+                "nutrition",
+                "sparkles",
+                "qr-code",
+                "business",
+                "airplane",
+                "clipboard",
+                "megaphone",
+                "newspaper",
+                "archive",
+                "bus",
+                "logo-usd",
+                "cash-outline"
+            ],
+            "style": "min-width: 120px;",
+            "index": 12
+        },
+        "dca_color": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 9,
+            "title": "Color",
+            "description": "Theme color",
+            "enum": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "warning",
+                "success",
+                "danger",
+                "medium",
+                "light",
+                "dark"
+            ],
+            "style": "min-width: 120px;",
+            "index": 12
+        },
+        "dca_scheme": {
+            "bsonType": "object",
+            "title": "Scheme",
+            "description": "Datacard scheme",
+            "style": "min-width: 120px;",
+            "default": "aaa",
+            "index": 13
+        },
+        "dca_priority": {
+            "bsonType": "number",
+            "minimum": 0,
+            "maximum": 999999,
+            "title": "Priority",
+            "description": "Priority order",
+            "style": "min-width: 100px;",
+            "index": 14
+        }
+    },
+    "required": [
+        "dca_id",
+        "dca_title",
+        "dca_collection_id",
+        "dca_function",
+        "dca_target",
+        "dca_scheme"
+    ],
+    "index": [
+        [
+            "dca_id"
+        ],
+        [
+            "dca_collection_id"
+        ],
+        [
+            "dca_function"
+        ]
+    ],
+    "unique": [
+        [
+            "dca_id"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    }
+}

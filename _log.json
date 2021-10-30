@@ -1,0 +1,80 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "log_type": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 8,
+            "title": "Type",
+            "description": "Log type",
+            "enum": [
+                "Info",
+                "Error",
+                "Warning"
+            ],
+            "style": "min-width: 120px;",
+            "index": 1
+        },
+        "log_date": {
+            "bsonType": "date",
+            "title": "Date",
+            "description": "Log date",
+            "style": "min-width: 100px;",
+            "index": 2
+        },
+        "log_user_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "User",
+            "description": "User id",
+            "style": "min-width: 120px;",
+            "index": 3
+        },
+        "log_ip": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 16,
+            "title": "IP",
+            "description": "IP address",
+            "style": "min-width: 100px;",
+            "index": 4
+        },
+        "log_collection_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-z0-9-]+$",
+            "title": "Collection",
+            "description": "Collection ID",
+            "style": "min-width: 120px;",
+            "index": 5
+        },
+        "log_operation": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Operation",
+            "description": "Operation",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "log_document": {
+            "bsonType": "object",
+            "title": "Document",
+            "description": "Document",
+            "style": "min-width: 120px;",
+            "index": 7
+        }
+    },
+    "required": [
+        "log_type",
+        "log_date",
+        "log_user_id",
+        "log_collection_id",
+        "log_operation"
+    ],
+    "sort": {
+        "_modified_at": -1
+    }
+}

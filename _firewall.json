@@ -1,0 +1,66 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "fwa_rule_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]+$",
+            "title": "ID",
+            "description": "Rule ID",
+            "style": "min-width: 100px;",
+            "index": 1
+        },
+        "fwa_user_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "User",
+            "description": "User ID",
+            "style": "min-width: 100px;",
+            "index": 2
+        },
+        "fwa_ip": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 16,
+            "title": "IP Address",
+            "description": "IP Address",
+            "style": "min-width: 100px;",
+            "index": 4
+        },
+        "fwa_description": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Rule description",
+            "style": "min-width: 120px;",
+            "index": 3
+        },
+        "fwa_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 80px;",
+            "index": 5
+        }
+    },
+    "required": [
+        "fwa_rule_id",
+        "fwa_user_id",
+        "fwa_ip"
+    ],
+    "unique": [
+        [
+            "fwa_rule_id"
+        ],
+        [
+            "fwa_user_id",
+            "fwa_ip"
+        ]
+    ],
+    "sort": {
+        "fwa_rule_id": 1
+    }
+}
