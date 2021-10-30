@@ -1,2 +1,2 @@
-# brezel-root-structures
-Brezel root structures for crud operations
+# brezel-root-schemes
+Root schemes used in basic data operations
