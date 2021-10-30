@@ -71,7 +71,6 @@
         "log_type",
         "log_date",
         "log_user_id",
-        "log_collection_id",
         "log_operation"
     ],
     "sort": {
