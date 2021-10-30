@@ -1,0 +1,110 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "col_id": {
+            "bsonType": "string",
+            "title": "Collection ID",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]+$",
+            "description": "Collection ID",
+            "style": "min-width: 120px;",
+            "index": 1
+        },
+        "col_title": {
+            "bsonType": "string",
+            "title": "Title",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "Collection title",
+            "style": "min-width: 120px;",
+            "index": 2
+        },
+        "col_description": {
+            "bsonType": "string",
+            "title": "Description",
+            "minLength": 0,
+            "maxLength": 256,
+            "description": "Collection description",
+            "style": "min-width: 120px;",
+            "index": 3
+        },
+        "col_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 120px;",
+            "index": 4
+        },
+        "col_responded": {
+            "bsonType": "bool",
+            "title": "Responded",
+            "description": "Responded or not",
+            "style": "min-width: 120px;",
+            "index": 5
+        },
+        "col_icon": {
+            "bsonType": "string",
+            "title": "Icon",
+            "minLength": 1,
+            "maxLength": 16,
+            "description": "Icon name",
+            "enum": [
+                "accessibility",
+                "bug",
+                "cube",
+                "nutrition",
+                "sparkles",
+                "qr-code",
+                "business",
+                "airplane",
+                "clipboard",
+                "megaphone",
+                "newspaper",
+                "archive",
+                "bus",
+                "logo-usd",
+                "cash-outline"
+            ],
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "col_color": {
+            "bsonType": "string",
+            "title": "Color",
+            "minLength": 1,
+            "maxLength": 9,
+            "description": "Theme color",
+            "enum": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "warning",
+                "success",
+                "danger",
+                "medium",
+                "light",
+                "dark"
+            ],
+            "style": "min-width: 120px;",
+            "index": 7
+        },
+        "col_structure": {
+            "bsonType": "object",
+            "title": "Structure",
+            "description": "Collection structure",
+            "style": "min-width: 120px;",
+            "index": 8
+        }
+    },
+    "required": [
+        "col_id",
+        "col_title",
+        "col_structure"
+    ],
+    "index": [
+        [
+            "col_id"
+        ]
+    ]
+}
