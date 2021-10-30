@@ -3,28 +3,28 @@
     "properties": {
         "col_id": {
             "bsonType": "string",
-            "title": "Collection ID",
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]+$",
+            "title": "Collection ID",
             "description": "Collection ID",
             "style": "min-width: 120px;",
             "index": 1
         },
         "col_title": {
             "bsonType": "string",
-            "title": "Title",
             "minLength": 1,
             "maxLength": 64,
+            "title": "Title",
             "description": "Collection title",
             "style": "min-width: 120px;",
             "index": 2
         },
         "col_description": {
             "bsonType": "string",
-            "title": "Description",
             "minLength": 0,
             "maxLength": 256,
+            "title": "Description",
             "description": "Collection description",
             "style": "min-width: 120px;",
             "index": 3
@@ -45,9 +45,9 @@
         },
         "col_icon": {
             "bsonType": "string",
-            "title": "Icon",
             "minLength": 1,
             "maxLength": 16,
+            "title": "Icon",
             "description": "Icon name",
             "enum": [
                 "accessibility",
@@ -71,9 +71,9 @@
         },
         "col_color": {
             "bsonType": "string",
-            "title": "Color",
             "minLength": 1,
             "maxLength": 9,
+            "title": "Color",
             "description": "Theme color",
             "enum": [
                 "primary",
