@@ -76,10 +76,10 @@
             "style": "min-width: 80px;",
             "index": 7
         },
-        "que_scheme": {
+        "que_structure": {
             "bsonType": "object",
-            "title": "Scheme",
-            "description": "Query scheme",
+            "title": "Structure",
+            "description": "Query structure",
             "style": "min-width: 100px;",
             "index": 9
         }

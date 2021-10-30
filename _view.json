@@ -80,10 +80,10 @@
             "style": "min-width: 100px;",
             "index": 7
         },
-        "vie_scheme": {
+        "vie_structure": {
             "bsonType": "object",
-            "title": "Scheme",
-            "description": "View scheme",
+            "title": "Structure",
+            "description": "View structure",
             "style": "min-width: 100px;",
             "index": 8
         }
