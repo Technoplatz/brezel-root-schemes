@@ -28,6 +28,19 @@
             "style": "min-width: 140px;",
             "index": 3
         },
+        "usr_type": {
+            "bsonType": "string",
+            "minLength": 8,
+            "maxLength": 8,
+            "title": "Type",
+            "description": "User type",
+            "enum": [
+                "Internal",
+                "External"
+            ],
+            "style": "min-width: 80px;",
+            "index": 7
+        },
         "usr_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
@@ -46,7 +59,8 @@
     "required": [
         "usr_id",
         "usr_name",
-        "usr_group_id"
+        "usr_group_id",
+        "usr_type"
     ],
     "unique": [
         [
