@@ -1,5 +1,4 @@
 {
-    "bsonType": "object",
     "properties": {
         "log_type": {
             "bsonType": "string",

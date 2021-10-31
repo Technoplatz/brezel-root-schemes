@@ -1,12 +1,11 @@
 {
-    "bsonType": "object",
     "properties": {
         "col_id": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]+$",
-            "title": "Collection ID",
+            "title": "ID",
             "description": "Collection ID",
             "style": "min-width: 120px;",
             "index": 1

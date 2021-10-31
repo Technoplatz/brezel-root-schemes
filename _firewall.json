@@ -1,5 +1,4 @@
 {
-    "bsonType": "object",
     "properties": {
         "fwa_rule_id": {
             "bsonType": "string",
@@ -27,7 +26,7 @@
             "title": "IP Address",
             "description": "IP Address",
             "style": "min-width: 100px;",
-            "index": 4
+            "index": 3
         },
         "fwa_description": {
             "bsonType": "string",
@@ -36,7 +35,7 @@
             "title": "Description",
             "description": "Rule description",
             "style": "min-width: 120px;",
-            "index": 3
+            "index": 4
         },
         "fwa_enabled": {
             "bsonType": "bool",

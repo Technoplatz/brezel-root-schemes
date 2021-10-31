@@ -1,5 +1,4 @@
 {
-    "bsonType": "object",
     "properties": {
         "vie_id": {
             "bsonType": "string",
@@ -41,8 +40,8 @@
         },
         "vie_enabled": {
             "bsonType": "bool",
-            "title": "Enabled?",
-            "description": "Enabled?",
+            "title": "Enabled",
+            "description": "Enabled or not",
             "style": "min-width: 100px;",
             "index": 5
         },

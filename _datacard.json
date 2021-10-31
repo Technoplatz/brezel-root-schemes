@@ -1,5 +1,4 @@
 {
-    "bsonType": "object",
     "properties": {
         "dca_id": {
             "bsonType": "string",
@@ -121,7 +120,7 @@
                 "cash-outline"
             ],
             "style": "min-width: 120px;",
-            "index": 12
+            "index": 11
         },
         "dca_color": {
             "bsonType": "string",

@@ -1,5 +1,4 @@
 {
-    "bsonType": "object",
     "properties": {
         "que_id": {
             "bsonType": "string",
@@ -81,7 +80,7 @@
             "title": "Structure",
             "description": "Query structure",
             "style": "min-width: 100px;",
-            "index": 9
+            "index": 8
         }
     },
     "required": [
