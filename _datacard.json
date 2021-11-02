@@ -138,6 +138,7 @@
             "maximum": 999999,
             "title": "Priority",
             "description": "Priority order",
+            "default": 1000,
             "style": "min-width: 100px;",
             "index": 13
         },
