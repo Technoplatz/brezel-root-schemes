@@ -109,6 +109,7 @@
                 "logo-usd",
                 "cash-outline"
             ],
+            "default": "sparkles",
             "style": "min-width: 120px;",
             "index": 11
         },
@@ -129,6 +130,7 @@
                 "light",
                 "dark"
             ],
+            "default": "primary",
             "style": "min-width: 120px;",
             "index": 12
         },
@@ -146,6 +148,13 @@
             "bsonType": "object",
             "title": "Structure",
             "description": "Datacard structure",
+            "default": {
+                "subscribers": [
+                    "user@________.com",
+                    "user@________.com"
+                ],
+                "match": []
+            },
             "style": "min-width: 120px;",
             "index": 14
         }
