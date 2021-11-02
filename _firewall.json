@@ -50,6 +50,13 @@
         "fwa_user_id",
         "fwa_ip"
     ],
+    "index": [
+        [
+            "fwa_user_id",
+            "fwa_ip",
+            "fwa_enabled"
+        ]
+    ],
     "unique": [
         [
             "fwa_rule_id"
