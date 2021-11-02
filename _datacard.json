@@ -55,11 +55,11 @@
             "style": "min-width: 120px;",
             "index": 5
         },
-        "dca_static_value": {
+        "dca_default_value": {
             "bsonType": "string",
-            "maxLength": 64,
-            "title": "Static",
-            "description": "Static value",
+            "maxLength": 32,
+            "title": "Value",
+            "description": "Default value",
             "style": "min-width: 120px;",
             "index": 6
         },
@@ -71,16 +71,6 @@
             "description": "Target field",
             "style": "min-width: 120px;",
             "index": 7
-        },
-        "dca_api_key": {
-            "bsonType": "string",
-            "minLength": 32,
-            "maxLength": 32,
-            "title": "API Key",
-            "description": "API key",
-            "secret": true,
-            "style": "min-width: 120px;",
-            "index": 8
         },
         "dca_enabled": {
             "bsonType": "bool",
@@ -142,14 +132,6 @@
             "style": "min-width: 120px;",
             "index": 12
         },
-        "dca_structure": {
-            "bsonType": "object",
-            "title": "Structure",
-            "description": "Datacard structure",
-            "style": "min-width: 120px;",
-            "default": "aaa",
-            "index": 13
-        },
         "dca_priority": {
             "bsonType": "number",
             "minimum": 0,
@@ -157,6 +139,13 @@
             "title": "Priority",
             "description": "Priority order",
             "style": "min-width: 100px;",
+            "index": 13
+        },
+        "dca_structure": {
+            "bsonType": "object",
+            "title": "Structure",
+            "description": "Datacard structure",
+            "style": "min-width: 120px;",
             "index": 14
         }
     },
