@@ -74,5 +74,11 @@
     ],
     "sort": {
         "_modified_at": -1
-    }
+    },
+    "permissions": [
+        {
+            "id": "Managers",
+            "level": 2
+        }
+    ]
 }
