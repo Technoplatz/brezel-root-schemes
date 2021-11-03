@@ -39,28 +39,43 @@
                 "External"
             ],
             "style": "min-width: 80px;",
-            "index": 7
+            "index": 4
         },
         "usr_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
             "style": "min-width: 80px;",
-            "index": 4
+            "index": 5
         },
         "usr_api_enabled": {
             "bsonType": "bool",
             "title": "API enabled",
             "description": "API enabled",
             "style": "min-width: 80px;",
-            "index": 5
+            "index": 6
+        },
+        "usr_permission": {
+            "bsonType": "string",
+            "minLength": 4,
+            "maxLength": 13,
+            "title": "Permission",
+            "description": "Permission level",
+            "enum": [
+                "User",
+                "Manager",
+                "Administrator"
+            ],
+            "style": "min-width: 80px;",
+            "index": 7
         }
     },
     "required": [
         "usr_id",
         "usr_name",
         "usr_group_id",
-        "usr_type"
+        "usr_type",
+        "usr_permission"
     ],
     "unique": [
         [
@@ -69,11 +84,5 @@
     ],
     "sort": {
         "usr_id": 1
-    },
-    "permissions": [
-        {
-            "id": "Managers",
-            "level": 2
-        }
-    ]
+    }
 }
