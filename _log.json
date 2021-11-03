@@ -9,7 +9,8 @@
             "enum": [
                 "Info",
                 "Error",
-                "Warning"
+                "Warning",
+                "Denied"
             ],
             "style": "min-width: 120px;",
             "index": 1
