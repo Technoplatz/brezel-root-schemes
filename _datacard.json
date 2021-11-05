@@ -37,54 +37,12 @@
             "style": "min-width: 100px;",
             "index": 4
         },
-        "dca_function": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 16,
-            "title": "Function",
-            "description": "Function",
-            "enum": [
-                "count",
-                "sum",
-                "average",
-                "variance",
-                "stdev",
-                "value",
-                "static"
-            ],
-            "style": "min-width: 120px;",
-            "index": 5
-        },
-        "dca_default_value": {
-            "bsonType": "string",
-            "maxLength": 32,
-            "title": "Value",
-            "description": "Default value",
-            "style": "min-width: 120px;",
-            "index": 6
-        },
-        "dca_target": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "title": "Target",
-            "description": "Target field",
-            "style": "min-width: 120px;",
-            "index": 7
-        },
         "dca_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
             "style": "min-width: 120px;",
-            "index": 9
-        },
-        "dca_dashboard": {
-            "bsonType": "bool",
-            "title": "Dashboard",
-            "description": "On the dashboarded",
-            "style": "min-width: 120px;",
-            "index": 10
+            "index": 5
         },
         "dca_icon": {
             "bsonType": "string",
@@ -111,28 +69,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 11
-        },
-        "dca_color": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 9,
-            "title": "Color",
-            "description": "Theme color",
-            "enum": [
-                "primary",
-                "secondary",
-                "tertiary",
-                "warning",
-                "success",
-                "danger",
-                "medium",
-                "light",
-                "dark"
-            ],
-            "default": "primary",
-            "style": "min-width: 120px;",
-            "index": 12
+            "index": 6
         },
         "dca_priority": {
             "bsonType": "number",
@@ -142,7 +79,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 13
+            "index": 7
         },
         "dca_structure": {
             "bsonType": "object",
@@ -150,22 +87,36 @@
             "description": "Datacard structure",
             "default": {
                 "subscribers": [
-                    "user@________.com",
-                    "user@________.com"
+                    "name@company.com",
+                    "name@company.com"
                 ],
-                "match": []
+                "aggregate": {
+                    "function": "count|sum|avg|var|stdev|value",
+                    "key": "field_key"
+                },
+                "match": [
+                    {
+                        "key": "field_key",
+                        "op": "eq|contains|in|gt|gte|lt|lte",
+                        "value": "xxxx"
+                    },
+                    {
+                        "key": "field_key",
+                        "op": "eq|contains|in|gt|gte|lt|lte",
+                        "value": "xxxx"
+                    }
+                ]
             },
             "style": "min-width: 120px;",
-            "index": 14
+            "index": 8
         }
     },
     "required": [
         "dca_id",
         "dca_title",
         "dca_collection_id",
-        "dca_function",
-        "dca_target",
-        "dca_structure"
+        "dca_structure",
+        "dca_priority"
     ],
     "index": [
         [
@@ -175,7 +126,7 @@
             "dca_collection_id"
         ],
         [
-            "dca_function"
+            "dca_enabled"
         ]
     ],
     "unique": [

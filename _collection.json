@@ -35,13 +35,6 @@
             "style": "min-width: 120px;",
             "index": 4
         },
-        "col_responded": {
-            "bsonType": "bool",
-            "title": "Responded",
-            "description": "Responded or not",
-            "style": "min-width: 120px;",
-            "index": 5
-        },
         "col_icon": {
             "bsonType": "string",
             "minLength": 1,
