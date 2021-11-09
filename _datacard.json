@@ -40,8 +40,15 @@
         "dca_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
-            "description": "Enabled or not",
-            "style": "min-width: 120px;",
+            "description": "Enabled or not?",
+            "style": "min-width: 80px;",
+            "index": 5
+        },
+        "dca_dashboard": {
+            "bsonType": "bool",
+            "title": "Dashboard",
+            "description": "Enabled at dasboard?",
+            "style": "min-width: 80px;",
             "index": 5
         },
         "dca_icon": {

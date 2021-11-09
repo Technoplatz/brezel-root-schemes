@@ -14,6 +14,7 @@
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 64,
+            "pattern": "^.+@.+$",
             "title": "User",
             "description": "User ID",
             "style": "min-width: 100px;",
