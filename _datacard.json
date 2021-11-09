@@ -88,7 +88,7 @@
             "default": {
                 "subscribers": [
                     "name@company.com",
-                    "name@company.com"
+                    "GroupId"
                 ],
                 "aggregate": {
                     "function": "count|sum|avg|var|stdev|value",
@@ -115,8 +115,8 @@
         "dca_id",
         "dca_title",
         "dca_collection_id",
-        "dca_structure",
-        "dca_priority"
+        "dca_priority",
+        "dca_structure"
     ],
     "index": [
         [
