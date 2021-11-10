@@ -32,6 +32,7 @@
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 64,
+            "pattern": "^[a-z0-9-]+$",
             "title": "Collection ID",
             "description": "Collection ID",
             "style": "min-width: 100px;",
@@ -143,5 +144,24 @@
     ],
     "sort": {
         "_modified_at": -1
-    }
+    },
+    "actions": [
+        {
+            "id": "priority-change",
+            "title": "Priority",
+            "properties": [
+                "dca_priority"
+            ],
+            "index": 0
+        },
+        {
+            "id": "enabled-change",
+            "title": "Enabled",
+            "properties": [
+                "dca_enabled",
+                "dca_dashboard"
+            ],
+            "index": 1
+        }
+    ]
 }
