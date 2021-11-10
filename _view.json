@@ -47,8 +47,8 @@
         },
         "vie_api_key": {
             "bsonType": "string",
-            "minLength": 32,
-            "maxLength": 32,
+            "minLength": 24,
+            "maxLength": 24,
             "title": "API Key",
             "description": "API Key",
             "secret": true,
