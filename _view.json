@@ -58,7 +58,7 @@
         "vie_icon": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 64,
+            "maxLength": 32,
             "title": "Icon",
             "description": "Icon name",
             "enum": [

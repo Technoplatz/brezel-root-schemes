@@ -55,7 +55,7 @@
         "dca_icon": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 16,
+            "maxLength": 32,
             "title": "Icon",
             "description": "Icon name",
             "enum": [
