@@ -70,12 +70,15 @@
                 "contract-outline",
                 "cube",
                 "expand-outline",
+                "golf-outline",
                 "logo-usd",
                 "megaphone",
                 "newspaper",
                 "nutrition",
                 "qr-code",
-                "sparkles"
+                "sparkles",
+                "swap-vertical-outline",
+                "swap-horizontal-outline"
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
