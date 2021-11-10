@@ -41,6 +41,7 @@
         "fwa_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
+            "default": true,
             "description": "Enabled or not",
             "style": "min-width: 80px;",
             "index": 5
