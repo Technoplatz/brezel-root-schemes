@@ -104,14 +104,14 @@
                     "GroupId"
                 ],
                 "aggregate": {
-                    "function": "count|sum|avg|var|stdev|value",
+                    "function": "count|sum|avg|var|stdev|max|min|value",
                     "key": "field_key"
                 },
                 "match": [
                     {
                         "key": "field_key",
                         "op": "eq|contains|in|gt|gte|lt|lte",
-                        "value": "xxxx"
+                        "value": 999
                     },
                     {
                         "key": "field_key",
