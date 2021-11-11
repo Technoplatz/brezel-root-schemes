@@ -34,24 +34,6 @@
             "style": "min-width: 100px;",
             "index": 4
         },
-        "sto_file_name": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "title": "File Name",
-            "description": "File name",
-            "style": "min-width: 100px;",
-            "index": 5
-        },
-        "sto_file_size": {
-            "bsonType": "number",
-            "minimum": 0,
-            "maximum": 999999,
-            "title": "File size",
-            "description": "File size",
-            "style": "min-width: 100px;",
-            "index": 6
-        },
         "sto_file": {
             "bsonType": "file",
             "minLength": 1,
