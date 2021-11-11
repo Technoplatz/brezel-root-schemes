@@ -48,8 +48,6 @@
         "sto_id",
         "sto_collection",
         "sto_file_type",
-        "sto_file_name",
-        "sto_file_size",
         "sto_file"
     ],
     "unique": [
@@ -58,9 +56,6 @@
         ]
     ],
     "index": [
-        [
-            "sto_file_name"
-        ],
         [
             "sto_file_type"
         ],
