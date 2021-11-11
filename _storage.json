@@ -15,24 +15,10 @@
             "minLength": 8,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]{8,32}$",
-            "title": "Collection",
+            "title": "Collection worksheet",
             "description": "Collection ID",
             "style": "min-width: 100px;",
             "index": 3
-        },
-        "sto_file_type": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 8,
-            "pattern": "^[a-zA-Z]{1,8}$",
-            "title": "Type",
-            "description": "Type",
-            "enum": [
-                "Excel",
-                "CSV"
-            ],
-            "style": "min-width: 100px;",
-            "index": 4
         },
         "sto_file": {
             "bsonType": "file",
@@ -47,7 +33,6 @@
     "required": [
         "sto_id",
         "sto_collection",
-        "sto_file_type",
         "sto_file"
     ],
     "unique": [
@@ -56,9 +41,6 @@
         ]
     ],
     "index": [
-        [
-            "sto_file_type"
-        ],
         [
             "sto_collection_id"
         ]
