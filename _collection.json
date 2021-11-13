@@ -44,6 +44,7 @@
             "enum": [
                 "accessibility",
                 "airplane",
+                "alert-circle-outline",
                 "archive",
                 "bug",
                 "bus",
@@ -52,6 +53,7 @@
                 "clipboard",
                 "contract-outline",
                 "cube",
+                "ellipse-outline",
                 "expand-outline",
                 "golf-outline",
                 "logo-usd",
@@ -61,8 +63,7 @@
                 "qr-code",
                 "sparkles",
                 "swap-vertical-outline",
-                "swap-horizontal-outline",
-                "alert-circle-outline"
+                "swap-horizontal-outline"
             ],
             "style": "min-width: 120px;",
             "index": 6
