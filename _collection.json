@@ -61,7 +61,8 @@
                 "qr-code",
                 "sparkles",
                 "swap-vertical-outline",
-                "swap-horizontal-outline"
+                "swap-horizontal-outline",
+                "alert-circle-outline"
             ],
             "style": "min-width: 120px;",
             "index": 6

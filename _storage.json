@@ -32,7 +32,7 @@
     },
     "required": [
         "sto_id",
-        "sto_collection",
+        "sto_collection_id",
         "sto_file"
     ],
     "unique": [
