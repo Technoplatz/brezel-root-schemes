@@ -44,6 +44,7 @@
             "minLength": 5,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9-_.]{5,64}$",
+            "file": true,
             "title": "File",
             "description": "File name",
             "style": "min-width: 100px;",
