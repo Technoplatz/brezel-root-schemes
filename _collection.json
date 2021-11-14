@@ -181,7 +181,27 @@
                         "level": 2
                     }
                 ],
-                "actions": []
+                "actions": [
+                    {
+                        "id": "open",
+                        "title": "Open",
+                        "status": "1-On the way",
+                        "properties": [
+                            "xxx_column_select",
+                            "xxx_column_number"
+                        ],
+                        "index": 0
+                    },
+                    {
+                        "id": "in-progress",
+                        "title": "In-progress",
+                        "status": "1-In Progress",
+                        "properties": [
+                            "xxx_column_date"
+                        ],
+                        "index": 1
+                    }
+                ]
             },
             "style": "min-width: 100px;",
             "index": 8
