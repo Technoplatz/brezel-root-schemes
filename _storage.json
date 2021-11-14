@@ -41,7 +41,7 @@
         },
         "sto_file": {
             "bsonType": "string",
-            "minLength": 5,
+            "minLength": 0,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9-_.]{5,64}$",
             "file": true,
