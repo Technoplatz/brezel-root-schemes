@@ -85,14 +85,97 @@
                 "light",
                 "dark"
             ],
-            "style": "min-width: 120px;",
+            "style": "min-width: 100px;",
             "index": 7
         },
         "col_structure": {
             "bsonType": "object",
             "title": "Structure",
             "description": "Collection structure",
-            "style": "min-width: 120px;",
+            "default": {
+                "properties": {
+                    "xxx_column_string": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "title": "String",
+                        "description": "Column string description",
+                        "style": "min-width: 100px;",
+                        "index": 1
+                    },
+                    "xxx_column_select": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "enum": [
+                            "Blue",
+                            "Red",
+                            "Orange",
+                            "Black",
+                            "Pink"
+                        ],
+                        "title": "Select",
+                        "description": "Column two description",
+                        "style": "min-width: 100px;",
+                        "index": 2
+                    },
+                    "xxx_column_number": {
+                        "bsonType": "number",
+                        "minimum": 0,
+                        "maximum": 9999,
+                        "title": "Number",
+                        "description": "Column number description",
+                        "style": "min-width: 100px;",
+                        "index": 3
+                    },
+                    "xxx_column_date": {
+                        "bsonType": "date",
+                        "title": "Date",
+                        "description": "Column date description",
+                        "style": "min-width: 100px;",
+                        "index": 4
+                    }
+                },
+                "required": [
+                    "xxx_column_string",
+                    "xxx_column_select",
+                    "xxx_column_number"
+                ],
+                "unique": [
+                    [
+                        "xxx_column_string"
+                    ]
+                ],
+                "index": [
+                    [
+                        "xxx_column_select"
+                    ],
+                    [
+                        "xxx_column_number"
+                    ],
+                    [
+                        "xxx_column_select",
+                        "xxx_column_date"
+                    ]
+                ],
+                "parents": [],
+                "sort": {
+                    "xxx_column_string": -1,
+                    "xxx_column_select": 1
+                },
+                "permissions": [
+                    {
+                        "id": "a@a.com",
+                        "level": 0
+                    },
+                    {
+                        "id": "managers",
+                        "level": 2
+                    }
+                ],
+                "actions": []
+            },
+            "style": "min-width: 100px;",
             "index": 8
         }
     },
