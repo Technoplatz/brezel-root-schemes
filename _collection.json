@@ -169,7 +169,15 @@
                         "level": 0
                     },
                     {
+                        "id": "b@b.com",
+                        "level": 1
+                    },
+                    {
                         "id": "managers",
+                        "level": 1
+                    },
+                    {
+                        "id": "administrators",
                         "level": 2
                     }
                 ],
