@@ -24,10 +24,20 @@
             "minLength": 8,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]{8,32}$",
-            "title": "Collection worksheet",
+            "title": "Collection",
             "description": "Collection ID",
             "style": "min-width: 100px;",
             "index": 3
+        },
+        "sto_worksheet": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-zA-Z0-9-]{1,32}$",
+            "title": "Worksheet",
+            "description": "Worksheet name",
+            "style": "min-width: 100px;",
+            "index": 4
         },
         "sto_prefix": {
             "bsonType": "string",
@@ -37,7 +47,7 @@
             "title": "Prefix",
             "description": "Column prefix like cus_",
             "style": "min-width: 80px;",
-            "index": 4
+            "index": 5
         },
         "sto_file": {
             "bsonType": "string",
@@ -47,21 +57,30 @@
             "title": "File",
             "description": "File name",
             "style": "min-width: 100px;",
-            "index": 5
+            "index": 6
         }
     },
     "required": [
         "sto_id",
-        "sto_collection_id"
+        "sto_collection_id",
+        "sto_worksheet",
+        "sto_prefix"
     ],
     "unique": [
         [
             "sto_id"
+        ],
+        [
+            "sto_collection_id",
+            "sto_worksheet"
         ]
     ],
     "index": [
         [
             "sto_collection_id"
+        ],
+        [
+            "sto_worksheet"
         ]
     ],
     "sort": {
