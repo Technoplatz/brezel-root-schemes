@@ -10,6 +10,15 @@
             "style": "min-width: 100px;",
             "index": 1
         },
+        "sto_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Description",
+            "description": "Storage description",
+            "style": "min-width: 140px;",
+            "index": 2
+        },
         "sto_collection_id": {
             "bsonType": "string",
             "minLength": 8,
@@ -20,6 +29,16 @@
             "style": "min-width: 100px;",
             "index": 3
         },
+        "sto_prefix": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 3,
+            "pattern": "^[a-z]{3,3}$",
+            "title": "Prefix",
+            "description": "Column prefix like cus_",
+            "style": "min-width: 80px;",
+            "index": 4
+        },
         "sto_file": {
             "bsonType": "file",
             "minLength": 1,
@@ -27,13 +46,12 @@
             "title": "File",
             "description": "File",
             "style": "min-width: 100px;",
-            "index": 7
+            "index": 5
         }
     },
     "required": [
         "sto_id",
-        "sto_collection_id",
-        "sto_file"
+        "sto_collection_id"
     ],
     "unique": [
         [
@@ -46,6 +64,6 @@
         ]
     ],
     "sort": {
-        "sto_file_name": -1
+        "_modified_at": -1
     }
 }
