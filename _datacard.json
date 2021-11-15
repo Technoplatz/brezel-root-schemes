@@ -7,6 +7,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Datacard ID",
+            "permanent": true,
             "style": "min-width: 120px;",
             "index": 1
         },
@@ -24,7 +25,7 @@
             "minLength": 0,
             "maxLength": 128,
             "title": "Description",
-            "description": "Datacard description",
+            "description": "Data card description",
             "style": "min-width: 120px;",
             "index": 3
         },
@@ -50,7 +51,7 @@
             "title": "Dashboard",
             "description": "Enabled at dasboard?",
             "style": "min-width: 80px;",
-            "index": 5
+            "index": 6
         },
         "dca_icon": {
             "bsonType": "string",
@@ -84,7 +85,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 7
         },
         "dca_priority": {
             "bsonType": "number",
@@ -94,7 +95,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 7
+            "index": 8
         },
         "dca_structure": {
             "bsonType": "object",
@@ -123,7 +124,7 @@
                 ]
             },
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 9
         }
     },
     "required": [
