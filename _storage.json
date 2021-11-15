@@ -2,9 +2,9 @@
     "properties": {
         "sto_id": {
             "bsonType": "string",
-            "minLength": 8,
+            "minLength": 3,
             "maxLength": 32,
-            "pattern": "^[a-z0-9-]{8,32}$",
+            "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Storage file ID",
             "style": "min-width: 100px;",
@@ -21,9 +21,9 @@
         },
         "sto_collection_id": {
             "bsonType": "string",
-            "minLength": 8,
+            "minLength": 3,
             "maxLength": 32,
-            "pattern": "^[a-z0-9-]{8,32}$",
+            "pattern": "^[a-z0-9-]{3,32}$",
             "title": "Collection",
             "description": "Collection ID",
             "style": "min-width: 100px;",

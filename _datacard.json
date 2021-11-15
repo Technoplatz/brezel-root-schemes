@@ -2,9 +2,9 @@
     "properties": {
         "dca_id": {
             "bsonType": "string",
-            "minLength": 1,
+            "minLength": 3,
             "maxLength": 32,
-            "pattern": "^[a-z0-9-]+$",
+            "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Datacard ID",
             "style": "min-width: 120px;",
@@ -30,9 +30,9 @@
         },
         "dca_collection_id": {
             "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "pattern": "^[a-z0-9-]+$",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]{3,32}$",
             "title": "Collection ID",
             "description": "Collection ID",
             "style": "min-width: 100px;",
