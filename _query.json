@@ -46,6 +46,20 @@
             "style": "min-width: 100px;",
             "index": 5
         },
+        "que_subscribers": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Subscribers",
+            "description": "Subscriber list",
+            "style": "min-width: 160px;",
+            "index": 6
+        },
         "que_api_key": {
             "bsonType": "string",
             "minLength": 24,
@@ -54,7 +68,7 @@
             "description": "API key",
             "secret": true,
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 7
         },
         "que_color": {
             "bsonType": "string",
@@ -74,14 +88,14 @@
                 "dark"
             ],
             "style": "min-width: 80px;",
-            "index": 7
+            "index": 8
         },
         "que_structure": {
             "bsonType": "object",
             "title": "Structure",
             "description": "Query structure",
             "style": "min-width: 100px;",
-            "index": 8
+            "index": 9
         }
     },
     "required": [
