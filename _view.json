@@ -16,7 +16,7 @@
             "minLength": 3,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]{3,32}$",
-            "title": "Collection",
+            "title": "ID",
             "description": "Collection ID",
             "style": "min-width: 100px;",
             "index": 2
@@ -35,8 +35,8 @@
             "minLength": 0,
             "maxLength": 128,
             "title": "Description",
-            "style": "min-width: 100px;",
             "description": "View description",
+            "style": "min-width: 100px;",
             "index": 4
         },
         "vie_enabled": {
@@ -51,51 +51,31 @@
             "minLength": 24,
             "maxLength": 24,
             "title": "API Key",
-            "description": "API Key",
+            "description": "API key",
             "secret": true,
             "style": "min-width: 120px;",
-            "index": 6
-        },
-        "vie_icon": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "title": "Icon",
-            "description": "Icon name",
-            "enum": [
-                "accessibility-outline",
-                "airplane-outline",
-                "alert-circle-outline",
-                "archive-outline",
-                "bug-outline",
-                "bus-outline",
-                "business-outline",
-                "cash-outline",
-                "clipboard-outline",
-                "contract-outline",
-                "cube-outline",
-                "ellipse-outline",
-                "expand-outline",
-                "golf-outline",
-                "logo-euro",
-                "logo-usd",
-                "megaphone-outline",
-                "newspaper-outline",
-                "nutrition-outline",
-                "qr-code-outline",
-                "sparkles-outline",
-                "swap-vertical-outline",
-                "swap-horizontal-outline"
-            ],
-            "style": "min-width: 100px;",
             "index": 7
+        },
+        "vie_subscribers": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Subscribers",
+            "description": "Subscribers list",
+            "style": "min-width: 160px;",
+            "index": 6
         },
         "vie_structure": {
             "bsonType": "object",
             "title": "Structure",
             "description": "View structure",
             "style": "min-width: 100px;",
-            "index": 8
+            "index": 9
         }
     },
     "required": [
@@ -110,6 +90,6 @@
         ]
     ],
     "sort": {
-        "usr_id": 1
+        "vie_id": 1
     }
 }
