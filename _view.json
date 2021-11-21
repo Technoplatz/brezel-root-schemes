@@ -16,7 +16,7 @@
             "minLength": 3,
             "maxLength": 32,
             "pattern": "^[a-z0-9-]{3,32}$",
-            "title": "ID",
+            "title": "Collection ID",
             "description": "Collection ID",
             "style": "min-width: 100px;",
             "index": 2
@@ -87,6 +87,9 @@
     "unique": [
         [
             "vie_id"
+        ],
+        [
+            "vie_api_key"
         ]
     ],
     "sort": {
