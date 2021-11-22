@@ -71,5 +71,15 @@
     ],
     "sort": {
         "fwa_rule_id": 1
-    }
+    },
+    "permissions": [
+        {
+            "id": "managers",
+            "level": 2
+        },
+        {
+            "id": "administrators",
+            "level": 2
+        }
+    ]
 }
