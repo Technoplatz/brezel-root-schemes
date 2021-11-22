@@ -29,19 +29,6 @@
             "style": "min-width: 140px;",
             "index": 3
         },
-        "usr_type": {
-            "bsonType": "string",
-            "minLength": 8,
-            "maxLength": 8,
-            "title": "Type",
-            "description": "User type",
-            "enum": [
-                "Internal",
-                "External"
-            ],
-            "style": "min-width: 80px;",
-            "index": 4
-        },
         "usr_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
@@ -56,13 +43,14 @@
             "style": "min-width: 80px;",
             "index": 6
         },
-        "usr_permission": {
+        "usr_level": {
             "bsonType": "string",
             "minLength": 4,
             "maxLength": 13,
-            "title": "Permission",
-            "description": "Permission level",
+            "title": "Level",
+            "description": "User level",
             "enum": [
+                "External",
                 "User",
                 "Manager",
                 "Administrator"
@@ -75,8 +63,7 @@
         "usr_id",
         "usr_name",
         "usr_group_id",
-        "usr_type",
-        "usr_permission"
+        "usr_level"
     ],
     "unique": [
         [
