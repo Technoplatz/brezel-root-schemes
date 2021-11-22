@@ -53,6 +53,7 @@
             "title": "API Key",
             "description": "API key",
             "secret": true,
+            "objectId": true,
             "style": "min-width: 120px;",
             "index": 7
         },
