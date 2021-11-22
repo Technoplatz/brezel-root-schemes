@@ -23,7 +23,7 @@
             "bsonType": "string",
             "minLength": 0,
             "maxLength": 32,
-            "pattern": "^[a-zA-Z0-9-]+$",
+            "pattern": "^[a-zA-Z0-9-]{0,32}$",
             "title": "Group ID",
             "description": "Group id",
             "style": "min-width: 140px;",
@@ -43,12 +43,13 @@
             "style": "min-width: 80px;",
             "index": 6
         },
-        "usr_level": {
+        "usr_level_id": {
             "bsonType": "string",
-            "minLength": 4,
-            "maxLength": 13,
-            "title": "Level",
-            "description": "User level",
+            "minLength": 1,
+            "maxLength": 16,
+            "pattern": "^[a-zA-Z]{1,16}$",
+            "title": "Level ID",
+            "description": "User level id",
             "enum": [
                 "External",
                 "User",
@@ -63,7 +64,7 @@
         "usr_id",
         "usr_name",
         "usr_group_id",
-        "usr_level"
+        "usr_level_id"
     ],
     "unique": [
         [
@@ -75,12 +76,16 @@
     },
     "permissions": [
         {
-            "id": "Managers",
-            "level": 2
+            "usr_level_id": "User",
+            "rank": 0
         },
         {
-            "id": "Administrators",
-            "level": 2
+            "usr_level_id": "Manager",
+            "rank": 1
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
         }
     ]
 }
