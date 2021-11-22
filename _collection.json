@@ -224,11 +224,11 @@
     },
     "permissions": [
         {
-            "id": "managers",
+            "id": "Managers",
             "level": 2
         },
         {
-            "id": "administrators",
+            "id": "Administrators",
             "level": 2
         }
     ]
