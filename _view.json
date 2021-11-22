@@ -81,8 +81,7 @@
     "required": [
         "vie_id",
         "vie_collection_id",
-        "vie_title",
-        "vie_api_key"
+        "vie_title"
     ],
     "unique": [
         [
