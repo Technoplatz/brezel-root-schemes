@@ -58,6 +58,25 @@
             ],
             "style": "min-width: 80px;",
             "index": 7
+        },
+        "usr_country_code": {
+            "bsonType": "number",
+            "minimum": 1,
+            "maximum": 999,
+            "title": "Country",
+            "description": "Country code",
+            "default": 90,
+            "style": "min-width: 100px;",
+            "index": 8
+        },
+        "usr_phone_no": {
+            "bsonType": "number",
+            "minimum": 1,
+            "maximum": 99999999999,
+            "title": "Phone",
+            "description": "Phone number",
+            "style": "min-width: 100px;",
+            "index": 8
         }
     },
     "required": [
