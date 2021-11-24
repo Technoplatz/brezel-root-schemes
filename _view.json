@@ -46,17 +46,6 @@
             "style": "min-width: 100px;",
             "index": 5
         },
-        "vie_api_key": {
-            "bsonType": "string",
-            "minLength": 24,
-            "maxLength": 24,
-            "title": "API Key",
-            "description": "API key",
-            "secret": true,
-            "objectId": true,
-            "style": "min-width: 120px;",
-            "index": 7
-        },
         "vie_subscribers": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -87,9 +76,6 @@
     "unique": [
         [
             "vie_id"
-        ],
-        [
-            "vie_api_key"
         ]
     ],
     "sort": {
