@@ -8,7 +8,7 @@
             "title": "ID",
             "description": "View ID",
             "permanent": true,
-            "style": "min-width: 100px;",
+            "style": "min-width: 140px;",
             "index": 1
         },
         "vie_collection_id": {
@@ -18,7 +18,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "Collection ID",
             "description": "Collection ID",
-            "style": "min-width: 100px;",
+            "style": "min-width: 140px;",
             "index": 2
         },
         "vie_title": {
@@ -27,7 +27,7 @@
             "maxLength": 64,
             "title": "Title",
             "description": "View title",
-            "style": "min-width: 100px;",
+            "style": "min-width: 140px;",
             "index": 3
         },
         "vie_description": {
@@ -36,14 +36,14 @@
             "maxLength": 128,
             "title": "Description",
             "description": "View description",
-            "style": "min-width: 100px;",
+            "style": "min-width: 140px;",
             "index": 4
         },
         "vie_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "style": "min-width: 100px;",
+            "style": "min-width: 90px;",
             "index": 5
         },
         "vie_subscribers": {
@@ -57,7 +57,7 @@
             },
             "title": "Subscribers",
             "description": "Subscribers list",
-            "style": "min-width: 160px;",
+            "style": "min-width: 130px;",
             "index": 6
         },
         "vie_structure": {
