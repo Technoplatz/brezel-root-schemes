@@ -15,7 +15,7 @@
             "bsonType": "string",
             "minLength": 3,
             "maxLength": 32,
-            "pattern": "^[a-z0-9-]{3,32}$",
+            "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "Collection ID",
             "description": "Collection ID",
             "style": "min-width: 140px;",
