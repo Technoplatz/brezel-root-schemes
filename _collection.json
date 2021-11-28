@@ -36,6 +36,13 @@
             "style": "min-width: 120px;",
             "index": 4
         },
+        "col_protected": {
+            "bsonType": "bool",
+            "title": "Protected",
+            "description": "Protected or not",
+            "style": "min-width: 120px;",
+            "index": 5
+        },
         "col_icon": {
             "bsonType": "string",
             "minLength": 1,
@@ -68,7 +75,7 @@
                 "swap-horizontal-outline"
             ],
             "style": "min-width: 120px;",
-            "index": 5
+            "index": 6
         },
         "col_color": {
             "bsonType": "string",
@@ -88,7 +95,7 @@
                 "dark"
             ],
             "style": "min-width: 100px;",
-            "index": 6
+            "index": 7
         },
         "col_structure": {
             "bsonType": "object",
