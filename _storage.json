@@ -46,7 +46,7 @@
             "maxLength": 3,
             "pattern": "^[a-z]{3,3}$",
             "title": "Prefix",
-            "description": "Column prefix like cus_",
+            "description": "Column prefix",
             "style": "min-width: 80px;",
             "index": 5
         },
