@@ -39,19 +39,49 @@
             "style": "min-width: 100px;",
             "index": 4
         },
+        "dca_function": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 8,
+            "pattern": "^[a-z]{1,8}$",
+            "title": "Function",
+            "description": "Function",
+            "enum": [
+                "count",
+                "sum",
+                "avg",
+                "var",
+                "stdev",
+                "max",
+                "min",
+                "value"
+            ],
+            "style": "min-width: 80px;",
+            "index": 5
+        },
+        "dca_field": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Field",
+            "description": "Field",
+            "style": "min-width: 100px;",
+            "index": 6
+        },
         "dca_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not?",
             "style": "min-width: 80px;",
-            "index": 5
+            "index": 7
         },
         "dca_dashboard": {
             "bsonType": "bool",
             "title": "Dashboard",
             "description": "Enabled at dasboard?",
             "style": "min-width: 80px;",
-            "index": 6
+            "index": 8
         },
         "dca_icon": {
             "bsonType": "string",
@@ -86,7 +116,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 7
+            "index": 9
         },
         "dca_priority": {
             "bsonType": "number",
@@ -96,7 +126,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 8
+            "index": 10
         },
         "dca_subscribers": {
             "bsonType": "array",
@@ -110,38 +140,70 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 9
+            "index": 11
         },
-        "dca_structure": {
-            "bsonType": "object",
-            "title": "Structure",
-            "description": "Datacard structure",
-            "default": {
-                "aggregate": {
-                    "function": "count|sum|avg|var|stdev|max|min|value",
-                    "key": "field_key"
-                },
-                "match": [
-                    {
-                        "key": "field_key",
-                        "op": "eq|contains|in|gt|gte|lt|lte",
-                        "value": 999
+        "dca_filter": {
+            "bsonType": "array",
+            "minItems": 1,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "items": {
+                "bsonType": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "key": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z_]{1,32}$",
+                        "title": "key",
+                        "description": "Item collection key"
                     },
-                    {
-                        "key": "field_key",
-                        "op": "eq|contains|in|gt|gte|lt|lte",
-                        "value": "xxxx"
+                    "operator": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 8,
+                        "pattern": "^[a-z]{1,8}$",
+                        "enum": [
+                            "eq",
+                            "contains",
+                            "in",
+                            "gt",
+                            "gte",
+                            "lt",
+                            "lte"
+                        ],
+                        "title": "op",
+                        "description": "Item filter operator"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-zA-Z0-9.-_]{1,32}$",
+                        "title": "value",
+                        "description": "Item value"
                     }
+                },
+                "required": [
+                    "key",
+                    "operator",
+                    "value"
                 ]
             },
+            "title": "Filter",
+            "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 10
+            "index": 12
         }
     },
     "required": [
         "dca_id",
         "dca_title",
         "dca_collection_id",
+        "dca_function",
+        "dca_field",
         "dca_priority",
         "dca_structure"
     ],
@@ -154,6 +216,12 @@
         ],
         [
             "dca_enabled"
+        ],
+        [
+            "dca_function"
+        ],
+        [
+            "dca_field"
         ]
     ],
     "unique": [
