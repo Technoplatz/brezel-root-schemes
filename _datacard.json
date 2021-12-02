@@ -204,8 +204,7 @@
         "dca_collection_id",
         "dca_function",
         "dca_field",
-        "dca_priority",
-        "dca_structure"
+        "dca_priority"
     ],
     "index": [
         [
