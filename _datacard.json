@@ -188,7 +188,7 @@
                 },
                 "required": [
                     "key",
-                    "operator",
+                    "op",
                     "value"
                 ]
             },
