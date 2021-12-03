@@ -19,6 +19,16 @@
             "style": "min-width: 140px;",
             "index": 2
         },
+        "usr_initials": {
+            "bsonType": "string",
+            "minLength": 2,
+            "maxLength": 3,
+            "pattern": "^[\\p{Lu}]{2,3}$",
+            "title": "Initials",
+            "description": "Initials",
+            "style": "min-width: 70px;",
+            "index": 3
+        },
         "usr_group_id": {
             "bsonType": "string",
             "minLength": 0,
@@ -27,7 +37,7 @@
             "title": "Group ID",
             "description": "Group id",
             "style": "min-width: 140px;",
-            "index": 3
+            "index": 4
         },
         "usr_enabled": {
             "bsonType": "bool",
@@ -84,6 +94,7 @@
     "required": [
         "usr_id",
         "usr_name",
+        "usr_initials",
         "usr_group_id",
         "usr_level_id",
         "usr_country_code"
@@ -91,6 +102,9 @@
     "unique": [
         [
             "usr_id"
+        ],
+        [
+            "usr_initials"
         ]
     ],
     "sort": {
