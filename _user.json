@@ -23,7 +23,7 @@
             "bsonType": "string",
             "minLength": 2,
             "maxLength": 3,
-            "pattern": "^[\\p{L}]{2,3}$",
+            "pattern": "^[A-ZÜĞİŞÇÖüğışçö]{2,3}$",
             "title": "Initials",
             "description": "Initials",
             "style": "min-width: 70px;",
