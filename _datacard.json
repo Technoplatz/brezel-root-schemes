@@ -160,7 +160,7 @@
                         "title": "key",
                         "description": "Item collection key"
                     },
-                    "operator": {
+                    "op": {
                         "bsonType": "string",
                         "minLength": 1,
                         "maxLength": 8,
