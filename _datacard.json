@@ -48,6 +48,7 @@
             "description": "Function",
             "enum": [
                 "count",
+                "distinct",
                 "sum",
                 "avg",
                 "var",
