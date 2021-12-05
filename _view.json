@@ -60,12 +60,67 @@
             "style": "min-width: 130px;",
             "index": 6
         },
-        "vie_structure": {
-            "bsonType": "object",
-            "title": "Structure",
-            "description": "View structure",
-            "style": "min-width: 100px;",
-            "index": 9
+        "vie_filter": {
+            "bsonType": "array",
+            "minItems": 0,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "items": {
+                "bsonType": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "key": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z_]{1,32}$",
+                        "title": "key",
+                        "description": "Collection key"
+                    },
+                    "op": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 8,
+                        "pattern": "^[a-z]{1,8}$",
+                        "enum": [
+                            "eq",
+                            "ne",
+                            "contains",
+                            "nc",
+                            "in",
+                            "nin",
+                            "gt",
+                            "gte",
+                            "lt",
+                            "lte",
+                            "null",
+                            "nnull",
+                            "true",
+                            "false"
+                        ],
+                        "title": "op",
+                        "description": "Filter operator"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()!-]{1,32}$",
+                        "title": "value",
+                        "description": "Value"
+                    }
+                },
+                "required": [
+                    "key",
+                    "op",
+                    "value"
+                ]
+            },
+            "title": "Filter",
+            "description": "Datacard filter",
+            "style": "min-width: 120px;",
+            "index": 12
         }
     },
     "required": [

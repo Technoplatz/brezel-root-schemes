@@ -159,7 +159,7 @@
                         "maxLength": 32,
                         "pattern": "^[a-z_]{1,32}$",
                         "title": "key",
-                        "description": "Item collection key"
+                        "description": "Collection key"
                     },
                     "op": {
                         "bsonType": "string",
@@ -168,15 +168,22 @@
                         "pattern": "^[a-z]{1,8}$",
                         "enum": [
                             "eq",
+                            "ne",
                             "contains",
+                            "nc",
                             "in",
+                            "nin",
                             "gt",
                             "gte",
                             "lt",
-                            "lte"
+                            "lte",
+                            "null",
+                            "nnull",
+                            "true",
+                            "false"
                         ],
                         "title": "op",
-                        "description": "Item filter operator"
+                        "description": "Filter operator"
                     },
                     "value": {
                         "bsonType": "string",
@@ -184,7 +191,7 @@
                         "maxLength": 32,
                         "pattern": "^[\\p{L}\\p{N}.,;?*_/()!-]{1,32}$",
                         "title": "value",
-                        "description": "Item value"
+                        "description": "Value"
                     }
                 },
                 "required": [
