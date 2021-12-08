@@ -66,6 +66,7 @@
             "uniqueItems": true,
             "minItems": 1,
             "maxItems": 2,
+            "additionalProperties": false,
             "items": {
                 "bsonType": "string",
                 "minLength": 1,
@@ -148,6 +149,7 @@
             "uniqueItems": true,
             "minItems": 1,
             "maxItems": 64,
+            "additionalProperties": false,
             "items": {
                 "bsonType": "string",
                 "minLength": 0,
