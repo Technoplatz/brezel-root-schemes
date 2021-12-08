@@ -68,7 +68,7 @@
             "maxItems": 2,
             "items": {
                 "bsonType": "string",
-                "pattern": "^[a-z_]{1,32}$",
+                "pattern": "^[_a-z]{1,32}$",
                 "minLength": 1,
                 "maxLength": 32
             },
@@ -147,7 +147,8 @@
         "kpi_subscribers": {
             "bsonType": "array",
             "uniqueItems": true,
-            "minItems": 0,
+            "minItems": 1,
+            "maxItems": 64,
             "items": {
                 "bsonType": "string",
                 "minLength": 0,
@@ -244,7 +245,7 @@
             "kpi_function"
         ],
         [
-            "kpi_field"
+            "kpi_fields"
         ]
     ],
     "unique": [
