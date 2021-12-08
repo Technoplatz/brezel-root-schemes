@@ -227,7 +227,7 @@
         "kpi_collection_id",
         "kpi_function",
         "kpi_target_value",
-        "kpi_field",
+        "kpi_fields",
         "kpi_priority"
     ],
     "index": [
