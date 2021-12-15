@@ -8,7 +8,7 @@
             "title": "ID",
             "description": "Storage file ID",
             "permanent": true,
-            "style": "min-width: 100px;",
+            "style": "min-width: 140px;",
             "index": 1
         },
         "sto_description": {
@@ -47,7 +47,7 @@
             "pattern": "^[a-z]{3,3}$",
             "title": "Prefix",
             "description": "Column prefix",
-            "style": "min-width: 80px;",
+            "style": "min-width: 50px;",
             "index": 5
         },
         "sto_file": {
