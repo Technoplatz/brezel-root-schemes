@@ -6,9 +6,9 @@
             "maxLength": 32,
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
-            "description": "Storage file ID",
+            "description": "Storage ID",
             "permanent": true,
-            "style": "min-width: 140px;",
+            "style": "min-width: 160px;",
             "index": 1
         },
         "sto_description": {

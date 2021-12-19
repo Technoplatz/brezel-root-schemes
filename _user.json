@@ -85,8 +85,8 @@
             "minLength": 6,
             "maxLength": 13,
             "pattern": "^[0-9]{6,13}$",
-            "title": "Phone",
-            "description": "Phone number",
+            "title": "Mobile",
+            "description": "Mobile number",
             "style": "min-width: 100px;",
             "index": 9
         }
@@ -97,7 +97,9 @@
         "usr_initials",
         "usr_group_id",
         "usr_level_id",
-        "usr_country_code"
+        "usr_country_code",
+        "usr_country_code",
+        "usr_phone_no"
     ],
     "unique": [
         [
