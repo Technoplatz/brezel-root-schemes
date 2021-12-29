@@ -43,6 +43,14 @@
             "style": "min-width: 120px;",
             "index": 5
         },
+        "col_barcode": {
+            "bsonType": "bool",
+            "title": "Barcode",
+            "default": false,
+            "description": "Barcoded or not",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
         "col_icon": {
             "bsonType": "string",
             "minLength": 1,
@@ -78,7 +86,7 @@
                 "swap-horizontal-outline"
             ],
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 7
         },
         "col_color": {
             "bsonType": "string",
@@ -98,7 +106,7 @@
                 "dark"
             ],
             "style": "min-width: 100px;",
-            "index": 7
+            "index": 8
         },
         "col_structure": {
             "bsonType": "object",
@@ -216,7 +224,7 @@
                 ]
             },
             "style": "min-width: 100px;",
-            "index": 7
+            "index": 9
         }
     },
     "required": [
