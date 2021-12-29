@@ -98,7 +98,6 @@
         "usr_group_id",
         "usr_level_id",
         "usr_country_code",
-        "usr_country_code",
         "usr_phone_no"
     ],
     "unique": [
