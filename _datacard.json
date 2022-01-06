@@ -126,7 +126,7 @@
         "dca_color": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 32,
+            "maxLength": 64,
             "title": "Color",
             "description": "Datacard color",
             "enum": [
@@ -140,7 +140,7 @@
                 "light",
                 "dark"
             ],
-            "pattern": "^[a-z-]{1,32}$",
+            "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
             "index": 10
         },

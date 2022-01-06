@@ -91,7 +91,7 @@
         "col_color": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 16,
+            "maxLength": 64,
             "title": "Color",
             "description": "Theme color",
             "enum": [
@@ -105,6 +105,7 @@
                 "light",
                 "dark"
             ],
+            "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
             "index": 8
         },
