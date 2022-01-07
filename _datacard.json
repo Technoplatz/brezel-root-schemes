@@ -214,7 +214,7 @@
                         "bsonType": "string",
                         "minLength": 1,
                         "maxLength": 32,
-                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()!-]{1,32}$",
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,32}$",
                         "title": "value",
                         "description": "Value"
                     }
