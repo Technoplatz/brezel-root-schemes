@@ -66,6 +66,7 @@
             "maxItems": 16,
             "uniqueItems": true,
             "additionalProperties": false,
+            "filter": true,
             "items": {
                 "bsonType": "object",
                 "additionalProperties": false,
