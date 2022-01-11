@@ -8,7 +8,7 @@
             "title": "ID",
             "description": "Datacard ID",
             "permanent": true,
-            "style": "min-width: 120px;",
+            "style": "min-width: 180px;",
             "index": 1
         },
         "dca_title": {
