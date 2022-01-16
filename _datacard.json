@@ -153,6 +153,22 @@
             "style": "min-width: 180px;",
             "index": 13
         },
+        "dca_pivot_columns": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 8,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 32,
+                "pattern": "^[a-z_]{1,32}$"
+            },
+            "title": "Pivot Columns",
+            "description": "Pivot Columns",
+            "style": "min-width: 180px;",
+            "index": 14
+        },
         "dca_sched_timezone": {
             "bsonType": "string",
             "minLength": 0,
@@ -164,7 +180,7 @@
                 "Europe/Istanbul"
             ],
             "style": "min-width: 140px;",
-            "index": 14
+            "index": 15
         },
         "dca_icon": {
             "bsonType": "string",
@@ -202,7 +218,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 15
+            "index": 16
         },
         "dca_color": {
             "bsonType": "string",
@@ -223,7 +239,7 @@
             ],
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
-            "index": 16
+            "index": 17
         },
         "dca_priority": {
             "bsonType": "number",
@@ -233,7 +249,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 17
+            "index": 18
         },
         "dca_subscribers": {
             "bsonType": "array",
@@ -247,7 +263,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 18
+            "index": 19
         },
         "dca_filter": {
             "bsonType": "array",
@@ -310,7 +326,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 19
+            "index": 20
         }
     },
     "required": [
