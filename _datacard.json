@@ -137,6 +137,19 @@
             "style": "min-width: 130px;",
             "index": 12
         },
+        "dca_sched_timezone": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 32,
+            "title": "Timezone",
+            "description": "Scheduled timezone",
+            "enum": [
+                "Europe/Berlin",
+                "Europe/Istanbul"
+            ],
+            "style": "min-width: 100px;",
+            "index": 13
+        },
         "dca_icon": {
             "bsonType": "string",
             "minLength": 1,
@@ -173,7 +186,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 13
+            "index": 14
         },
         "dca_color": {
             "bsonType": "string",
@@ -194,7 +207,7 @@
             ],
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
-            "index": 14
+            "index": 15
         },
         "dca_priority": {
             "bsonType": "number",
@@ -204,7 +217,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 15
+            "index": 16
         },
         "dca_subscribers": {
             "bsonType": "array",
@@ -218,7 +231,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 16
+            "index": 17
         },
         "dca_filter": {
             "bsonType": "array",
@@ -281,7 +294,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 17
+            "index": 18
         }
     },
     "required": [
