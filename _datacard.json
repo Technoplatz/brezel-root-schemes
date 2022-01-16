@@ -85,6 +85,58 @@
             "style": "min-width: 80px;",
             "index": 8
         },
+        "dca_scheduled": {
+            "bsonType": "bool",
+            "title": "Scheduled",
+            "description": "Scheduled or not?",
+            "style": "min-width: 80px;",
+            "index": 9
+        },
+        "dca_sched_minutes": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 8,
+            "items": {
+                "bsonType": "number",
+                "minimum": 0,
+                "maximum": 59
+            },
+            "title": "Scheduled minutes",
+            "description": "Scheduled minutes",
+            "style": "min-width: 130px;",
+            "index": 10
+        },
+        "dca_sched_hours": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 8,
+            "items": {
+                "bsonType": "number",
+                "minimum": 0,
+                "maximum": 23
+            },
+            "title": "Scheduled hours",
+            "description": "Scheduled hours",
+            "style": "min-width: 130px;",
+            "index": 11
+        },
+        "dca_sched_days": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 7,
+            "items": {
+                "bsonType": "string",
+                "minLength": 3,
+                "maxLength": 3
+            },
+            "title": "Scheduled days",
+            "description": "Scheduled days",
+            "style": "min-width: 130px;",
+            "index": 12
+        },
         "dca_icon": {
             "bsonType": "string",
             "minLength": 1,
@@ -121,7 +173,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 9
+            "index": 13
         },
         "dca_color": {
             "bsonType": "string",
@@ -142,7 +194,7 @@
             ],
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
-            "index": 10
+            "index": 14
         },
         "dca_priority": {
             "bsonType": "number",
@@ -152,7 +204,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 11
+            "index": 15
         },
         "dca_subscribers": {
             "bsonType": "array",
@@ -166,7 +218,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 12
+            "index": 16
         },
         "dca_filter": {
             "bsonType": "array",
@@ -229,7 +281,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 13
+            "index": 17
         }
     },
     "required": [
