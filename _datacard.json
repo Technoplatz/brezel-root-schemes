@@ -74,22 +74,22 @@
         "dca_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
-            "description": "Enabled or not?",
-            "style": "min-width: 80px;",
+            "description": "Enabled?",
+            "style": "min-width: 120px;",
             "index": 7
         },
         "dca_dashboard": {
             "bsonType": "bool",
             "title": "Dashboard",
-            "description": "Enabled at dasboard?",
-            "style": "min-width: 80px;",
+            "description": "Show ib Dasboard?",
+            "style": "min-width: 120px;",
             "index": 8
         },
         "dca_scheduled": {
             "bsonType": "bool",
             "title": "Scheduled",
-            "description": "Scheduled or not?",
-            "style": "min-width: 80px;",
+            "description": "Scheduled?",
+            "style": "min-width: 120px;",
             "index": 9
         },
         "dca_sched_minutes": {
@@ -205,6 +205,27 @@
             "style": "min-width: 140px;",
             "index": 17
         },
+        "dca_attach_pivot": {
+            "bsonType": "bool",
+            "title": "Attach Pivot",
+            "description": "Attach Pivot?",
+            "style": "min-width: 120px;",
+            "index": 18
+        },
+        "dca_attach_csv": {
+            "bsonType": "bool",
+            "title": "Attach CSV",
+            "description": "Attach CSV?",
+            "style": "min-width: 120px;",
+            "index": 19
+        },
+        "dca_attach_excel": {
+            "bsonType": "bool",
+            "title": "Attach Excel",
+            "description": "Attach Excel?",
+            "style": "min-width: 120px;",
+            "index": 20
+        },
         "dca_icon": {
             "bsonType": "string",
             "minLength": 1,
@@ -241,7 +262,7 @@
             ],
             "default": "sparkles",
             "style": "min-width: 120px;",
-            "index": 18
+            "index": 21
         },
         "dca_color": {
             "bsonType": "string",
@@ -262,7 +283,7 @@
             ],
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
-            "index": 19
+            "index": 22
         },
         "dca_priority": {
             "bsonType": "number",
@@ -272,7 +293,7 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 20
+            "index": 23
         },
         "dca_subscribers": {
             "bsonType": "array",
@@ -286,7 +307,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 21
+            "index": 24
         },
         "dca_filter": {
             "bsonType": "array",
@@ -349,7 +370,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 22
+            "index": 25
         }
     },
     "required": [
