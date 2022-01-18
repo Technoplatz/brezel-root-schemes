@@ -158,8 +158,9 @@
                     },
                     "value": {
                         "bsonType": "string",
-                        "minLength": 0,
+                        "minLength": 1,
                         "maxLength": 32,
+                        "pattern": "^[a-z]{1,32}$",
                         "enum": [
                             "sum",
                             "count",
