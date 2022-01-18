@@ -162,7 +162,9 @@
                         "maxLength": 32,
                         "enum": [
                             "sum",
-                            "count"
+                            "count",
+                            "distinct",
+                            "mean"
                         ],
                         "title": "Function",
                         "description": "Index value"
@@ -175,7 +177,7 @@
             },
             "title": "Pivot Values",
             "description": "Pivot Values",
-            "style": "min-width: 120px;",
+            "style": "min-width: 130px;",
             "index": 13
         },
         "dca_pivot_index": {
@@ -191,7 +193,7 @@
             },
             "title": "Pivot Indexes",
             "description": "Pivot Indexes",
-            "style": "min-width: 180px;",
+            "style": "min-width: 130px;",
             "index": 14
         },
         "dca_pivot_columns": {
@@ -207,7 +209,7 @@
             },
             "title": "Pivot Columns",
             "description": "Pivot Columns",
-            "style": "min-width: 180px;",
+            "style": "min-width: 130px;",
             "index": 15
         },
         "dca_pivot_totals": {
