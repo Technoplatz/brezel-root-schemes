@@ -139,18 +139,43 @@
         },
         "dca_pivot_values": {
             "bsonType": "array",
-            "uniqueItems": true,
             "minItems": 0,
-            "maxItems": 3,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "kv": true,
             "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 32,
-                "pattern": "^[a-z_]{1,32}$"
+                "bsonType": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "key": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z_]{1,32}$",
+                        "title": "key",
+                        "description": "Index key"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "minLength": 0,
+                        "maxLength": 32,
+                        "enum": [
+                            "sum",
+                            "count"
+                        ],
+                        "title": "value",
+                        "description": "Index value"
+                    }
+                },
+                "required": [
+                    "key",
+                    "value"
+                ]
             },
             "title": "Pivot Values",
             "description": "Pivot Values",
-            "style": "min-width: 180px;",
+            "style": "min-width: 120px;",
             "index": 13
         },
         "dca_pivot_index": {
@@ -371,47 +396,6 @@
             "description": "Datacard filter",
             "style": "min-width: 120px;",
             "index": 25
-        },
-        "dca_values": {
-            "bsonType": "array",
-            "minItems": 0,
-            "maxItems": 16,
-            "uniqueItems": true,
-            "additionalProperties": false,
-            "kv": true,
-            "items": {
-                "bsonType": "object",
-                "additionalProperties": false,
-                "properties": {
-                    "key": {
-                        "bsonType": "string",
-                        "minLength": 1,
-                        "maxLength": 32,
-                        "pattern": "^[a-z_]{1,32}$",
-                        "title": "key",
-                        "description": "Index key"
-                    },
-                    "value": {
-                        "bsonType": "string",
-                        "minLength": 0,
-                        "maxLength": 32,
-                        "enum": [
-                            "sum",
-                            "count"
-                        ],
-                        "title": "value",
-                        "description": "Index value"
-                    }
-                },
-                "required": [
-                    "key",
-                    "value"
-                ]
-            },
-            "title": "Pivot Values",
-            "description": "Pivot Values",
-            "style": "min-width: 120px;",
-            "index": 26
         }
     },
     "required": [
