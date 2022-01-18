@@ -153,7 +153,7 @@
                         "minLength": 1,
                         "maxLength": 32,
                         "pattern": "^[a-z_]{1,32}$",
-                        "title": "key",
+                        "title": "Key",
                         "description": "Index key"
                     },
                     "value": {
@@ -164,7 +164,7 @@
                             "sum",
                             "count"
                         ],
-                        "title": "value",
+                        "title": "Function",
                         "description": "Index value"
                     }
                 },
