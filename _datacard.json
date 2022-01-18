@@ -372,13 +372,13 @@
             "style": "min-width: 120px;",
             "index": 25
         },
-        "dca_index": {
+        "dca_values": {
             "bsonType": "array",
             "minItems": 0,
             "maxItems": 16,
             "uniqueItems": true,
             "additionalProperties": false,
-            "filter": true,
+            "kv": true,
             "items": {
                 "bsonType": "object",
                 "additionalProperties": false,
@@ -408,10 +408,10 @@
                     "value"
                 ]
             },
-            "title": "Filter",
-            "description": "Datacard filter",
+            "title": "Pivot Values",
+            "description": "Pivot Values",
             "style": "min-width: 120px;",
-            "index": 25
+            "index": 26
         }
     },
     "required": [
