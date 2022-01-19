@@ -235,6 +235,7 @@
                 "Europe/Berlin",
                 "Europe/Istanbul"
             ],
+            "default": "Europe/Berlin",
             "style": "min-width: 140px;",
             "index": 17
         },
@@ -261,7 +262,7 @@
         },
         "dca_icon": {
             "bsonType": "string",
-            "minLength": 1,
+            "minLength": 0,
             "maxLength": 32,
             "title": "Icon",
             "description": "Icon name",
@@ -293,13 +294,13 @@
                 "swap-vertical-outline",
                 "swap-horizontal-outline"
             ],
-            "default": "sparkles",
+            "default": "sparkles-outline",
             "style": "min-width: 120px;",
             "index": 21
         },
         "dca_color": {
             "bsonType": "string",
-            "minLength": 1,
+            "minLength": 0,
             "maxLength": 64,
             "title": "Color",
             "description": "Datacard color",
@@ -314,6 +315,7 @@
                 "light",
                 "dark"
             ],
+            "default": "primary",
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
             "index": 22
