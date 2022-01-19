@@ -164,8 +164,13 @@
                         "enum": [
                             "sum",
                             "count",
-                            "distinct",
-                            "mean"
+                            "size",
+                            "unique",
+                            "mean",
+                            "average",
+                            "std",
+                            "min",
+                            "max"
                         ],
                         "title": "Function",
                         "description": "Index value"
