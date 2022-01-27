@@ -368,6 +368,44 @@
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
             "index": 24
+        },
+        "vie_icon": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 32,
+            "title": "Icon",
+            "description": "Icon name",
+            "enum": [
+                "accessibility-outline",
+                "airplane-outline",
+                "alert-circle-outline",
+                "archive-outline",
+                "bug-outline",
+                "bus-outline",
+                "business-outline",
+                "cash-outline",
+                "clipboard-outline",
+                "contract-outline",
+                "cube-outline",
+                "ellipse-outline",
+                "expand-outline",
+                "golf-outline",
+                "id-card-outline",
+                "logo-euro",
+                "logo-usd",
+                "megaphone-outline",
+                "newspaper-outline",
+                "nutrition-outline",
+                "phone-portrait-outline",
+                "reader-outline",
+                "qr-code-outline",
+                "sparkles-outline",
+                "swap-vertical-outline",
+                "swap-horizontal-outline"
+            ],
+            "default": "sparkles-outline",
+            "style": "min-width: 120px;",
+            "index": 25
         }
     },
     "required": [
@@ -378,6 +416,11 @@
     "unique": [
         [
             "vie_id"
+        ]
+    ],
+    "index": [
+        [
+            "vie_collection_id"
         ]
     ],
     "sort": {
