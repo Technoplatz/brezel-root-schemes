@@ -179,6 +179,20 @@
             "style": "min-width: 120px;",
             "index": 12
         },
+        "vie_sched_timezone": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 32,
+            "title": "Scheduled Time Zone",
+            "description": "Scheduled time zone",
+            "enum": [
+                "Europe/Berlin",
+                "Europe/Istanbul"
+            ],
+            "default": "Europe/Berlin",
+            "style": "min-width: 140px;",
+            "index": 13
+        },
         "vie_sched_days": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -192,7 +206,7 @@
             "title": "Scheduled Days",
             "description": "Scheduled days",
             "style": "min-width: 180px;",
-            "index": 13
+            "index": 14
         },
         "vie_sched_hours": {
             "bsonType": "array",
@@ -207,7 +221,7 @@
             "title": "Scheduled Hours",
             "description": "Scheduled hours",
             "style": "min-width: 130px;",
-            "index": 14
+            "index": 15
         },
         "vie_sched_minutes": {
             "bsonType": "array",
@@ -222,7 +236,7 @@
             "title": "Scheduled minutes",
             "description": "Scheduled Minutes",
             "style": "min-width: 130px;",
-            "index": 15
+            "index": 16
         },
         "vie_pivot_values": {
             "bsonType": "array",
@@ -311,20 +325,6 @@
             "description": "Showing pivot totals",
             "style": "min-width: 80px;",
             "index": 19
-        },
-        "vie_sched_timezone": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 32,
-            "title": "Time Zone",
-            "description": "Scheduled time zone",
-            "enum": [
-                "Europe/Berlin",
-                "Europe/Istanbul"
-            ],
-            "default": "Europe/Berlin",
-            "style": "min-width: 140px;",
-            "index": 20
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
