@@ -8,6 +8,7 @@
             "title": "ID",
             "description": "View ID",
             "permanent": true,
+            "readonly": true,
             "style": "min-width: 140px;",
             "index": 1
         },
