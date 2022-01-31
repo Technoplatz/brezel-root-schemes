@@ -417,6 +417,9 @@
     "unique": [
         [
             "vie_id"
+        ],
+        [
+            "vie_title"
         ]
     ],
     "index": [
