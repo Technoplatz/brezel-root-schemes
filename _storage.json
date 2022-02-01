@@ -28,6 +28,8 @@
             "pattern": "^[a-z]{3,3}$",
             "title": "Prefix",
             "description": "Column prefix",
+            "permanent": true,
+            "readonly": true,
             "style": "min-width: 50px;",
             "index": 5
         },
