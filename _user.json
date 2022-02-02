@@ -61,8 +61,8 @@
             "title": "Level ID",
             "description": "User level id",
             "enum": [
+                "Internal",
                 "External",
-                "User",
                 "Manager",
                 "Administrator"
             ],
