@@ -59,12 +59,21 @@
             "style": "min-width: 120px;",
             "index": 6
         },
+        "log_object_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Object Id",
+            "description": "Object Id",
+            "style": "min-width: 120px;",
+            "index": 7
+        },
         "log_document": {
             "bsonType": "object",
             "title": "Document",
             "description": "Document",
             "style": "min-width: 120px;",
-            "index": 7
+            "index": 8
         }
     },
     "required": [
@@ -76,6 +85,17 @@
     "sort": {
         "_modified_at": -1
     },
+    "index": [
+        [
+            "log_object_id"
+        ],
+        [
+            "log_operation"
+        ],
+        [
+            "log_collection_id"
+        ]
+    ],
     "permissions": [
         {
             "usr_level_id": "User",
