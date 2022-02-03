@@ -7,9 +7,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "View ID",
-            "permanent": true,
-            "readonly": true,
-            "style": "min-width: 140px;",
+            "style": "min-width: 190px;",
             "index": 1
         },
         "vie_collection_id": {
