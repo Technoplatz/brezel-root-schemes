@@ -439,6 +439,10 @@
             "rank": 1
         },
         {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
             "usr_level_id": "Administrator",
             "rank": 2
         }
