@@ -147,7 +147,8 @@
                 "min",
                 "datediff",
                 "value",
-                "first"
+                "first",
+                "last"
             ],
             "style": "min-width: 80px;",
             "index": 9
