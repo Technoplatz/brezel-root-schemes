@@ -19,7 +19,7 @@
             "title": "Collection",
             "description": "Collection ID",
             "style": "min-width: 100px;",
-            "index": 3
+            "index": 2
         },
         "sto_prefix": {
             "bsonType": "string",
@@ -31,7 +31,15 @@
             "permanent": true,
             "readonly": true,
             "style": "min-width: 50px;",
-            "index": 5
+            "index": 3
+        },
+        "sto_group_by": {
+            "bsonType": "bool",
+            "title": "Group by",
+            "default": false,
+            "description": "Group by combines duplicate items with sum",
+            "style": "min-width: 80px;",
+            "index": 4
         },
         "sto_file": {
             "bsonType": "string",
@@ -41,7 +49,7 @@
             "title": "File",
             "description": "File name",
             "style": "min-width: 100px;",
-            "index": 6
+            "index": 5
         }
     },
     "required": [
