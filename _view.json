@@ -66,6 +66,22 @@
             "style": "min-width: 130px;",
             "index": 7
         },
+        "vie_projection": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 64,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 32,
+                "pattern": "^[a-z_]{1,32}$"
+            },
+            "title": "Selected Columns",
+            "description": "Selected columns",
+            "style": "min-width: 130px;",
+            "index": 8
+        },
         "vie_filter": {
             "bsonType": "array",
             "minItems": 0,
@@ -127,7 +143,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 9
         },
         "vie_function": {
             "bsonType": "string",
@@ -151,7 +167,7 @@
                 "last"
             ],
             "style": "min-width: 80px;",
-            "index": 9
+            "index": 10
         },
         "vie_field": {
             "bsonType": "string",
@@ -161,7 +177,7 @@
             "title": "Field",
             "description": "Field",
             "style": "min-width: 100px;",
-            "index": 10
+            "index": 11
         },
         "vie_priority": {
             "bsonType": "number",
@@ -171,14 +187,14 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 11
+            "index": 12
         },
         "vie_scheduled": {
             "bsonType": "bool",
             "title": "Scheduled",
             "description": "Scheduled?",
             "style": "min-width: 120px;",
-            "index": 12
+            "index": 13
         },
         "vie_sched_timezone": {
             "bsonType": "string",
@@ -192,7 +208,7 @@
             ],
             "default": "Europe/Berlin",
             "style": "min-width: 140px;",
-            "index": 13
+            "index": 14
         },
         "vie_sched_days": {
             "bsonType": "array",
@@ -207,7 +223,7 @@
             "title": "Scheduled Days",
             "description": "Scheduled days",
             "style": "min-width: 180px;",
-            "index": 14
+            "index": 15
         },
         "vie_sched_hours": {
             "bsonType": "array",
@@ -222,7 +238,7 @@
             "title": "Scheduled Hours",
             "description": "Scheduled hours",
             "style": "min-width: 130px;",
-            "index": 15
+            "index": 16
         },
         "vie_sched_minutes": {
             "bsonType": "array",
@@ -237,12 +253,12 @@
             "title": "Scheduled minutes",
             "description": "Scheduled Minutes",
             "style": "min-width: 130px;",
-            "index": 16
+            "index": 17
         },
         "vie_pivot_values": {
             "bsonType": "array",
             "minItems": 0,
-            "maxItems": 16,
+            "maxItems": 1,
             "uniqueItems": true,
             "additionalProperties": false,
             "kv": true,
@@ -302,7 +318,7 @@
             "title": "Pivot Indexes",
             "description": "Pivot Indexes",
             "style": "min-width: 130px;",
-            "index": 17
+            "index": 18
         },
         "vie_pivot_columns": {
             "bsonType": "array",
@@ -318,14 +334,14 @@
             "title": "Pivot Columns",
             "description": "Pivot Columns",
             "style": "min-width: 130px;",
-            "index": 18
+            "index": 19
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
             "title": "Pivot Totals",
             "description": "Showing pivot totals",
             "style": "min-width: 80px;",
-            "index": 19
+            "index": 20
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
