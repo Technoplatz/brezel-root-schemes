@@ -66,22 +66,6 @@
             "style": "min-width: 130px;",
             "index": 7
         },
-        "vie_projection": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "maxItems": 64,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 32,
-                "pattern": "^[a-z_]{1,32}$"
-            },
-            "title": "Selected Columns",
-            "description": "Selected columns",
-            "style": "min-width: 130px;",
-            "index": 8
-        },
         "vie_filter": {
             "bsonType": "array",
             "minItems": 0,
@@ -143,6 +127,22 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
+            "index": 8
+        },
+        "vie_projection": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 64,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 32,
+                "pattern": "^[a-z_]{1,32}$"
+            },
+            "title": "Selected Columns",
+            "description": "Selected columns",
+            "style": "min-width: 130px;",
             "index": 9
         },
         "vie_function": {
@@ -302,7 +302,7 @@
             "title": "Pivot Values",
             "description": "Pivot Values",
             "style": "min-width: 130px;",
-            "index": 16
+            "index": 18
         },
         "vie_pivot_index": {
             "bsonType": "array",
@@ -318,7 +318,7 @@
             "title": "Pivot Indexes",
             "description": "Pivot Indexes",
             "style": "min-width: 130px;",
-            "index": 18
+            "index": 19
         },
         "vie_pivot_columns": {
             "bsonType": "array",
@@ -334,35 +334,35 @@
             "title": "Pivot Columns",
             "description": "Pivot Columns",
             "style": "min-width: 130px;",
-            "index": 19
+            "index": 20
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
             "title": "Pivot Totals",
             "description": "Showing pivot totals",
             "style": "min-width: 80px;",
-            "index": 20
+            "index": 21
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
             "title": "Attach Pivot",
             "description": "Attach Pivot?",
             "style": "min-width: 120px;",
-            "index": 21
+            "index": 22
         },
         "vie_attach_csv": {
             "bsonType": "bool",
             "title": "Attach CSV",
             "description": "Attach CSV?",
             "style": "min-width: 120px;",
-            "index": 22
+            "index": 23
         },
         "vie_attach_excel": {
             "bsonType": "bool",
             "title": "Attach Excel",
             "description": "Attach Excel?",
             "style": "min-width: 120px;",
-            "index": 23
+            "index": 24
         },
         "vie_color": {
             "bsonType": "string",
@@ -384,7 +384,7 @@
             "default": "primary",
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
-            "index": 24
+            "index": 25
         },
         "vie_icon": {
             "bsonType": "string",
@@ -423,7 +423,7 @@
             ],
             "default": "sparkles-outline",
             "style": "min-width: 120px;",
-            "index": 25
+            "index": 26
         }
     },
     "required": [
