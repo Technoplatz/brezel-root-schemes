@@ -150,7 +150,7 @@
             "title": "Group by",
             "default": false,
             "description": "Group by combines duplicate items with sum",
-            "style": "min-width: 80px;",
+            "style": "min-width: 90px;",
             "index": 10
         },
         "vie_groupby_columns": {
@@ -166,7 +166,7 @@
             },
             "title": "Group by Columns",
             "description": "Group by columns",
-            "style": "min-width: 130px;",
+            "style": "min-width: 140px;",
             "index": 11
         },
         "vie_function": {
