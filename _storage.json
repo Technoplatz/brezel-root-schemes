@@ -70,7 +70,7 @@
                 "maxLength": 32,
                 "pattern": "^[a-z_]{1,32}$"
             },
-            "title": "Upsert matches columns given here",
+            "title": "Upsert Match Columns",
             "description": "Upsert matches columns given here",
             "style": "min-width: 130px;",
             "index": 7
