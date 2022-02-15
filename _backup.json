@@ -9,6 +9,7 @@
             "description": "Backup ID",
             "permanent": true,
             "readonly": true,
+            "default": "database-dump",
             "style": "min-width: 160px;",
             "index": 1
         },
