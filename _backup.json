@@ -23,18 +23,6 @@
             "readonly": true,
             "style": "min-width: 50px;",
             "index": 2
-        },
-        "bak_file": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 64,
-            "file": true,
-            "title": "File",
-            "description": "File name",
-            "permanent": true,
-            "readonly": true,
-            "style": "min-width: 100px;",
-            "index": 3
         }
     },
     "required": [
