@@ -19,8 +19,10 @@
             "pattern": "^[a-z]{3,16}$",
             "title": "Backup Type",
             "description": "Backup Type",
-            "permanent": true,
-            "readonly": true,
+            "enum": [
+                "gzip"
+            ],
+            "default": "gzip",
             "style": "min-width: 50px;",
             "index": 2
         }
