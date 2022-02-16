@@ -282,7 +282,7 @@
         "vie_pivot_values": {
             "bsonType": "array",
             "minItems": 0,
-            "maxItems": 1,
+            "maxItems": 2,
             "uniqueItems": true,
             "additionalProperties": false,
             "kv": true,
