@@ -31,6 +31,8 @@
             "bsonType": "number",
             "title": "Size",
             "description": "File Size",
+            "permanent": true,
+            "readonly": true,
             "style": "min-width: 80px;",
             "index": 3
         }
