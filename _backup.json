@@ -13,6 +13,16 @@
             "style": "min-width: 160px;",
             "index": 1
         },
+        "bak_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{0,128}$",
+            "title": "Description",
+            "description": "Description",
+            "style": "min-width: 160px;",
+            "index": 2
+        },
         "bak_type": {
             "bsonType": "string",
             "minLength": 3,
@@ -25,7 +35,7 @@
             ],
             "default": "gzip",
             "style": "min-width: 50px;",
-            "index": 2
+            "index": 3
         },
         "bak_size": {
             "bsonType": "number",
@@ -34,7 +44,7 @@
             "permanent": true,
             "readonly": true,
             "style": "min-width: 80px;",
-            "index": 3
+            "index": 4
         }
     },
     "required": [
