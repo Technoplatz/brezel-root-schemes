@@ -26,6 +26,13 @@
             "default": "gzip",
             "style": "min-width: 50px;",
             "index": 2
+        },
+        "bak_size": {
+            "bsonType": "number",
+            "title": "Size",
+            "description": "File Size",
+            "style": "min-width: 80px;",
+            "index": 3
         }
     },
     "required": [
