@@ -10,7 +10,8 @@
                 "Info",
                 "Error",
                 "Warning",
-                "Denied"
+                "Denied",
+                "Announcement"
             ],
             "style": "min-width: 120px;",
             "index": 1
