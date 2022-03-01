@@ -50,22 +50,6 @@
             "description": "File name",
             "style": "min-width: 100px;",
             "index": 6
-        },
-        "sto_upsert_match_columns": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "maxItems": 16,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 32,
-                "pattern": "^[a-z_]{1,32}$"
-            },
-            "title": "Upsert Match Columns",
-            "description": "Upsert matches columns given here",
-            "style": "min-width: 130px;",
-            "index": 7
         }
     },
     "required": [
