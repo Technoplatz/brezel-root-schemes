@@ -41,14 +41,6 @@
             "style": "min-width: 80px;",
             "index": 4
         },
-        "sto_upsert": {
-            "bsonType": "bool",
-            "title": "UPSERT",
-            "default": false,
-            "description": "Upsert replaces existing records as well as creating new records",
-            "style": "min-width: 80px;",
-            "index": 5
-        },
         "sto_file": {
             "bsonType": "string",
             "minLength": 0,
