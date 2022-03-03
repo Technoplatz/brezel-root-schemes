@@ -141,8 +141,8 @@
             "minLength": 1,
             "maxLength": 8,
             "pattern": "^[a-z]{1,8}$",
-            "title": "Chart Function",
-            "description": "Chart Function",
+            "title": "Legend Position",
+            "description": "Legend Position",
             "enum": [
                 "right",
                 "below"
