@@ -133,6 +133,7 @@
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
             "title": "Legend Title",
             "description": "Legend Title",
+            "default": "Legend",
             "style": "min-width: 120px;",
             "index": 13
         },
@@ -147,6 +148,7 @@
                 "right",
                 "below"
             ],
+            "default": "right",
             "style": "min-width: 80px;",
             "index": 14
         },
