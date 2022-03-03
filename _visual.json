@@ -126,15 +126,29 @@
             "style": "min-width: 120px;",
             "index": 12
         },
-        "vis_p_legend_label": {
+        "vis_p_legend_title": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
-            "title": "Legend Label",
-            "description": "Legend Label",
+            "title": "Legend Title",
+            "description": "Legend Title",
             "style": "min-width: 120px;",
             "index": 13
+        },
+        "vis_p_legend_position": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 8,
+            "pattern": "^[a-z]{1,8}$",
+            "title": "Chart Function",
+            "description": "Chart Function",
+            "enum": [
+                "right",
+                "below"
+            ],
+            "style": "min-width: 80px;",
+            "index": 14
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -142,7 +156,7 @@
             "default": true,
             "description": "X-Axis Show",
             "style": "min-width: 80px;",
-            "index": 14
+            "index": 15
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -150,7 +164,7 @@
             "default": true,
             "description": "Y-Axis Show",
             "style": "min-width: 80px;",
-            "index": 15
+            "index": 16
         },
         "vis_p_legend_show": {
             "bsonType": "bool",
@@ -158,7 +172,7 @@
             "default": true,
             "description": "Legend Show",
             "style": "min-width: 80px;",
-            "index": 16
+            "index": 17
         },
         "vis_p_xaxis_label_show": {
             "bsonType": "bool",
@@ -166,7 +180,7 @@
             "default": true,
             "description": "X-Axis Label Show",
             "style": "min-width: 80px;",
-            "index": 17
+            "index": 18
         },
         "vis_p_yaxis_label_show": {
             "bsonType": "bool",
@@ -174,7 +188,7 @@
             "default": true,
             "description": "Y-Axis Label Show",
             "style": "min-width: 80px;",
-            "index": 18
+            "index": 19
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -182,7 +196,7 @@
             "default": true,
             "description": "Data Label Show",
             "style": "min-width: 80px;",
-            "index": 19
+            "index": 20
         },
         "vis_p_generic_show": {
             "bsonType": "bool",
@@ -190,7 +204,7 @@
             "default": true,
             "description": "Generic Data Show",
             "style": "min-width: 80px;",
-            "index": 20
+            "index": 21
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -204,7 +218,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 21
+            "index": 22
         },
         "vis_generic_data": {
             "bsonType": "object",
@@ -212,7 +226,7 @@
             "description": "Generic Data",
             "default": [],
             "style": "min-width: 130px;",
-            "index": 22
+            "index": 23
         }
     },
     "required": [
