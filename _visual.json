@@ -38,6 +38,13 @@
             "style": "min-width: 140px;",
             "index": 4
         },
+        "vis_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 90px;",
+            "index": 5
+        },
         "vis_chart_style": {
             "bsonType": "string",
             "minLength": 1,
@@ -50,7 +57,7 @@
                 "Grouped Vertical Bar Chart"
             ],
             "style": "min-width: 180px;",
-            "index": 5
+            "index": 6
         },
         "vis_chart_xaxis": {
             "bsonType": "string",
@@ -60,7 +67,7 @@
             "title": "Chart X-Axis",
             "description": "Chart X-Axis",
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 7
         },
         "vis_chart_yaxis": {
             "bsonType": "string",
@@ -70,7 +77,7 @@
             "title": "Chart Y-Axis",
             "description": "Chart Y-Axis",
             "style": "min-width: 120px;",
-            "index": 7
+            "index": 8
         },
         "vis_chart_legend": {
             "bsonType": "string",
@@ -80,7 +87,7 @@
             "title": "Chart Legend",
             "description": "Chart Legend",
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 9
         },
         "vis_chart_function": {
             "bsonType": "string",
@@ -97,7 +104,7 @@
                 "stdev"
             ],
             "style": "min-width: 80px;",
-            "index": 9
+            "index": 10
         },
         "vis_p_xaxis_label": {
             "bsonType": "string",
@@ -107,7 +114,7 @@
             "title": "X-Axis Label",
             "description": "X-Axis Label",
             "style": "min-width: 120px;",
-            "index": 10
+            "index": 11
         },
         "vis_p_yaxis_label": {
             "bsonType": "string",
@@ -117,7 +124,7 @@
             "title": "Y-Axis Label",
             "description": "Y-Axis Label",
             "style": "min-width: 120px;",
-            "index": 11
+            "index": 12
         },
         "vis_p_legend_label": {
             "bsonType": "string",
@@ -127,7 +134,7 @@
             "title": "Legend Label",
             "description": "Legend Label",
             "style": "min-width: 120px;",
-            "index": 12
+            "index": 13
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -135,7 +142,7 @@
             "default": true,
             "description": "X-Axis Show",
             "style": "min-width: 80px;",
-            "index": 13
+            "index": 14
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -143,7 +150,7 @@
             "default": true,
             "description": "Y-Axis Show",
             "style": "min-width: 80px;",
-            "index": 14
+            "index": 15
         },
         "vis_p_legend_show": {
             "bsonType": "bool",
@@ -151,7 +158,7 @@
             "default": true,
             "description": "Legend Show",
             "style": "min-width: 80px;",
-            "index": 15
+            "index": 16
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -159,7 +166,7 @@
             "default": true,
             "description": "Data Label Show",
             "style": "min-width: 80px;",
-            "index": 16
+            "index": 17
         },
         "vis_p_generic_show": {
             "bsonType": "bool",
@@ -167,7 +174,7 @@
             "default": true,
             "description": "Generic Data Show",
             "style": "min-width: 80px;",
-            "index": 17
+            "index": 18
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -181,7 +188,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 18
+            "index": 19
         },
         "vis_generic_data": {
             "bsonType": "object",
@@ -189,7 +196,7 @@
             "description": "Generic Data",
             "default": [],
             "style": "min-width: 130px;",
-            "index": 19
+            "index": 20
         }
     },
     "required": [
