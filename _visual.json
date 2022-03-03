@@ -1,0 +1,223 @@
+{
+    "properties": {
+        "vis_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]{3,32}$",
+            "title": "ID",
+            "description": "Visual ID",
+            "style": "min-width: 190px;",
+            "index": 1
+        },
+        "vis_view_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-_]{3,32}$",
+            "title": "View ID",
+            "description": "View ID",
+            "style": "min-width: 140px;",
+            "index": 2
+        },
+        "vis_title": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Title",
+            "description": "Visual title",
+            "style": "min-width: 140px;",
+            "index": 3
+        },
+        "vis_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Visual description",
+            "style": "min-width: 140px;",
+            "index": 4
+        },
+        "vis_chart_style": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z0-9- ]{1,64}$",
+            "title": "Chart Style",
+            "description": "Chart Style",
+            "enum": [
+                "Normalized Vertical Bar Chart",
+                "Stacked Vertical Bar Chart",
+                "Grouped Vertical Bar Chart"
+            ],
+            "style": "min-width: 180px;",
+            "index": 5
+        },
+        "vis_chart_xaxis": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Chart X-Axis",
+            "description": "Chart X-Axis",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "vis_chart_yaxis": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Chart Y-Axis",
+            "description": "Chart Y-Axis",
+            "style": "min-width: 120px;",
+            "index": 7
+        },
+        "vis_chart_legend": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Chart Legend",
+            "description": "Chart Legend",
+            "style": "min-width: 120px;",
+            "index": 8
+        },
+        "vis_chart_function": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 8,
+            "pattern": "^[a-z]{1,8}$",
+            "title": "Chart Function",
+            "description": "Chart Function",
+            "enum": [
+                "count",
+                "sum",
+                "avg",
+                "var",
+                "stdev"
+            ],
+            "style": "min-width: 80px;",
+            "index": 9
+        },
+        "vis_p_xaxis_label": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z0-9_- ]{1,64}$",
+            "title": "X-Axis Label",
+            "description": "X-Axis Label",
+            "style": "min-width: 120px;",
+            "index": 10
+        },
+        "vis_p_yaxis_label": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z0-9_- ]{1,64}$",
+            "title": "Y-Axis Label",
+            "description": "Y-Axis Label",
+            "style": "min-width: 120px;",
+            "index": 11
+        },
+        "vis_p_legend_label": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z0-9_- ]{1,64}$",
+            "title": "Legend Label",
+            "description": "Legend Label",
+            "style": "min-width: 120px;",
+            "index": 12
+        },
+        "vis_p_xaxis_show": {
+            "bsonType": "bool",
+            "title": "X-Axis Show",
+            "default": true,
+            "description": "X-Axis Show",
+            "style": "min-width: 80px;",
+            "index": 13
+        },
+        "vis_p_yaxis_show": {
+            "bsonType": "bool",
+            "title": "Y-Axis Show",
+            "default": true,
+            "description": "Y-Axis Show",
+            "style": "min-width: 80px;",
+            "index": 14
+        },
+        "vis_p_legend_show": {
+            "bsonType": "bool",
+            "title": "Legend Show",
+            "default": true,
+            "description": "Legend Show",
+            "style": "min-width: 80px;",
+            "index": 15
+        },
+        "vis_p_datalabel_show": {
+            "bsonType": "bool",
+            "title": "Data Label Show",
+            "default": true,
+            "description": "Data Label Show",
+            "style": "min-width: 80px;",
+            "index": 16
+        },
+        "vis_subscribers": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Subscribers",
+            "description": "Subscribers list",
+            "style": "min-width: 130px;",
+            "index": 17
+        }
+    },
+    "required": [
+        "vis_id",
+        "vis_view_id",
+        "vis_title",
+        "vis_chart_style",
+        "vis_chart_xaxis",
+        "vis_chart_legend",
+        "vis_chart_function"
+    ],
+    "unique": [
+        [
+            "vis_id"
+        ],
+        [
+            "vis_title"
+        ]
+    ],
+    "index": [
+        [
+            "vis_view_id"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "User",
+            "rank": 0
+        },
+        {
+            "usr_level_id": "Manager",
+            "rank": 1
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}

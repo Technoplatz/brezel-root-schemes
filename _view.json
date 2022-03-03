@@ -380,68 +380,6 @@
             "style": "min-width: 120px;",
             "index": 25
         },
-        "vie_chart_style": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 64,
-            "pattern": "^[a-zA-Z0-9- ]{0,64}$",
-            "title": "Chart Style",
-            "description": "Chart Style",
-            "enum": [
-                "Normalized Vertical Bar Chart",
-                "Stacked Vertical Bar Chart",
-                "Grouped Vertical Bar Chart"
-            ],
-            "style": "min-width: 180px;",
-            "index": 26
-        },
-        "vie_chart_xaxis": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Chart X-Axis",
-            "description": "Chart X-Axis",
-            "style": "min-width: 120px;",
-            "index": 27
-        },
-        "vie_chart_legend": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Chart Legend",
-            "description": "Chart Legend",
-            "style": "min-width: 120px;",
-            "index": 28
-        },
-        "vie_chart_value": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Chart Value",
-            "description": "Chart Value",
-            "style": "min-width: 120px;",
-            "index": 29
-        },
-        "vie_chart_function": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 8,
-            "pattern": "^[a-z]{1,8}$",
-            "title": "Chart Function",
-            "description": "Chart Function",
-            "enum": [
-                "count",
-                "sum",
-                "avg",
-                "var",
-                "stdev"
-            ],
-            "style": "min-width: 80px;",
-            "index": 30
-        },
         "vie_color": {
             "bsonType": "string",
             "minLength": 0,
