@@ -398,6 +398,7 @@
                 "dark"
             ],
             "default": "primary",
+            "color": true,
             "pattern": "^[a-z-]{1,64}$",
             "style": "min-width: 100px;",
             "index": 31

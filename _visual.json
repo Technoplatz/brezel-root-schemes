@@ -227,6 +227,23 @@
             "style": "min-width: 80px;",
             "index": 23
         },
+        "vis_p_color_scheme": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 16,
+            "items": {
+                "bsonType": "string",
+                "minLength": 3,
+                "maxLength": 32,
+                "pattern": "^[a-fA-F0-9#]{3,32}$"
+            },
+            "title": "Color Scheme",
+            "description": "Color Scheme",
+            "color": true,
+            "style": "min-width: 130px;",
+            "index": 24
+        },
         "vis_subscribers": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -239,7 +256,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 24
+            "index": 25
         },
         "vis_generic_data": {
             "bsonType": "object",
@@ -247,7 +264,7 @@
             "description": "Generic Data",
             "default": [],
             "style": "min-width: 130px;",
-            "index": 25
+            "index": 26
         }
     },
     "required": [
