@@ -236,7 +236,7 @@
                 "bsonType": "string",
                 "minLength": 3,
                 "maxLength": 32,
-                "pattern": "^[a-fA-F0-9#]{3,32}$"
+                "pattern": "^[a-zA-Z ]{3,32}$"
             },
             "title": "Color Scheme",
             "description": "Color Scheme",
