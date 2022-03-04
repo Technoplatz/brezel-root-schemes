@@ -262,7 +262,36 @@
             "bsonType": "object",
             "title": "Generic Data",
             "description": "Generic Data",
-            "default": [],
+            "default": {
+                "data": [
+                    {
+                        "name": "Düsseldorf",
+                        "series": [
+                            {
+                                "name": "Population",
+                                "value": 621000
+                            },
+                            {
+                                "name": "Altitude",
+                                "value": 38
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cologne",
+                        "series": [
+                            {
+                                "name": "Population",
+                                "value": 1087000
+                            },
+                            {
+                                "name": "Altitude",
+                                "value": 53
+                            }
+                        ]
+                    }
+                ]
+            },
             "style": "min-width: 130px;",
             "index": 26
         }
