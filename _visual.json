@@ -208,6 +208,14 @@
             "style": "min-width: 80px;",
             "index": 21
         },
+        "vis_p_gradient": {
+            "bsonType": "bool",
+            "title": "Gradient",
+            "default": true,
+            "description": "Gradient",
+            "style": "min-width: 80px;",
+            "index": 22
+        },
         "vis_subscribers": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -220,7 +228,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 22
+            "index": 23
         },
         "vis_generic_data": {
             "bsonType": "object",
@@ -228,7 +236,7 @@
             "description": "Generic Data",
             "default": [],
             "style": "min-width: 130px;",
-            "index": 23
+            "index": 24
         }
     },
     "required": [
