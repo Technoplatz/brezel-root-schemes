@@ -214,7 +214,7 @@
         "vis_p_generic_show": {
             "bsonType": "bool",
             "title": "Show Generic Data",
-            "default": true,
+            "default": false,
             "description": "Generic Data Show",
             "style": "min-width: 80px;",
             "index": 22
