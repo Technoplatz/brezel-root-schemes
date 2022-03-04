@@ -54,7 +54,10 @@
             "enum": [
                 "Normalized Vertical Bar Chart",
                 "Stacked Vertical Bar Chart",
-                "Grouped Vertical Bar Chart"
+                "Grouped Vertical Bar Chart",
+                "Normalized Horizontal Bar Chart",
+                "Stacked Horizontal Bar Chart",
+                "Grouped Horizontal Bar Chart"
             ],
             "style": "min-width: 180px;",
             "index": 6
