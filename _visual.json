@@ -240,6 +240,12 @@
             },
             "title": "Color Scheme",
             "description": "Color Scheme",
+            "default": [
+                "LightBlue",
+                "FireBrick",
+                "PaleGoldenRod",
+                "YellowGreen"
+            ],
             "color": true,
             "style": "min-width: 130px;",
             "index": 24
