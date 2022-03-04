@@ -211,7 +211,7 @@
         "vis_p_gradient": {
             "bsonType": "bool",
             "title": "Gradient",
-            "default": true,
+            "default": false,
             "description": "Gradient",
             "style": "min-width: 80px;",
             "index": 22
