@@ -198,7 +198,7 @@
         "vis_p_datalabel_show": {
             "bsonType": "bool",
             "title": "Show Data Label",
-            "default": true,
+            "default": false,
             "description": "Show Data Label",
             "style": "min-width: 80px;",
             "index": 20
