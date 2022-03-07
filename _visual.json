@@ -57,7 +57,8 @@
                 "Grouped Vertical Bar Chart",
                 "Normalized Horizontal Bar Chart",
                 "Stacked Horizontal Bar Chart",
-                "Grouped Horizontal Bar Chart"
+                "Grouped Horizontal Bar Chart",
+                "Line Chart"
             ],
             "style": "min-width: 180px;",
             "index": 6
