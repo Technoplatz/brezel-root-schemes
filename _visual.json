@@ -245,6 +245,14 @@
             "style": "min-width: 80px;",
             "index": 25
         },
+        "vis_p_nobarwhenzero": {
+            "bsonType": "bool",
+            "title": "No Bar When Zero",
+            "default": true,
+            "description": "No Bar When Zero",
+            "style": "min-width: 140px;",
+            "index": 26
+        },
         "vis_p_color_scheme": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -266,7 +274,7 @@
             ],
             "color": true,
             "style": "min-width: 130px;",
-            "index": 26
+            "index": 27
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -280,7 +288,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 27
+            "index": 28
         },
         "vis_generic_data": {
             "bsonType": "object",
@@ -317,7 +325,7 @@
                 ]
             },
             "style": "min-width: 130px;",
-            "index": 28
+            "index": 29
         }
     },
     "required": [
