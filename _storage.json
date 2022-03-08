@@ -18,6 +18,7 @@
             "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "Collection",
             "description": "Collection ID",
+            "collection": true,
             "style": "min-width: 100px;",
             "index": 2
         },

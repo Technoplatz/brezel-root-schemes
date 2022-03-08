@@ -17,6 +17,7 @@
             "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "View ID",
             "description": "View ID",
+            "view": true,
             "style": "min-width: 140px;",
             "index": 2
         },
