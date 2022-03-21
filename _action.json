@@ -1,0 +1,190 @@
+{
+    "properties": {
+        "act_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-]{3,32}$",
+            "title": "ID",
+            "description": "Action ID",
+            "style": "min-width: 190px;",
+            "index": 1
+        },
+        "act_collection_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-_]{3,32}$",
+            "title": "Collection ID",
+            "description": "Collection ID",
+            "collection": true,
+            "style": "min-width: 140px;",
+            "index": 2
+        },
+        "act_title": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Title",
+            "description": "Action title",
+            "style": "min-width: 140px;",
+            "index": 3
+        },
+        "act_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Action description",
+            "style": "min-width: 140px;",
+            "index": 4
+        },
+        "act_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 90px;",
+            "index": 5
+        },
+        "act_filter": {
+            "bsonType": "array",
+            "minItems": 0,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "filter": true,
+            "items": {
+                "bsonType": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "key": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z_]{1,32}$",
+                        "title": "key",
+                        "description": "Collection key"
+                    },
+                    "op": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 8,
+                        "pattern": "^[a-z]{1,8}$",
+                        "enum": [
+                            "eq",
+                            "ne",
+                            "contains",
+                            "nc",
+                            "in",
+                            "nin",
+                            "gt",
+                            "gte",
+                            "lt",
+                            "lte",
+                            "null",
+                            "nnull",
+                            "true",
+                            "false"
+                        ],
+                        "title": "op",
+                        "description": "Filter operator"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,32}$",
+                        "title": "value",
+                        "description": "Value"
+                    }
+                },
+                "required": [
+                    "key",
+                    "op",
+                    "value"
+                ]
+            },
+            "title": "Filter",
+            "description": "Action filter",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "act_fields": {
+            "bsonType": "array",
+            "minItems": 0,
+            "maxItems": 16,
+            "uniqueItems": true,
+            "additionalProperties": false,
+            "kv": true,
+            "items": {
+                "bsonType": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "key": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z_]{1,32}$",
+                        "title": "Key",
+                        "description": "Index key"
+                    },
+                    "value": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 32,
+                        "pattern": "^[a-z]{1,32}$",
+                        "title": "Value",
+                        "description": "Field value"
+                    }
+                },
+                "required": [
+                    "key",
+                    "value"
+                ]
+            },
+            "title": "Pivot Values",
+            "description": "Pivot Values",
+            "style": "min-width: 130px;",
+            "index": 19
+        }
+    },
+    "required": [
+        "act_id",
+        "act_collection_id",
+        "act_title"
+    ],
+    "unique": [
+        [
+            "act_id"
+        ],
+        [
+            "act_title"
+        ]
+    ],
+    "index": [
+        [
+            "act_collection_id"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "User",
+            "rank": 0
+        },
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}
