@@ -7,6 +7,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Action ID",
+            "required": true,
             "style": "min-width: 190px;",
             "index": 1
         },
@@ -17,6 +18,7 @@
             "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "Collection ID",
             "description": "Collection ID",
+            "required": true,
             "collection": true,
             "style": "min-width: 140px;",
             "index": 2
@@ -27,6 +29,7 @@
             "maxLength": 64,
             "title": "Title",
             "description": "Action title",
+            "required": true,
             "style": "min-width: 140px;",
             "index": 3
         },
@@ -92,8 +95,8 @@
                     "value": {
                         "bsonType": "string",
                         "minLength": 1,
-                        "maxLength": 32,
-                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,32}$",
+                        "maxLength": 64,
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,64}$",
                         "title": "value",
                         "description": "Value"
                     }
@@ -131,8 +134,8 @@
                     "value": {
                         "bsonType": "string",
                         "minLength": 1,
-                        "maxLength": 32,
-                        "pattern": "^[a-z]{1,32}$",
+                        "maxLength": 64,
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,64}$",
                         "title": "Value",
                         "description": "Field value"
                     }
@@ -142,16 +145,18 @@
                     "value"
                 ]
             },
-            "title": "Pivot Values",
-            "description": "Pivot Values",
+            "title": "Field Values",
+            "description": "Field Values",
+            "required": true,
             "style": "min-width: 130px;",
-            "index": 19
+            "index": 7
         }
     },
     "required": [
         "act_id",
         "act_collection_id",
-        "act_title"
+        "act_title",
+        "act_fields"
     ],
     "unique": [
         [
