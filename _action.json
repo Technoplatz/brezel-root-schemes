@@ -154,8 +154,7 @@
     "required": [
         "act_id",
         "act_collection_id",
-        "act_title",
-        "act_fields"
+        "act_title"
     ],
     "unique": [
         [
