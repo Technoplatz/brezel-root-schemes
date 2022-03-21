@@ -147,7 +147,6 @@
             },
             "title": "Field Values",
             "description": "Field Values",
-            "required": true,
             "style": "min-width: 130px;",
             "index": 7
         }
