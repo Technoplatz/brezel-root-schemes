@@ -133,9 +133,9 @@
                     },
                     "value": {
                         "bsonType": "string",
-                        "minLength": 1,
+                        "minLength": 0,
                         "maxLength": 64,
-                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{1,64}$",
+                        "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{0,64}$",
                         "title": "Value",
                         "description": "Field value"
                     }
