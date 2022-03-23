@@ -163,6 +163,20 @@
             "description": "Field Values",
             "style": "min-width: 130px;",
             "index": 9
+        },
+        "act_subscribers": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Subscribers",
+            "description": "Subscribers list",
+            "style": "min-width: 130px;",
+            "index": 10
         }
     },
     "required": [
