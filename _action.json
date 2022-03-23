@@ -46,21 +46,21 @@
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "style": "min-width: 90px;",
+            "style": "min-width: 110px;",
             "index": 5
         },
         "act_one_click": {
             "bsonType": "bool",
             "title": "One Click",
             "description": "One Click",
-            "style": "min-width: 90px;",
+            "style": "min-width: 120px;",
             "index": 6
         },
         "act_sort_no": {
             "bsonType": "number",
             "title": "Sort No",
             "description": "Sort No",
-            "style": "min-width: 90px;",
+            "style": "min-width: 120px;",
             "index": 7
         },
         "act_filter": {
