@@ -1,5 +1,28 @@
 [
     {
+        "version": "1.7.9",
+        "date": "2022-03-23",
+        "description": "Version issues have been fixed.",
+        "updates": [
+            {
+                "type": "BUGFIX",
+                "description": null
+            },
+            {
+                "type": "CHANGED",
+                "description": null
+            },
+            {
+                "type": "ADDED",
+                "description": null
+            },
+            {
+                "type": "REMOVED",
+                "description": null
+            }
+        ]
+    },
+    {
         "version": "1.7.8",
         "date": "2022-03-23",
         "description": "Some GUI improvements have been made.",
