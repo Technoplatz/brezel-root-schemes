@@ -1,0 +1,48 @@
+[
+    {
+        "version": "1.7.8",
+        "date": "2022-03-23",
+        "description": "Some GUI improvements have been made.",
+        "updates": [
+            {
+                "type": "BUGFIX",
+                "description": null
+            },
+            {
+                "type": "CHANGED",
+                "description": null
+            },
+            {
+                "type": "ADDED",
+                "description": null
+            },
+            {
+                "type": "REMOVED",
+                "description": null
+            }
+        ]
+    },
+    {
+        "version": "1.7.7",
+        "date": "2022-03-22",
+        "description": "Some cosmetic updates have been made.",
+        "updates": [
+            {
+                "type": "BUGFIX",
+                "description": null
+            },
+            {
+                "type": "CHANGED",
+                "description": null
+            },
+            {
+                "type": "ADDED",
+                "description": null
+            },
+            {
+                "type": "REMOVED",
+                "description": null
+            }
+        ]
+    }
+]

@@ -175,7 +175,7 @@
             },
             "title": "Subscribers",
             "description": "Subscribers list",
-            "style": "min-width: 130px;",
+            "style": "min-width: 140px;",
             "index": 10
         }
     },
