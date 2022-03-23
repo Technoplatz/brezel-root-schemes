@@ -49,6 +49,20 @@
             "style": "min-width: 90px;",
             "index": 5
         },
+        "act_one_click": {
+            "bsonType": "bool",
+            "title": "One Click",
+            "description": "One Click",
+            "style": "min-width: 90px;",
+            "index": 6
+        },
+        "act_sort_no": {
+            "bsonType": "number",
+            "title": "Sort No",
+            "description": "Sort No",
+            "style": "min-width: 90px;",
+            "index": 7
+        },
         "act_filter": {
             "bsonType": "array",
             "minItems": 0,
@@ -110,7 +124,7 @@
             "title": "Filter",
             "description": "Action filter",
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 8
         },
         "act_fields": {
             "bsonType": "array",
@@ -148,7 +162,7 @@
             "title": "Field Values",
             "description": "Field Values",
             "style": "min-width: 130px;",
-            "index": 7
+            "index": 9
         }
     },
     "required": [
@@ -170,7 +184,7 @@
         ]
     ],
     "sort": {
-        "_modified_at": -1
+        "act_sort_no": 1
     },
     "permissions": [
         {
