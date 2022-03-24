@@ -9,7 +9,8 @@
             "description": "Collection ID",
             "required": true,
             "permanent": true,
-            "style": "min-width: 140px;",
+            "width": 150,
+            "style": "min-width: 150px;",
             "index": 10
         },
         "col_title": {
@@ -17,9 +18,10 @@
             "minLength": 1,
             "maxLength": 64,
             "title": "Title",
-            "description": "Collection title",
+            "description": "Collection Title",
             "required": true,
-            "style": "min-width: 140px;",
+            "width": 150,
+            "style": "min-width: 150px;",
             "index": 20
         },
         "col_description": {
@@ -27,149 +29,43 @@
             "minLength": 0,
             "maxLength": 128,
             "title": "Description",
-            "description": "Collection description",
-            "style": "min-width: 190px;",
+            "description": "Collection Description",
+            "width": 150,
+            "style": "min-width: 150px;",
             "index": 30
         },
         "col_enabled": {
             "bsonType": "bool",
-            "title": "Enabled",
-            "description": "Enabled or not",
+            "title": "Enabled?",
+            "description": "Enabled?",
+            "width": 110,
             "style": "min-width: 110px;",
             "index": 40
         },
         "col_protected": {
             "bsonType": "bool",
-            "title": "Protected",
-            "description": "Protected or not",
+            "title": "Protected?",
+            "description": "Protected?",
+            "width": 120,
             "style": "min-width: 120px;",
             "index": 50
         },
         "col_barcode_enabled": {
             "bsonType": "bool",
-            "title": "Barcode Enabled",
+            "title": "Barcode Enabled?",
             "default": false,
-            "description": "Barcode Enabled",
-            "style": "min-width: 150px;",
+            "description": "Barcode Enabled?",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 60
         },
         "col_structure": {
             "bsonType": "object",
             "title": "Structure",
-            "description": "Collection structure",
+            "description": "Collection Structure",
             "required": true,
-            "default": {
-                "properties": {
-                    "xxx_column_string": {
-                        "bsonType": "string",
-                        "minLength": 1,
-                        "maxLength": 64,
-                        "title": "String",
-                        "description": "Column string description",
-                        "style": "min-width: 100px;",
-                        "index": 1
-                    },
-                    "xxx_column_select": {
-                        "bsonType": "string",
-                        "minLength": 1,
-                        "maxLength": 64,
-                        "enum": [
-                            "Blue",
-                            "Red",
-                            "Orange",
-                            "Black",
-                            "Pink"
-                        ],
-                        "title": "Select",
-                        "description": "Column two description",
-                        "style": "min-width: 100px;",
-                        "index": 2
-                    },
-                    "xxx_column_number": {
-                        "bsonType": "number",
-                        "minimum": 0,
-                        "maximum": 9999,
-                        "title": "Number",
-                        "description": "Column number description",
-                        "style": "min-width: 100px;",
-                        "index": 3
-                    },
-                    "xxx_column_date": {
-                        "bsonType": "date",
-                        "title": "Date",
-                        "description": "Column date description",
-                        "style": "min-width: 100px;",
-                        "index": 4
-                    }
-                },
-                "required": [
-                    "xxx_column_string",
-                    "xxx_column_select",
-                    "xxx_column_number"
-                ],
-                "unique": [
-                    [
-                        "xxx_column_string"
-                    ]
-                ],
-                "index": [
-                    [
-                        "xxx_column_select"
-                    ],
-                    [
-                        "xxx_column_number"
-                    ],
-                    [
-                        "xxx_column_select",
-                        "xxx_column_date"
-                    ]
-                ],
-                "parents": [],
-                "sort": {
-                    "xxx_column_string": -1,
-                    "xxx_column_select": 1
-                },
-                "permissions": [
-                    {
-                        "id": "a@a.com",
-                        "level": 0
-                    },
-                    {
-                        "id": "b@b.com",
-                        "level": 1
-                    },
-                    {
-                        "id": "managers",
-                        "level": 1
-                    },
-                    {
-                        "id": "administrators",
-                        "level": 2
-                    }
-                ],
-                "actions": [
-                    {
-                        "id": "open",
-                        "title": "Open",
-                        "status": "1-On the way",
-                        "properties": [
-                            "xxx_column_select",
-                            "xxx_column_number"
-                        ],
-                        "index": 0
-                    },
-                    {
-                        "id": "in-progress",
-                        "title": "In-progress",
-                        "status": "1-In Progress",
-                        "properties": [
-                            "xxx_column_date"
-                        ],
-                        "index": 1
-                    }
-                ]
-            },
-            "style": "min-width: 100px;",
+            "width": 120,
+            "style": "min-width: 120px;",
             "index": 70
         }
     },
