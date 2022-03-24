@@ -1,5 +1,28 @@
 [
     {
+        "version": "1.8.2",
+        "date": "2022-03-24",
+        "description": "Quick actions added",
+        "updates": [
+            {
+                "type": "BUGFIX",
+                "description": null
+            },
+            {
+                "type": "CHANGED",
+                "description": null
+            },
+            {
+                "type": "ADDED",
+                "description": null
+            },
+            {
+                "type": "REMOVED",
+                "description": null
+            }
+        ]
+    },
+    {
         "version": "1.8.1",
         "date": "2022-03-24",
         "description": "GUI and service improvements.",
