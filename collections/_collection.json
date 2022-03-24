@@ -7,9 +7,10 @@
             "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "ID",
             "description": "Collection ID",
+            "required": true,
             "permanent": true,
-            "style": "min-width: 120px;",
-            "index": 1
+            "style": "min-width: 140px;",
+            "index": 10
         },
         "col_title": {
             "bsonType": "string",
@@ -17,8 +18,9 @@
             "maxLength": 64,
             "title": "Title",
             "description": "Collection title",
-            "style": "min-width: 120px;",
-            "index": 2
+            "required": true,
+            "style": "min-width: 140px;",
+            "index": 20
         },
         "col_description": {
             "bsonType": "string",
@@ -26,95 +28,36 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Collection description",
-            "style": "min-width: 120px;",
-            "index": 3
+            "style": "min-width: 190px;",
+            "index": 30
         },
         "col_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "style": "min-width: 120px;",
-            "index": 4
+            "style": "min-width: 110px;",
+            "index": 40
         },
         "col_protected": {
             "bsonType": "bool",
             "title": "Protected",
             "description": "Protected or not",
             "style": "min-width: 120px;",
-            "index": 5
+            "index": 50
         },
-        "col_barcode": {
+        "col_barcode_enabled": {
             "bsonType": "bool",
-            "title": "Barcode",
+            "title": "Barcode Enabled",
             "default": false,
-            "description": "Barcoded or not",
-            "style": "min-width: 120px;",
-            "index": 6
-        },
-        "col_icon": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "title": "Icon",
-            "description": "Icon name",
-            "enum": [
-                "accessibility-outline",
-                "airplane-outline",
-                "alert-circle-outline",
-                "archive-outline",
-                "bug-outline",
-                "bus-outline",
-                "business-outline",
-                "cash-outline",
-                "clipboard-outline",
-                "contract-outline",
-                "cube-outline",
-                "easel-outline",
-                "ellipse-outline",
-                "expand-outline",
-                "golf-outline",
-                "id-card-outline",
-                "logo-euro",
-                "logo-usd",
-                "megaphone-outline",
-                "newspaper-outline",
-                "nutrition-outline",
-                "phone-portrait-outline",
-                "reader-outline",
-                "qr-code-outline",
-                "sparkles-outline",
-                "swap-vertical-outline",
-                "swap-horizontal-outline"
-            ],
-            "style": "min-width: 120px;",
-            "index": 7
-        },
-        "col_color": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "title": "Color",
-            "description": "Theme color",
-            "enum": [
-                "primary",
-                "secondary",
-                "tertiary",
-                "warning",
-                "success",
-                "danger",
-                "medium",
-                "light",
-                "dark"
-            ],
-            "color": true,
-            "pattern": "^[a-z-]{1,64}$",
-            "style": "min-width: 100px;",
-            "index": 8
+            "description": "Barcode Enabled",
+            "style": "min-width: 150px;",
+            "index": 60
         },
         "col_structure": {
             "bsonType": "object",
             "title": "Structure",
             "description": "Collection structure",
+            "required": true,
             "default": {
                 "properties": {
                     "xxx_column_string": {
@@ -227,7 +170,7 @@
                 ]
             },
             "style": "min-width: 100px;",
-            "index": 9
+            "index": 70
         }
     },
     "required": [
