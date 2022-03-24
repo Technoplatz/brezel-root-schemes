@@ -1,0 +1,260 @@
+{
+    "properties": {
+        "col_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-_]{3,32}$",
+            "title": "ID",
+            "description": "Collection ID",
+            "permanent": true,
+            "style": "min-width: 120px;",
+            "index": 1
+        },
+        "col_title": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Title",
+            "description": "Collection title",
+            "style": "min-width: 120px;",
+            "index": 2
+        },
+        "col_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Collection description",
+            "style": "min-width: 120px;",
+            "index": 3
+        },
+        "col_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled",
+            "description": "Enabled or not",
+            "style": "min-width: 120px;",
+            "index": 4
+        },
+        "col_protected": {
+            "bsonType": "bool",
+            "title": "Protected",
+            "description": "Protected or not",
+            "style": "min-width: 120px;",
+            "index": 5
+        },
+        "col_barcode": {
+            "bsonType": "bool",
+            "title": "Barcode",
+            "default": false,
+            "description": "Barcoded or not",
+            "style": "min-width: 120px;",
+            "index": 6
+        },
+        "col_icon": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "title": "Icon",
+            "description": "Icon name",
+            "enum": [
+                "accessibility-outline",
+                "airplane-outline",
+                "alert-circle-outline",
+                "archive-outline",
+                "bug-outline",
+                "bus-outline",
+                "business-outline",
+                "cash-outline",
+                "clipboard-outline",
+                "contract-outline",
+                "cube-outline",
+                "easel-outline",
+                "ellipse-outline",
+                "expand-outline",
+                "golf-outline",
+                "id-card-outline",
+                "logo-euro",
+                "logo-usd",
+                "megaphone-outline",
+                "newspaper-outline",
+                "nutrition-outline",
+                "phone-portrait-outline",
+                "reader-outline",
+                "qr-code-outline",
+                "sparkles-outline",
+                "swap-vertical-outline",
+                "swap-horizontal-outline"
+            ],
+            "style": "min-width: 120px;",
+            "index": 7
+        },
+        "col_color": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Color",
+            "description": "Theme color",
+            "enum": [
+                "primary",
+                "secondary",
+                "tertiary",
+                "warning",
+                "success",
+                "danger",
+                "medium",
+                "light",
+                "dark"
+            ],
+            "color": true,
+            "pattern": "^[a-z-]{1,64}$",
+            "style": "min-width: 100px;",
+            "index": 8
+        },
+        "col_structure": {
+            "bsonType": "object",
+            "title": "Structure",
+            "description": "Collection structure",
+            "default": {
+                "properties": {
+                    "xxx_column_string": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "title": "String",
+                        "description": "Column string description",
+                        "style": "min-width: 100px;",
+                        "index": 1
+                    },
+                    "xxx_column_select": {
+                        "bsonType": "string",
+                        "minLength": 1,
+                        "maxLength": 64,
+                        "enum": [
+                            "Blue",
+                            "Red",
+                            "Orange",
+                            "Black",
+                            "Pink"
+                        ],
+                        "title": "Select",
+                        "description": "Column two description",
+                        "style": "min-width: 100px;",
+                        "index": 2
+                    },
+                    "xxx_column_number": {
+                        "bsonType": "number",
+                        "minimum": 0,
+                        "maximum": 9999,
+                        "title": "Number",
+                        "description": "Column number description",
+                        "style": "min-width: 100px;",
+                        "index": 3
+                    },
+                    "xxx_column_date": {
+                        "bsonType": "date",
+                        "title": "Date",
+                        "description": "Column date description",
+                        "style": "min-width: 100px;",
+                        "index": 4
+                    }
+                },
+                "required": [
+                    "xxx_column_string",
+                    "xxx_column_select",
+                    "xxx_column_number"
+                ],
+                "unique": [
+                    [
+                        "xxx_column_string"
+                    ]
+                ],
+                "index": [
+                    [
+                        "xxx_column_select"
+                    ],
+                    [
+                        "xxx_column_number"
+                    ],
+                    [
+                        "xxx_column_select",
+                        "xxx_column_date"
+                    ]
+                ],
+                "parents": [],
+                "sort": {
+                    "xxx_column_string": -1,
+                    "xxx_column_select": 1
+                },
+                "permissions": [
+                    {
+                        "id": "a@a.com",
+                        "level": 0
+                    },
+                    {
+                        "id": "b@b.com",
+                        "level": 1
+                    },
+                    {
+                        "id": "managers",
+                        "level": 1
+                    },
+                    {
+                        "id": "administrators",
+                        "level": 2
+                    }
+                ],
+                "actions": [
+                    {
+                        "id": "open",
+                        "title": "Open",
+                        "status": "1-On the way",
+                        "properties": [
+                            "xxx_column_select",
+                            "xxx_column_number"
+                        ],
+                        "index": 0
+                    },
+                    {
+                        "id": "in-progress",
+                        "title": "In-progress",
+                        "status": "1-In Progress",
+                        "properties": [
+                            "xxx_column_date"
+                        ],
+                        "index": 1
+                    }
+                ]
+            },
+            "style": "min-width: 100px;",
+            "index": 9
+        }
+    },
+    "required": [
+        "col_id",
+        "col_title",
+        "col_structure"
+    ],
+    "index": [
+        [
+            "col_id"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "User",
+            "rank": 0
+        },
+        {
+            "usr_level_id": "Manager",
+            "rank": 1
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}
