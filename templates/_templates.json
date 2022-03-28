@@ -4,17 +4,17 @@
         "title": "Generic Template",
         "description": "Generic Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "collection": "generic",
-        "properties": "_tmp-generic-properties.json",
+        "structure": "_tmp-generic-structure.json",
         "data": "_tmp-generic-data.json",
-        "sort": 1
+        "sort": 10
     },
     {
         "_id": "brezel-template-reference",
         "title": "Reference Template",
         "description": "Reference Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "collection": "reference",
-        "properties": "_tmp-reference-properties.json",
+        "structure": "_tmp-reference-structure.json",
         "data": "_tmp-reference-data.json",
-        "sort": 2
+        "sort": 20
     }
 ]
