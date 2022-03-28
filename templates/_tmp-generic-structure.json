@@ -17,7 +17,7 @@
             "maxLength": 64,
             "enum": [
                 "0-Open",
-                "1-InProgess",
+                "1-InProcess",
                 "2-Closed",
                 "3-Finalized"
             ],
@@ -33,6 +33,7 @@
             "bsonType": "date",
             "title": "Date",
             "description": "gen_date column refers to the date type data.",
+            "default": "$CURRENT_DATE",
             "width": 100,
             "style": "min-width: 100px;",
             "index": 30
