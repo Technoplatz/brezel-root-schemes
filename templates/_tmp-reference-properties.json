@@ -1,0 +1,91 @@
+{
+    "properties": {
+        "ref_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "title": "ID",
+            "description": "ref_id column refers to the string type unique index key of the collection.",
+            "required": true,
+            "style": "min-width: 100px;",
+            "index": 10
+        },
+        "ref_type": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "enum": [
+                "Type-0",
+                "Type-1",
+                "Type-2",
+                "Type-3",
+                "Type-4"
+            ],
+            "title": "Status",
+            "description": "ref_status column refers to the string type data which includes selectable values.",
+            "default": "Type-0",
+            "required": true,
+            "style": "min-width: 100px;",
+            "index": 20
+        },
+        "ref_title": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 256,
+            "title": "Title",
+            "description": "ref_title column refers to the string type data.",
+            "required": true,
+            "style": "min-width: 100px;",
+            "index": 30
+        },
+        "ref_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "ref_enabled column refers to the boolean (true/false) type data.",
+            "style": "min-width: 110px;",
+            "index": 40
+        },
+        "ref_notes": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 512,
+            "title": "Notes",
+            "description": "ref_notes column refers to the long text type data.",
+            "style": "min-width: 100px;",
+            "index": 50
+        }
+    },
+    "required": [
+        "ref_id",
+        "ref_status",
+        "ref_date"
+    ],
+    "unique": [
+        [
+            "ref_id"
+        ]
+    ],
+    "index": [
+        [
+            "ref_status"
+        ]
+    ],
+    "parents": [],
+    "sort": {
+        "ref_id": 1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "User",
+            "rank": 0
+        }
+    ]
+}
