@@ -31,6 +31,6 @@
         "act_qty": 1,
         "act_price": 2800.00,
         "act_amount": 2800.00,
-        "act_notes": "There are some missing items"
+        "act_notes": null
     }
 ]
