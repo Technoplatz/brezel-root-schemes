@@ -1,7 +1,8 @@
 [
     {
         "_id": "brezel-template-generic",
-        "title": "Generic Template",
+        "name": "Generic Template",
+        "title": "Generic",
         "description": "Generic Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         "collection": "generic",
         "structure": "_tmp-generic-structure.json",
@@ -10,11 +11,12 @@
     },
     {
         "_id": "brezel-template-account",
-        "title": "Account Template",
-        "description": "Account Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "collection": "account",
-        "structure": "_tmp-account-structure.json",
-        "data": "_tmp-account-data.json",
+        "name": "Accounts Template",
+        "title": "Accounts",
+        "description": "Accounts Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "collection": "accounts",
+        "structure": "_tmp-accounts-structure.json",
+        "data": "_tmp-accounts-data.json",
         "sort": 20
     }
 ]
