@@ -18,5 +18,15 @@
         "structure": "_tmp-accounts-structure.json",
         "data": "_tmp-accounts-data.json",
         "sort": 20
+    },
+    {
+        "_id": "brezel-template-transactions",
+        "name": "Transactions Template",
+        "title": "Transactions",
+        "description": "Transactions Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "collection": "transactions",
+        "structure": "_tmp-transactions-structure.json",
+        "data": "_tmp-transactions-data.json",
+        "sort": 20
     }
 ]

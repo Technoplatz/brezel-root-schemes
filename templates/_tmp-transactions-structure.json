@@ -1,0 +1,157 @@
+{
+    "properties": {
+        "act_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 128,
+            "title": "ID",
+            "description": "Transaction ID",
+            "required": true,
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 10
+        },
+        "act_status": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "enum": [
+                "0-Open",
+                "1-InProcess",
+                "2-Closed",
+                "3-Finalized"
+            ],
+            "title": "Status",
+            "description": "Transaction Status",
+            "required": true,
+            "default": "0-Open",
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 20
+        },
+        "act_date": {
+            "bsonType": "date",
+            "title": "Date",
+            "description": "Transaction Date",
+            "default": "$CURRENT_DATE",
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 30
+        },
+        "act_account_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Account ID",
+            "description": "Account ID",
+            "pattern": "^[A-Za-z0-9]{1,64}$",
+            "required": true,
+            "readonly": true,
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 40
+        },
+        "act_product_id": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Product ID",
+            "description": "Product ID",
+            "pattern": "^[A-Za-z0-9-.]{1,64}$",
+            "required": true,
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 50
+        },
+        "act_qty": {
+            "bsonType": "number",
+            "minimum": 0,
+            "maximum": 9999999,
+            "title": "Quantity",
+            "description": "Transaction Quantity",
+            "required": true,
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 60
+        },
+        "act_price": {
+            "bsonType": "number",
+            "title": "Price",
+            "description": "Unit Price",
+            "required": true,
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 70
+        },
+        "act_amount": {
+            "bsonType": "number",
+            "title": "Amount",
+            "description": "Transaction Amount",
+            "required": true,
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 80
+        },
+        "act_notes": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 512,
+            "title": "Notes",
+            "description": "act_notes column refers to the long text type data.",
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 90
+        }
+    },
+    "required": [
+        "act_id",
+        "act_status",
+        "act_date",
+        "act_account_id",
+        "act_product_id"
+    ],
+    "unique": [
+        [
+            "act_id"
+        ]
+    ],
+    "index": [
+        [
+            "act_status"
+        ],
+        [
+            "act_account_id"
+        ],
+        [
+            "act_product_id"
+        ]
+    ],
+    "parents": [
+        {
+            "collection": "accounts",
+            "lookup": [
+                {
+                    "local": "act_account_id",
+                    "remote": "acc_id"
+                }
+            ]
+        }
+    ],
+    "sort": {
+        "act_id": 1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "User",
+            "rank": 0
+        }
+    ]
+}
