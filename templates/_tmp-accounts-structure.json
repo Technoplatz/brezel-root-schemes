@@ -8,6 +8,7 @@
             "description": "Primary unique ID of the account",
             "pattern": "^[A-Za-z0-9]{1,64}$",
             "required": true,
+            "readonly": true,
             "width": 120,
             "style": "min-width: 120px;",
             "index": 10
@@ -37,6 +38,7 @@
             "title": "Account No",
             "description": "Secondary unique identifier of the account",
             "required": true,
+            "readonly": true,
             "width": 120,
             "style": "min-width: 120px;",
             "index": 30
@@ -57,6 +59,7 @@
             "maxLength": 64,
             "title": "Tax No",
             "description": "Tax number of the account holder",
+            "readonly": true,
             "pattern": "^[A-Z0-9-.]{0,64}$",
             "width": 110,
             "style": "min-width: 110px;",
