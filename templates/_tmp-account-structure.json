@@ -77,8 +77,8 @@
             "bsonType": "string",
             "minLength": 2,
             "maxLength": 3,
-            "title": "Address",
-            "description": "Address",
+            "title": "Country",
+            "description": "Country",
             "pattern": "^[A-Z]{2,3}$",
             "required": true,
             "width": 100,
@@ -103,7 +103,7 @@
         },
         "acc_is_supplier": {
             "bsonType": "bool",
-            "title": "Customer?",
+            "title": "Supplier?",
             "description": "Is the account holder a supplier?",
             "width": 120,
             "style": "min-width: 120px;",
@@ -111,7 +111,7 @@
         },
         "acc_is_distributor": {
             "bsonType": "bool",
-            "title": "Customer?",
+            "title": "Distributor?",
             "description": "Is the account holder a distributor?",
             "width": 120,
             "style": "min-width: 120px;",
@@ -119,7 +119,7 @@
         },
         "acc_is_dealer": {
             "bsonType": "bool",
-            "title": "Customer?",
+            "title": "Dealer?",
             "description": "Is the account holder a dealer?",
             "width": 120,
             "style": "min-width: 120px;",
