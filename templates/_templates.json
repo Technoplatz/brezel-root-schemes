@@ -7,7 +7,8 @@
         "collection": "generic",
         "structure": "_tmp-generic-structure.json",
         "data": "_tmp-generic-data.json",
-        "sort": 10
+        "sort": 10,
+        "enabled": false
     },
     {
         "_id": "brezel-template-account",
@@ -17,7 +18,8 @@
         "collection": "accounts",
         "structure": "_tmp-accounts-structure.json",
         "data": "_tmp-accounts-data.json",
-        "sort": 20
+        "sort": 20,
+        "enabled": true
     },
     {
         "_id": "brezel-template-transactions",
@@ -27,6 +29,7 @@
         "collection": "transactions",
         "structure": "_tmp-transactions-structure.json",
         "data": "_tmp-transactions-data.json",
-        "sort": 20
+        "sort": 20,
+        "enabled": true
     }
 ]
