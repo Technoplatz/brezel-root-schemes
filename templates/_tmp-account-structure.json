@@ -37,8 +37,8 @@
             "title": "Account No",
             "description": "Secondary unique identifier of the account",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 120,
+            "style": "min-width: 120px;",
             "index": 30
         },
         "acc_legal_name": {
@@ -47,8 +47,8 @@
             "title": "Legal Name",
             "description": "Account Legal Name",
             "required": true,
-            "width": 240,
-            "style": "min-width: 240px;",
+            "width": 250,
+            "style": "min-width: 250px;",
             "index": 40
         },
         "acc_tax_no": {
@@ -66,32 +66,32 @@
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Is the account enabled?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 60
         },
         "acc_is_customer": {
             "bsonType": "bool",
             "title": "Customer?",
             "description": "Is the account holder a customer?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 70
         },
         "acc_is_supplier": {
             "bsonType": "bool",
             "title": "Supplier?",
             "description": "Is the account holder a supplier?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 80
         },
         "acc_is_distributor": {
             "bsonType": "bool",
             "title": "Distributor?",
             "description": "Is the account holder a distributor?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 150,
+            "style": "min-width: 150px;",
             "index": 90
         },
         "acc_is_dealer": {
@@ -132,8 +132,8 @@
             "description": "Country",
             "pattern": "^[A-Z]{2,3}$",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 130
         },
         "acc_notes": {
@@ -142,8 +142,8 @@
             "maxLength": 1024,
             "title": "Notes",
             "description": "Account Notes",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 140
         }
     },
