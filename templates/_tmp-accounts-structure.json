@@ -6,7 +6,7 @@
             "maxLength": 64,
             "title": "ID",
             "description": "Primary unique ID of the account",
-            "pattern": "^[A-Za-z0-9]{1,64}$",
+            "pattern": "^[A-Za-z0-9ğüşıöçĞÜŞİÖÇß]{1,64}$",
             "required": true,
             "readonly": true,
             "width": 130,
