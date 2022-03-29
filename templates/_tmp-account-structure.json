@@ -62,16 +62,67 @@
             "style": "min-width: 110px;",
             "index": 50
         },
-        "acc_address": {
+        "acc_is_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "Is the account enabled?",
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 60
+        },
+        "acc_is_customer": {
+            "bsonType": "bool",
+            "title": "Customer?",
+            "description": "Is the account holder a customer?",
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 70
+        },
+        "acc_is_supplier": {
+            "bsonType": "bool",
+            "title": "Supplier?",
+            "description": "Is the account holder a supplier?",
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 80
+        },
+        "acc_is_distributor": {
+            "bsonType": "bool",
+            "title": "Distributor?",
+            "description": "Is the account holder a distributor?",
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 90
+        },
+        "acc_is_dealer": {
+            "bsonType": "bool",
+            "title": "Dealer?",
+            "description": "Is the account holder a dealer?",
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 100
+        },
+        "acc_billing_address": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 256,
-            "title": "Address",
-            "description": "Address",
+            "title": "Billing Address",
+            "description": "Billing Address",
             "required": true,
             "width": 240,
             "style": "min-width: 340px;",
-            "index": 60
+            "index": 110
+        },
+        "acc_shipping_address": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 256,
+            "title": "Shipping Address",
+            "description": "Shipping Address",
+            "required": true,
+            "width": 240,
+            "style": "min-width: 340px;",
+            "index": 120
         },
         "acc_country": {
             "bsonType": "string",
@@ -83,47 +134,7 @@
             "required": true,
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 70
-        },
-        "acc_is_enabled": {
-            "bsonType": "bool",
-            "title": "Enabled?",
-            "description": "Is the account enabled?",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 80
-        },
-        "acc_is_customer": {
-            "bsonType": "bool",
-            "title": "Customer?",
-            "description": "Is the account holder a customer?",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 90
-        },
-        "acc_is_supplier": {
-            "bsonType": "bool",
-            "title": "Supplier?",
-            "description": "Is the account holder a supplier?",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 100
-        },
-        "acc_is_distributor": {
-            "bsonType": "bool",
-            "title": "Distributor?",
-            "description": "Is the account holder a distributor?",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 110
-        },
-        "acc_is_dealer": {
-            "bsonType": "bool",
-            "title": "Dealer?",
-            "description": "Is the account holder a dealer?",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 120
+            "index": 130
         },
         "acc_notes": {
             "bsonType": "string",
@@ -133,7 +144,7 @@
             "description": "Account Notes",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 130
+            "index": 140
         }
     },
     "required": [
