@@ -1,6 +1,7 @@
 [
     {
         "act_id": "DN01765005",
+        "act_item_no": "10",
         "act_status": "0-Open",
         "act_date": "2022-03-29",
         "act_account_id": "Teknoplatz",
@@ -12,6 +13,7 @@
     },
     {
         "act_id": "DN61065441",
+        "act_item_no": "10",
         "act_status": "0-Open",
         "act_date": "2022-03-29",
         "act_account_id": "Teknoplatz",
@@ -20,17 +22,41 @@
         "act_price": 2800.00,
         "act_amount": 2800.00,
         "act_notes": "There are some missing items"
-    }
-    ,
+    },
     {
         "act_id": "DN87000320",
+        "act_item_no": "10",
         "act_status": "0-Open",
         "act_date": "2022-03-29",
         "act_account_id": "Angoora",
         "act_product_id": "R070000020",
+        "act_qty": 2,
+        "act_price": 900.00,
+        "act_amount": 1800.00,
+        "act_notes": null
+    },
+    {
+        "act_id": "DN87000320",
+        "act_item_no": "20",
+        "act_status": "0-Open",
+        "act_date": "2022-03-29",
+        "act_account_id": "Angoora",
+        "act_product_id": "R083000111",
+        "act_qty": 4,
+        "act_price": 90.00,
+        "act_amount": 320.00,
+        "act_notes": null
+    },
+    {
+        "act_id": "DN87000320",
+        "act_item_no": "30",
+        "act_status": "0-Open",
+        "act_date": "2022-03-29",
+        "act_account_id": "Angoora",
+        "act_product_id": "U400550007",
         "act_qty": 1,
-        "act_price": 2800.00,
-        "act_amount": 2800.00,
+        "act_price": 84.00,
+        "act_amount": 84.00,
         "act_notes": null
     }
 ]

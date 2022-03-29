@@ -9,8 +9,8 @@
             "pattern": "^[A-Za-z0-9]{1,64}$",
             "required": true,
             "readonly": true,
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 10
         },
         "acc_type": {

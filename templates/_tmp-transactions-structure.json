@@ -3,13 +3,23 @@
         "act_id": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 128,
+            "maxLength": 64,
             "title": "ID",
             "description": "Transaction ID",
             "required": true,
             "width": 100,
             "style": "min-width: 100px;",
             "index": 10
+        },
+        "act_item_no": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 64,
+            "title": "Item No",
+            "description": "Item No",
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 20
         },
         "act_status": {
             "bsonType": "string",
@@ -27,7 +37,7 @@
             "default": "0-Open",
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 20
+            "index": 30
         },
         "act_date": {
             "bsonType": "date",
@@ -36,7 +46,7 @@
             "default": "$CURRENT_DATE",
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 30
+            "index": 40
         },
         "act_account_id": {
             "bsonType": "string",
@@ -47,9 +57,9 @@
             "pattern": "^[A-Za-z0-9]{1,64}$",
             "required": true,
             "readonly": true,
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 40
+            "width": 130,
+            "style": "min-width: 130px;",
+            "index": 50
         },
         "act_product_id": {
             "bsonType": "string",
@@ -61,7 +71,7 @@
             "required": true,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 50
+            "index": 60
         },
         "act_qty": {
             "bsonType": "number",
@@ -70,27 +80,27 @@
             "title": "Quantity",
             "description": "Transaction Quantity",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
-            "index": 60
+            "width": 80,
+            "style": "min-width: 80px;",
+            "index": 70
         },
         "act_price": {
             "bsonType": "number",
             "title": "Price",
             "description": "Unit Price",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
-            "index": 70
+            "width": 80,
+            "style": "min-width: 80px;",
+            "index": 80
         },
         "act_amount": {
             "bsonType": "number",
             "title": "Amount",
             "description": "Transaction Amount",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
-            "index": 80
+            "width": 90,
+            "style": "min-width: 90px;",
+            "index": 90
         },
         "act_notes": {
             "bsonType": "string",
@@ -100,7 +110,7 @@
             "description": "act_notes column refers to the long text type data.",
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 90
+            "index": 100
         }
     },
     "required": [
@@ -112,7 +122,8 @@
     ],
     "unique": [
         [
-            "act_id"
+            "act_id",
+            "act_item_no"
         ]
     ],
     "index": [
