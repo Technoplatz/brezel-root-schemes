@@ -9,12 +9,12 @@
         "sort": 10
     },
     {
-        "_id": "brezel-template-reference",
-        "title": "Reference Template",
-        "description": "Reference Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        "collection": "reference",
-        "structure": "_tmp-reference-structure.json",
-        "data": "_tmp-reference-data.json",
+        "_id": "brezel-template-account",
+        "title": "Account Template",
+        "description": "Account Template lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "collection": "account",
+        "structure": "_tmp-account-structure.json",
+        "data": "_tmp-account-data.json",
         "sort": 20
     }
 ]
