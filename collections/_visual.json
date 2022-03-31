@@ -196,8 +196,8 @@
                 "below"
             ],
             "default": "right",
-            "width": 160,
-            "style": "min-width: 160px;",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 170
         },
         "vis_p_xaxis_show": {
@@ -268,8 +268,8 @@
             "title": "Show Generic Data",
             "default": false,
             "description": "Generic Data Show",
-            "width": 140,
-            "style": "min-width: 140px;",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 250
         },
         "vis_p_gradient": {
