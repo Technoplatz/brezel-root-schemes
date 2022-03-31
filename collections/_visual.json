@@ -47,6 +47,7 @@
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
+            "default": true,
             "width": 110,
             "style": "min-width: 110px;",
             "index": 50
@@ -57,7 +58,7 @@
             "description": "Priority",
             "minimum": 0,
             "maximum": 9999,
-            "default": 0,
+            "default": 1,
             "width": 110,
             "style": "min-width: 110px;",
             "index": 60
@@ -136,7 +137,7 @@
             "bsonType": "number",
             "title": "Width (px)",
             "description": "Width (px)",
-            "default": 640,
+            "default": 480,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 120
@@ -145,7 +146,7 @@
             "bsonType": "number",
             "title": "Height (px)",
             "description": "Height (px)",
-            "default": 480,
+            "default": 280,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 130
