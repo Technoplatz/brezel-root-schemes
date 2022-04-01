@@ -7,6 +7,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Action ID",
+            "permanent": true,
             "required": true,
             "style": "min-width: 190px;",
             "index": 1
