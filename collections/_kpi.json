@@ -79,13 +79,13 @@
             "style": "min-width: 140px;",
             "index": 70
         },
-        "kpi_chart_legend": {
+        "kpi_chart_yaxis": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z_]{1,32}$",
-            "title": "Value Column",
-            "description": "Legend Value Column",
+            "title": "Y-Axis Column",
+            "description": "Chart Y-Axis Column",
             "required": true,
             "width": 140,
             "style": "min-width: 140px;",
@@ -157,7 +157,7 @@
         "kpi_view_id",
         "kpi_title",
         "kpi_chart_xaxis",
-        "kpi_chart_legend",
+        "kpi_chart_yaxis",
         "kpi_chart_function",
         "kpi_chart_width",
         "kpi_chart_height"
