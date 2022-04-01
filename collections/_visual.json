@@ -7,6 +7,7 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Visual ID",
+            "protected": true,
             "width": 200,
             "style": "min-width: 200px;",
             "index": 10
@@ -28,7 +29,7 @@
             "minLength": 1,
             "maxLength": 64,
             "title": "Title",
-            "description": "Visual title",
+            "description": "Title",
             "width": 160,
             "style": "min-width: 160px;",
             "index": 30
@@ -38,15 +39,15 @@
             "minLength": 0,
             "maxLength": 128,
             "title": "Description",
-            "description": "Visual Description",
+            "description": "Description",
             "width": 160,
             "style": "min-width: 160px;",
             "index": 40
         },
         "vis_enabled": {
             "bsonType": "bool",
-            "title": "Enabled",
-            "description": "Enabled or not",
+            "title": "Enabled?",
+            "description": "Enabled?",
             "default": true,
             "width": 110,
             "style": "min-width: 110px;",
