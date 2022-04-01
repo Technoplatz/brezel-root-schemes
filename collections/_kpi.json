@@ -9,8 +9,8 @@
             "description": "KPI ID",
             "permanent": true,
             "required": true,
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 10
         },
         "kpi_title": {
@@ -20,8 +20,8 @@
             "title": "Title",
             "description": "KPI Title",
             "required": true,
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 20
         },
         "kpi_description": {
@@ -30,16 +30,16 @@
             "maxLength": 128,
             "title": "Description",
             "description": "KPI description",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 180,
+            "style": "min-width: 180px;",
             "index": 30
         },
         "kpi_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Enabled?",
-            "width": 80,
-            "style": "min-width: 80px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 40
         },
         "kpi_priority": {
@@ -49,8 +49,8 @@
             "minimum": 1,
             "maximum": 9999,
             "default": 1,
-            "width": 110,
-            "style": "min-width: 110px;",
+            "width": 100,
+            "style": "min-width: 100px;",
             "index": 50
         },
         "kpi_view_id": {
@@ -86,8 +86,8 @@
                 "datediff",
                 "value"
             ],
-            "width": 80,
-            "style": "min-width: 80px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 70
         },
         "kpi_field": {
@@ -98,8 +98,8 @@
             "title": "Field",
             "description": "Field",
             "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 80
         },
         "kpi_target_value": {
@@ -108,8 +108,8 @@
             "description": "Target Value",
             "required": true,
             "default": 0,
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 90
         },
         "kpi_subscribers": {
@@ -123,8 +123,8 @@
             },
             "title": "Subscribers",
             "description": "Subscribers List",
-            "width": 140,
-            "style": "min-width: 140px;",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 100
         }
     },
