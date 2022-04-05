@@ -85,11 +85,23 @@
     "required": [
         "col_id",
         "col_title",
+        "col_prefix",
         "col_structure"
     ],
     "index": [
         [
+            "col_title"
+        ],
+        [
+            "col_enabled"
+        ]
+    ],
+    "unique": [
+        [
             "col_id"
+        ],
+        [
+            "col_prefix"
         ]
     ],
     "sort": {
