@@ -83,6 +83,17 @@
             "style": "min-width: 210px;",
             "index": 70
         },
+        "vis_chart_legend": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Group By",
+            "description": "Chart Group By",
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 89
+        },
         "vis_chart_xaxis": {
             "bsonType": "string",
             "minLength": 1,
@@ -92,7 +103,7 @@
             "description": "Chart X-Axis Column",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 80
+            "index": 90
         },
         "vis_chart_yaxis": {
             "bsonType": "string",
@@ -101,17 +112,6 @@
             "pattern": "^[a-z_]{1,32}$",
             "title": "Y-Axis Column",
             "description": "Chart Y-Axis Column",
-            "width": 140,
-            "style": "min-width: 140px;",
-            "index": 90
-        },
-        "vis_chart_legend": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Chart Legend",
-            "description": "Chart Legend",
             "width": 140,
             "style": "min-width: 140px;",
             "index": 100
