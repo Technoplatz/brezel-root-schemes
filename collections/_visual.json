@@ -121,7 +121,7 @@
             "minLength": 1,
             "maxLength": 8,
             "pattern": "^[a-z]{1,8}$",
-            "title": "Chart Function",
+            "title": "Y-Axis Function",
             "description": "Chart Function",
             "enum": [
                 "count",
