@@ -103,7 +103,7 @@
                 "count",
                 "sum",
                 "unique",
-                "avg",
+                "mean",
                 "var",
                 "stdev"
             ],
