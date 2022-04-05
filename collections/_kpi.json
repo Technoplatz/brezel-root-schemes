@@ -102,6 +102,7 @@
             "enum": [
                 "count",
                 "sum",
+                "unique",
                 "avg",
                 "var",
                 "stdev"
