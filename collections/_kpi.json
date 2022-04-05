@@ -118,7 +118,7 @@
             "default": false,
             "width": 110,
             "style": "min-width: 110px;",
-            "index": 110
+            "index": 100
         },
         "kpi_target_value": {
             "bsonType": "number",
