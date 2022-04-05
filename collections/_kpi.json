@@ -111,13 +111,22 @@
             "style": "min-width: 160px;",
             "index": 90
         },
+        "kpi_target": {
+            "bsonType": "bool",
+            "title": "Target?",
+            "description": "Target?",
+            "default": false,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 110
+        },
         "kpi_target_value": {
             "bsonType": "number",
             "title": "Target Value",
             "description": "Target Value",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 100
+            "index": 110
         },
         "kpi_chart_width": {
             "bsonType": "number",
@@ -126,7 +135,7 @@
             "default": 240,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 110
+            "index": 120
         },
         "kpi_chart_height": {
             "bsonType": "number",
@@ -135,7 +144,7 @@
             "default": 120,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 120
+            "index": 130
         },
         "kpi_subscribers": {
             "bsonType": "array",
@@ -150,7 +159,7 @@
             "description": "Subscribers list",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 130
+            "index": 140
         }
     },
     "required": [
