@@ -66,6 +66,7 @@
             "pattern": "^[a-z]{3,3}$",
             "title": "Prefix",
             "description": "Column prefix",
+            "required": true,
             "permanent": true,
             "readonly": true,
             "width": 110,
