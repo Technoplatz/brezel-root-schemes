@@ -75,6 +75,7 @@
             "title": "X-Axis Column",
             "description": "Chart X-Axis Column",
             "required": true,
+            "property": true,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 70
@@ -84,9 +85,10 @@
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z_]{1,32}$",
-            "title": "Y-Axis Column",
-            "description": "Chart Y-Axis Column",
+            "title": "Data Column",
+            "description": "Data Column",
             "required": true,
+            "property": true,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 80
@@ -96,8 +98,8 @@
             "minLength": 1,
             "maxLength": 8,
             "pattern": "^[a-z]{1,8}$",
-            "title": "Y-Axis Function",
-            "description": "Y-Axis Function",
+            "title": "Function on Data Column",
+            "description": "Function on Data Column",
             "required": true,
             "enum": [
                 "count",
@@ -105,7 +107,8 @@
                 "unique",
                 "mean",
                 "var",
-                "stdev"
+                "stdev",
+                "datediff"
             ],
             "width": 160,
             "style": "min-width: 160px;",
@@ -130,8 +133,8 @@
         },
         "kpi_chart_width": {
             "bsonType": "number",
-            "title": "Width (px)",
-            "description": "Width (px)",
+            "title": "Chart Width (px)",
+            "description": "Chart Width (px)",
             "default": 240,
             "width": 140,
             "style": "min-width: 140px;",
@@ -139,8 +142,8 @@
         },
         "kpi_chart_height": {
             "bsonType": "number",
-            "title": "Height (px)",
-            "description": "Height (px)",
+            "title": "Chart Height (px)",
+            "description": "Chart Height (px)",
             "default": 120,
             "width": 140,
             "style": "min-width: 140px;",

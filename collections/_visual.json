@@ -90,6 +90,7 @@
             "pattern": "^[a-z_]{1,32}$",
             "title": "Group By",
             "description": "Chart Group By",
+            "property": true,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 89
@@ -101,6 +102,7 @@
             "pattern": "^[a-z_]{1,32}$",
             "title": "X-Axis Column",
             "description": "Chart X-Axis Column",
+            "property": true,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 90
@@ -110,8 +112,9 @@
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z_]{1,32}$",
-            "title": "Y-Axis Column",
-            "description": "Chart Y-Axis Column",
+            "title": "Data Column",
+            "description": "Data Column",
+            "property": true,
             "width": 140,
             "style": "min-width: 140px;",
             "index": 100
@@ -121,14 +124,15 @@
             "minLength": 1,
             "maxLength": 8,
             "pattern": "^[a-z]{1,8}$",
-            "title": "Y-Axis Function",
-            "description": "Chart Function",
+            "title": "Function on Data Column",
+            "description": "Function on Data Column",
             "enum": [
                 "count",
                 "sum",
                 "avg",
                 "var",
-                "stdev"
+                "stdev",
+                "datediff"
             ],
             "width": 160,
             "style": "min-width: 160px;",
@@ -136,8 +140,8 @@
         },
         "vis_chart_width": {
             "bsonType": "number",
-            "title": "Width (px)",
-            "description": "Width (px)",
+            "title": "Chart Width (px)",
+            "description": "Chart Width (px)",
             "default": 480,
             "width": 140,
             "style": "min-width: 140px;",
@@ -145,8 +149,8 @@
         },
         "vis_chart_height": {
             "bsonType": "number",
-            "title": "Height (px)",
-            "description": "Height (px)",
+            "title": "Chart Height (px)",
+            "description": "Chart Height (px)",
             "default": 280,
             "width": 140,
             "style": "min-width: 140px;",
@@ -265,15 +269,6 @@
             "style": "min-width: 180px;",
             "index": 240
         },
-        "vis_p_generic_show": {
-            "bsonType": "bool",
-            "title": "Show Generic Data",
-            "default": false,
-            "description": "Generic Data Show",
-            "width": 180,
-            "style": "min-width: 180px;",
-            "index": 250
-        },
         "vis_p_gradient": {
             "bsonType": "bool",
             "title": "Gradient",
@@ -281,7 +276,7 @@
             "description": "Gradient",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 260
+            "index": 250
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -290,7 +285,7 @@
             "description": "No Bar When Zero",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 270
+            "index": 260
         },
         "vis_p_rounddomains": {
             "bsonType": "bool",
@@ -299,7 +294,7 @@
             "description": "Round domains for aligned gridlines",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 280
+            "index": 270
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -323,7 +318,7 @@
             "color": true,
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 290
+            "index": 280
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -338,45 +333,7 @@
             "description": "Subscribers list",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 300
-        },
-        "vis_generic_data": {
-            "bsonType": "object",
-            "title": "Generic Data",
-            "description": "Generic Data",
-            "default": {
-                "data": [
-                    {
-                        "name": "Düsseldorf",
-                        "series": [
-                            {
-                                "name": "Population",
-                                "value": 621000
-                            },
-                            {
-                                "name": "Altitude",
-                                "value": 38
-                            }
-                        ]
-                    },
-                    {
-                        "name": "Cologne",
-                        "series": [
-                            {
-                                "name": "Population",
-                                "value": 1087000
-                            },
-                            {
-                                "name": "Altitude",
-                                "value": 53
-                            }
-                        ]
-                    }
-                ]
-            },
-            "width": 140,
-            "style": "min-width: 140px;",
-            "index": 310
+            "index": 290
         }
     },
     "required": [
