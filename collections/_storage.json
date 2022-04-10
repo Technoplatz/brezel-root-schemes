@@ -40,15 +40,6 @@
             "style": "min-width: 100px;",
             "index": 30
         },
-        "sto_group_by": {
-            "bsonType": "bool",
-            "title": "Group by",
-            "default": true,
-            "description": "Group by combines duplicate items with sum",
-            "width": 100,
-            "style": "min-width: 100px;",
-            "index": 40
-        },
         "sto_file": {
             "bsonType": "string",
             "minLength": 0,
@@ -58,7 +49,7 @@
             "description": "File name",
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 50
+            "index": 40
         }
     },
     "required": [
@@ -79,7 +70,7 @@
     ],
     "index": [
         [
-            "sto_group_by"
+            "sto_collection_id"
         ]
     ],
     "sort": {
