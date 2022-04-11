@@ -154,24 +154,6 @@
             "style": "min-width: 140px;",
             "index": 120
         },
-        "vis_chart_width": {
-            "bsonType": "number",
-            "title": "Chart Width (px)",
-            "description": "Chart Width (px)",
-            "default": 480,
-            "width": 140,
-            "style": "min-width: 140px;",
-            "index": 130
-        },
-        "vis_chart_height": {
-            "bsonType": "number",
-            "title": "Chart Height (px)",
-            "description": "Chart Height (px)",
-            "default": 280,
-            "width": 140,
-            "style": "min-width: 140px;",
-            "index": 140
-        },
         "vis_p_xaxis_label": {
             "bsonType": "string",
             "minLength": 1,
@@ -181,7 +163,7 @@
             "description": "X-Axis Label",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 150
+            "index": 130
         },
         "vis_p_yaxis_label": {
             "bsonType": "string",
@@ -192,7 +174,7 @@
             "description": "Y-Axis Label",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 160
+            "index": 140
         },
         "vis_p_legend_title": {
             "bsonType": "string",
@@ -204,7 +186,7 @@
             "default": "Legend",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 170
+            "index": 150
         },
         "vis_p_legend_position": {
             "bsonType": "string",
@@ -220,7 +202,43 @@
             "default": "right",
             "width": 180,
             "style": "min-width: 180px;",
+            "index": 160
+        },
+        "vis_target": {
+            "bsonType": "bool",
+            "title": "Target?",
+            "description": "Target?",
+            "default": false,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 170
+        },
+        "vis_target_value": {
+            "bsonType": "number",
+            "title": "Target Value",
+            "description": "Target Value",
+            "default": 0,
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 180
+        },
+        "vis_chart_width": {
+            "bsonType": "number",
+            "title": "Chart Width (px)",
+            "description": "Chart Width (px)",
+            "default": 480,
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 190
+        },
+        "vis_chart_height": {
+            "bsonType": "number",
+            "title": "Chart Height (px)",
+            "description": "Chart Height (px)",
+            "default": 280,
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 200
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -229,7 +247,7 @@
             "description": "Show X-Axis",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 190
+            "index": 210
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -238,7 +256,7 @@
             "description": "Show Y-Axis",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 200
+            "index": 220
         },
         "vis_p_legend_show": {
             "bsonType": "bool",
@@ -247,7 +265,7 @@
             "description": "Show Legend",
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 210
+            "index": 230
         },
         "vis_p_xaxis_label_show": {
             "bsonType": "bool",
@@ -256,7 +274,7 @@
             "description": "Show X-Axis Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 220
+            "index": 240
         },
         "vis_p_yaxis_label_show": {
             "bsonType": "bool",
@@ -265,7 +283,7 @@
             "description": "Show Y-Axis Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 230
+            "index": 250
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -274,7 +292,7 @@
             "description": "Show Data Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 240
+            "index": 260
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -283,7 +301,7 @@
             "description": "Show Grid",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 250
+            "index": 270
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -292,7 +310,7 @@
             "description": "Gradient",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 260
+            "index": 280
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -301,7 +319,7 @@
             "description": "No Bar When Zero",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 270
+            "index": 290
         },
         "vis_p_rounddomains": {
             "bsonType": "bool",
@@ -310,7 +328,7 @@
             "description": "Round domains for aligned gridlines",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 280
+            "index": 300
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -334,7 +352,7 @@
             "color": true,
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 290
+            "index": 310
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -349,7 +367,7 @@
             "description": "Subscribers list",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 300
+            "index": 320
         }
     },
     "required": [
@@ -378,6 +396,10 @@
         ],
         [
             "vis_type"
+        ],
+        [
+            "vis_type",
+            "vis_enabled"
         ]
     ],
     "sort": {
