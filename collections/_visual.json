@@ -86,9 +86,11 @@
             "title": "Chart Style",
             "description": "Chart Style",
             "enum": [
+                "Vertical Bar Chart",
                 "Normalized Vertical Bar Chart",
                 "Stacked Vertical Bar Chart",
                 "Grouped Vertical Bar Chart",
+                "Horizontal Bar Chart",
                 "Normalized Horizontal Bar Chart",
                 "Stacked Horizontal Bar Chart",
                 "Grouped Horizontal Bar Chart",

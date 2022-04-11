@@ -7,9 +7,10 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "View ID",
-            "permanent": true,
+            "readonly": true,
+            "required": true,
             "style": "min-width: 190px;",
-            "index": 1
+            "index": 10
         },
         "vie_collection_id": {
             "bsonType": "string",
@@ -19,8 +20,9 @@
             "title": "Collection ID",
             "description": "Collection ID",
             "collection": true,
+            "required": true,
             "style": "min-width: 140px;",
-            "index": 2
+            "index": 20
         },
         "vie_title": {
             "bsonType": "string",
@@ -28,8 +30,9 @@
             "maxLength": 64,
             "title": "Title",
             "description": "View title",
+            "required": true,
             "style": "min-width: 140px;",
-            "index": 3
+            "index": 30
         },
         "vie_description": {
             "bsonType": "string",
@@ -38,21 +41,21 @@
             "title": "Description",
             "description": "View description",
             "style": "min-width: 140px;",
-            "index": 4
+            "index": 40
         },
         "vie_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
             "style": "min-width: 90px;",
-            "index": 5
+            "index": 50
         },
         "vie_dashboard": {
             "bsonType": "bool",
             "title": "Dashboard",
             "description": "Show ib Dasboard?",
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 60
         },
         "vie_subscribers": {
             "bsonType": "array",
@@ -66,7 +69,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 130px;",
-            "index": 7
+            "index": 70
         },
         "vie_filter": {
             "bsonType": "array",
@@ -129,7 +132,7 @@
             "title": "Filter",
             "description": "Datacard filter",
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 80
         },
         "vie_projection": {
             "bsonType": "array",
@@ -145,7 +148,7 @@
             "title": "Selected Columns",
             "description": "Selected columns",
             "style": "min-width: 130px;",
-            "index": 9
+            "index": 90
         },
         "vie_excluded_columns": {
             "bsonType": "array",
@@ -161,7 +164,7 @@
             "title": "Excluded Columns",
             "description": "Excluded columns",
             "style": "min-width: 140px;",
-            "index": 10
+            "index": 100
         },
         "vie_function": {
             "bsonType": "string",
@@ -185,7 +188,7 @@
                 "last"
             ],
             "style": "min-width: 80px;",
-            "index": 11
+            "index": 110
         },
         "vie_field": {
             "bsonType": "string",
@@ -195,7 +198,7 @@
             "title": "Field",
             "description": "Field",
             "style": "min-width: 100px;",
-            "index": 12
+            "index": 120
         },
         "vie_priority": {
             "bsonType": "number",
@@ -205,14 +208,14 @@
             "description": "Priority order",
             "default": 1000,
             "style": "min-width: 100px;",
-            "index": 13
+            "index": 130
         },
         "vie_scheduled": {
             "bsonType": "bool",
             "title": "Scheduled",
             "description": "Scheduled?",
             "style": "min-width: 120px;",
-            "index": 14
+            "index": 140
         },
         "vie_sched_timezone": {
             "bsonType": "string",
@@ -226,7 +229,7 @@
             ],
             "default": "Europe/Berlin",
             "style": "min-width: 140px;",
-            "index": 15
+            "index": 150
         },
         "vie_sched_days": {
             "bsonType": "array",
@@ -241,7 +244,7 @@
             "title": "Scheduled Days",
             "description": "Scheduled days",
             "style": "min-width: 180px;",
-            "index": 16
+            "index": 160
         },
         "vie_sched_hours": {
             "bsonType": "array",
@@ -256,7 +259,7 @@
             "title": "Scheduled Hours",
             "description": "Scheduled hours",
             "style": "min-width: 130px;",
-            "index": 17
+            "index": 170
         },
         "vie_sched_minutes": {
             "bsonType": "array",
@@ -271,7 +274,7 @@
             "title": "Scheduled minutes",
             "description": "Scheduled Minutes",
             "style": "min-width: 130px;",
-            "index": 18
+            "index": 180
         },
         "vie_pivot_values": {
             "bsonType": "array",
@@ -320,7 +323,7 @@
             "title": "Pivot Values",
             "description": "Pivot Values",
             "style": "min-width: 130px;",
-            "index": 19
+            "index": 190
         },
         "vie_pivot_index": {
             "bsonType": "array",
@@ -336,7 +339,7 @@
             "title": "Pivot Indexes",
             "description": "Pivot Indexes",
             "style": "min-width: 130px;",
-            "index": 20
+            "index": 200
         },
         "vie_pivot_columns": {
             "bsonType": "array",
@@ -352,97 +355,35 @@
             "title": "Pivot Columns",
             "description": "Pivot Columns",
             "style": "min-width: 130px;",
-            "index": 21
+            "index": 210
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
             "title": "Pivot Totals",
             "description": "Showing pivot totals",
             "style": "min-width: 80px;",
-            "index": 22
+            "index": 220
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
             "title": "Attach Pivot",
             "description": "Attach Pivot?",
             "style": "min-width: 120px;",
-            "index": 23
+            "index": 230
         },
         "vie_attach_csv": {
             "bsonType": "bool",
             "title": "Attach CSV",
             "description": "Attach CSV?",
             "style": "min-width: 120px;",
-            "index": 24
+            "index": 240
         },
         "vie_attach_excel": {
             "bsonType": "bool",
             "title": "Attach Excel",
             "description": "Attach Excel?",
             "style": "min-width: 120px;",
-            "index": 25
-        },
-        "vie_color": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 64,
-            "title": "Color",
-            "description": "Datacard color",
-            "enum": [
-                "primary",
-                "secondary",
-                "tertiary",
-                "warning",
-                "success",
-                "danger",
-                "medium",
-                "light",
-                "dark"
-            ],
-            "default": "primary",
-            "color": true,
-            "pattern": "^[a-z-]{1,64}$",
-            "style": "min-width: 100px;",
-            "index": 31
-        },
-        "vie_icon": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 32,
-            "title": "Icon",
-            "description": "Icon name",
-            "enum": [
-                "accessibility-outline",
-                "airplane-outline",
-                "alert-circle-outline",
-                "archive-outline",
-                "bug-outline",
-                "bus-outline",
-                "business-outline",
-                "cash-outline",
-                "clipboard-outline",
-                "contract-outline",
-                "cube-outline",
-                "easel-outline",
-                "ellipse-outline",
-                "expand-outline",
-                "golf-outline",
-                "id-card-outline",
-                "logo-euro",
-                "logo-usd",
-                "megaphone-outline",
-                "newspaper-outline",
-                "nutrition-outline",
-                "phone-portrait-outline",
-                "qr-code-outline",
-                "reader-outline",
-                "sparkles-outline",
-                "swap-vertical-outline",
-                "swap-horizontal-outline"
-            ],
-            "default": "sparkles-outline",
-            "style": "min-width: 120px;",
-            "index": 32
+            "index": 250
         }
     },
     "required": [
