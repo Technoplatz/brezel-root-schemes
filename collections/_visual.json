@@ -134,7 +134,8 @@
             "enum": [
                 "count",
                 "sum",
-                "avg",
+                "unique",
+                "mean",
                 "var",
                 "stdev",
                 "datediff"
