@@ -7,7 +7,6 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Visual ID",
-            "permanent": true,
             "required": true,
             "width": 200,
             "style": "min-width: 200px;",
