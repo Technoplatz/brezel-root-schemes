@@ -8,6 +8,7 @@
             "title": "ID",
             "description": "Visual ID",
             "permanent": true,
+            "required": true,
             "width": 200,
             "style": "min-width: 200px;",
             "index": 10
@@ -19,10 +20,24 @@
             "pattern": "^[a-z0-9-_]{3,32}$",
             "title": "View ID",
             "description": "View ID",
+            "required": true,
             "view": true,
             "width": 200,
             "style": "min-width: 200px;",
             "index": 20
+        },
+        "vis_type": {
+            "bsonType": "string",
+            "title": "Type",
+            "description": "Type",
+            "enum": [
+                "chart",
+                "kpi"
+            ],
+            "required": true,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 30
         },
         "vis_title": {
             "bsonType": "string",
@@ -30,9 +45,10 @@
             "maxLength": 64,
             "title": "Title",
             "description": "Title",
+            "required": true,
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 30
+            "index": 40
         },
         "vis_description": {
             "bsonType": "string",
@@ -42,7 +58,7 @@
             "description": "Description",
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 40
+            "index": 50
         },
         "vis_enabled": {
             "bsonType": "bool",
@@ -51,7 +67,7 @@
             "default": true,
             "width": 110,
             "style": "min-width: 110px;",
-            "index": 50
+            "index": 60
         },
         "vis_priority": {
             "bsonType": "number",
@@ -62,7 +78,7 @@
             "default": 1,
             "width": 110,
             "style": "min-width: 110px;",
-            "index": 60
+            "index": 70
         },
         "vis_chart_style": {
             "bsonType": "string",
@@ -81,7 +97,7 @@
             ],
             "width": 210,
             "style": "min-width: 210px;",
-            "index": 70
+            "index": 80
         },
         "vis_chart_xaxis": {
             "bsonType": "string",
@@ -93,7 +109,7 @@
             "property": true,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 80
+            "index": 90
         },
         "vis_chart_yaxis": {
             "bsonType": "string",
@@ -105,7 +121,7 @@
             "property": true,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 90
+            "index": 100
         },
         "vis_chart_function": {
             "bsonType": "string",
@@ -124,7 +140,7 @@
             ],
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 100
+            "index": 110
         },
         "vis_chart_legend": {
             "bsonType": "string",
@@ -136,7 +152,7 @@
             "property": true,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 110
+            "index": 120
         },
         "vis_chart_width": {
             "bsonType": "number",
@@ -145,7 +161,7 @@
             "default": 480,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 120
+            "index": 130
         },
         "vis_chart_height": {
             "bsonType": "number",
@@ -154,7 +170,7 @@
             "default": 280,
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 130
+            "index": 140
         },
         "vis_p_xaxis_label": {
             "bsonType": "string",
@@ -165,7 +181,7 @@
             "description": "X-Axis Label",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 140
+            "index": 150
         },
         "vis_p_yaxis_label": {
             "bsonType": "string",
@@ -176,7 +192,7 @@
             "description": "Y-Axis Label",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 150
+            "index": 160
         },
         "vis_p_legend_title": {
             "bsonType": "string",
@@ -188,7 +204,7 @@
             "default": "Legend",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 160
+            "index": 170
         },
         "vis_p_legend_position": {
             "bsonType": "string",
@@ -204,7 +220,7 @@
             "default": "right",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 170
+            "index": 180
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -213,7 +229,7 @@
             "description": "Show X-Axis",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 180
+            "index": 190
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -222,7 +238,7 @@
             "description": "Show Y-Axis",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 190
+            "index": 200
         },
         "vis_p_legend_show": {
             "bsonType": "bool",
@@ -231,7 +247,7 @@
             "description": "Show Legend",
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 200
+            "index": 210
         },
         "vis_p_xaxis_label_show": {
             "bsonType": "bool",
@@ -240,7 +256,7 @@
             "description": "Show X-Axis Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 210
+            "index": 220
         },
         "vis_p_yaxis_label_show": {
             "bsonType": "bool",
@@ -249,7 +265,7 @@
             "description": "Show Y-Axis Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 220
+            "index": 230
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -258,7 +274,7 @@
             "description": "Show Data Label",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 230
+            "index": 240
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -267,7 +283,7 @@
             "description": "Show Grid",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 240
+            "index": 250
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -276,7 +292,7 @@
             "description": "Gradient",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 250
+            "index": 260
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -285,7 +301,7 @@
             "description": "No Bar When Zero",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 260
+            "index": 270
         },
         "vis_p_rounddomains": {
             "bsonType": "bool",
@@ -294,7 +310,7 @@
             "description": "Round domains for aligned gridlines",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 270
+            "index": 280
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -318,7 +334,7 @@
             "color": true,
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 280
+            "index": 290
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -333,11 +349,12 @@
             "description": "Subscribers list",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 290
+            "index": 300
         }
     },
     "required": [
         "vis_id",
+        "vis_type",
         "vis_view_id",
         "vis_title",
         "vis_chart_style",
@@ -358,6 +375,9 @@
     "index": [
         [
             "vis_view_id"
+        ],
+        [
+            "vis_type"
         ]
     ],
     "sort": {
