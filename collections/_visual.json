@@ -94,7 +94,8 @@
                 "Normalized Horizontal Bar Chart",
                 "Stacked Horizontal Bar Chart",
                 "Grouped Horizontal Bar Chart",
-                "Line Chart"
+                "Line Chart",
+                "Pie Chart"
             ],
             "width": 210,
             "style": "min-width: 210px;",
@@ -332,6 +333,33 @@
             "style": "min-width: 180px;",
             "index": 300
         },
+        "vis_p_doughnut": {
+            "bsonType": "bool",
+            "title": "Show as Doughnut",
+            "default": false,
+            "description": "Show as Doughnut",
+            "width": 180,
+            "style": "min-width: 180px;",
+            "index": 310
+        },
+        "vis_p_tooltipdisabled": {
+            "bsonType": "bool",
+            "title": "Tooltip Disabled",
+            "default": false,
+            "description": "Tooltip Disabled",
+            "width": 180,
+            "style": "min-width: 180px;",
+            "index": 320
+        },
+        "vis_p_labels": {
+            "bsonType": "bool",
+            "title": "Pie Labels",
+            "default": false,
+            "description": "Pie Labels",
+            "width": 180,
+            "style": "min-width: 180px;",
+            "index": 330
+        },
         "vis_p_color_scheme": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -354,7 +382,7 @@
             "color": true,
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 310
+            "index": 340
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -369,7 +397,7 @@
             "description": "Subscribers list",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 320
+            "index": 350
         }
     },
     "required": [
