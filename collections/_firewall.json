@@ -8,8 +8,10 @@
             "title": "ID",
             "description": "Rule ID",
             "permanent": true,
-            "style": "min-width: 100px;",
-            "index": 1
+            "required": true,
+            "width": 180,
+            "style": "min-width: 180px;",
+            "index": 10
         },
         "fwa_user_id": {
             "bsonType": "string",
@@ -18,8 +20,10 @@
             "pattern": "^.+@.+$",
             "title": "User",
             "description": "User ID",
-            "style": "min-width: 100px;",
-            "index": 2
+            "required": true,
+            "width": 180,
+            "style": "min-width: 180px;",
+            "index": 20
         },
         "fwa_ip": {
             "bsonType": "string",
@@ -27,8 +31,10 @@
             "maxLength": 16,
             "title": "IP Address",
             "description": "IP Address",
-            "style": "min-width: 100px;",
-            "index": 3
+            "required": true,
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 30
         },
         "fwa_description": {
             "bsonType": "string",
@@ -36,16 +42,18 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Rule description",
-            "style": "min-width: 120px;",
-            "index": 4
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 40
         },
         "fwa_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "default": true,
             "description": "Enabled or not",
-            "style": "min-width: 80px;",
-            "index": 5
+            "width": 120,
+            "style": "min-width: 120px;",
+            "index": 50
         }
     },
     "required": [
