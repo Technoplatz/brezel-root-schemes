@@ -1,5 +1,11 @@
 [
     {
+        "version": "1.9.8",
+        "date": "2022-04-13",
+        "description": "General improvements",
+        "updates": []
+    },
+    {
         "version": "1.9.7",
         "date": "2022-04-12",
         "description": "General improvements",
