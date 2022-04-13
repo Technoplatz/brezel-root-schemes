@@ -7,17 +7,21 @@
             "pattern": "^.+@.+$",
             "title": "ID",
             "description": "Business E-mail",
+            "required": true,
+            "width": 200,
             "style": "min-width: 200px;",
-            "index": 1
+            "index": 10
         },
         "usr_name": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 64,
-            "title": "Name",
-            "description": "User fullname",
+            "title": "Full Name",
+            "description": "User Full Name",
+            "required": true,
+            "width": 140,
             "style": "min-width: 140px;",
-            "index": 2
+            "index": 20
         },
         "usr_group_id": {
             "bsonType": "string",
@@ -26,22 +30,25 @@
             "pattern": "^[a-zA-Z0-9-]{0,32}$",
             "title": "Group ID",
             "description": "Group id",
+            "required": true,
+            "width": 140,
             "style": "min-width: 140px;",
-            "index": 4
+            "index": 30
         },
         "usr_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
             "style": "min-width: 80px;",
-            "index": 5
+            "index": 40
         },
         "usr_api_enabled": {
             "bsonType": "bool",
             "title": "API enabled",
             "description": "API enabled",
-            "style": "min-width: 80px;",
-            "index": 6
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 50
         },
         "usr_level_id": {
             "bsonType": "string",
@@ -56,38 +63,40 @@
                 "Manager",
                 "Administrator"
             ],
+            "required": true,
+            "width": 80,
             "style": "min-width: 80px;",
-            "index": 7
+            "index": 60
         },
         "usr_country_code": {
             "bsonType": "string",
-            "minLength": 1,
+            "minLength": 0,
             "maxLength": 5,
-            "pattern": "^[0-9-]{1,5}$",
+            "pattern": "^[0-9-]{0,5}$",
             "title": "Country",
             "description": "Country code",
             "default": "49",
-            "style": "min-width: 100px;",
-            "index": 8
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 70
         },
         "usr_phone_no": {
             "bsonType": "string",
-            "minLength": 6,
+            "minLength": 0,
             "maxLength": 13,
-            "pattern": "^[0-9-]{6,13}$",
+            "pattern": "^[0-9-]{0,13}$",
             "title": "Mobile",
             "description": "Mobile number",
+            "width": 100,
             "style": "min-width: 100px;",
-            "index": 9
+            "index": 80
         }
     },
     "required": [
         "usr_id",
         "usr_name",
         "usr_group_id",
-        "usr_level_id",
-        "usr_country_code",
-        "usr_phone_no"
+        "usr_level_id"
     ],
     "unique": [
         [
