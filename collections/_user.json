@@ -39,15 +39,16 @@
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "style": "min-width: 80px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 40
         },
         "usr_api_enabled": {
             "bsonType": "bool",
             "title": "API enabled",
             "description": "API enabled",
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 50
         },
         "usr_level_id": {
@@ -64,8 +65,8 @@
                 "Administrator"
             ],
             "required": true,
-            "width": 80,
-            "style": "min-width: 80px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 60
         },
         "usr_country_code": {
@@ -87,8 +88,8 @@
             "pattern": "^[0-9-]{0,13}$",
             "title": "Mobile",
             "description": "Mobile number",
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 120,
+            "style": "min-width: 120px;",
             "index": 80
         }
     },
