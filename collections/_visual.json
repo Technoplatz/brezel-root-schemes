@@ -8,8 +8,8 @@
             "title": "ID",
             "description": "Visual ID",
             "required": true,
-            "width": 200,
-            "style": "min-width: 200px;",
+            "width": 240,
+            "style": "min-width: 240px;",
             "index": 10
         },
         "vis_view_id": {
@@ -21,8 +21,8 @@
             "description": "View ID",
             "required": true,
             "view": true,
-            "width": 200,
-            "style": "min-width: 200px;",
+            "width": 240,
+            "style": "min-width: 240px;",
             "index": 20
         },
         "vis_title": {
@@ -32,8 +32,8 @@
             "title": "Title",
             "description": "Title",
             "required": true,
-            "width": 160,
-            "style": "min-width: 160px;",
+            "width": 240,
+            "style": "min-width: 240px;",
             "index": 30
         },
         "vis_description": {
