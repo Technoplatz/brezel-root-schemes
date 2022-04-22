@@ -7,10 +7,9 @@
             "pattern": "^[a-z0-9-]{3,32}$",
             "title": "ID",
             "description": "Action ID",
-            "permanent": true,
             "required": true,
             "style": "min-width: 190px;",
-            "index": 1
+            "index": 10
         },
         "act_collection_id": {
             "bsonType": "string",
@@ -22,7 +21,7 @@
             "required": true,
             "collection": true,
             "style": "min-width: 140px;",
-            "index": 2
+            "index": 20
         },
         "act_title": {
             "bsonType": "string",
@@ -32,7 +31,7 @@
             "description": "Action title",
             "required": true,
             "style": "min-width: 140px;",
-            "index": 3
+            "index": 30
         },
         "act_description": {
             "bsonType": "string",
@@ -41,28 +40,28 @@
             "title": "Description",
             "description": "Action description",
             "style": "min-width: 140px;",
-            "index": 4
+            "index": 40
         },
         "act_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
             "style": "min-width: 110px;",
-            "index": 5
+            "index": 50
         },
         "act_one_click": {
             "bsonType": "bool",
             "title": "One Click",
             "description": "One Click",
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 60
         },
         "act_sort_no": {
             "bsonType": "number",
             "title": "Sort No",
             "description": "Sort No",
             "style": "min-width: 120px;",
-            "index": 7
+            "index": 70
         },
         "act_filter": {
             "bsonType": "array",
@@ -125,7 +124,7 @@
             "title": "Filter",
             "description": "Action filter",
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 80
         },
         "act_fields": {
             "bsonType": "array",
@@ -163,7 +162,7 @@
             "title": "Field Values",
             "description": "Field Values",
             "style": "min-width: 130px;",
-            "index": 9
+            "index": 90
         },
         "act_subscribers": {
             "bsonType": "array",
@@ -177,7 +176,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "style": "min-width: 140px;",
-            "index": 10
+            "index": 100
         }
     },
     "required": [
@@ -188,9 +187,6 @@
     "unique": [
         [
             "act_id"
-        ],
-        [
-            "act_title"
         ]
     ],
     "index": [
@@ -199,7 +195,7 @@
         ]
     ],
     "sort": {
-        "act_sort_no": 1
+        "_modified_at": -1
     },
     "permissions": [
         {
