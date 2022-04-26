@@ -125,6 +125,18 @@
             "style": "min-width: 140px;",
             "index": 100
         },
+        "vis_chart_legend": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 32,
+            "pattern": "^[a-z_]{1,32}$",
+            "title": "Legend (Group)",
+            "description": "Legend (Group) Column",
+            "property": true,
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 110
+        },
         "vis_chart_function": {
             "bsonType": "string",
             "minLength": 1,
@@ -143,7 +155,7 @@
             ],
             "width": 160,
             "style": "min-width: 160px;",
-            "index": 110
+            "index": 120
         },
         "vis_kpi_um": {
             "bsonType": "string",
@@ -154,18 +166,6 @@
             "description": "KPI value unit of measure",
             "width": 110,
             "style": "min-width: 110px;",
-            "index": 120
-        },
-        "vis_chart_legend": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Legend (Group)",
-            "description": "Legend (Group) Column",
-            "property": true,
-            "width": 140,
-            "style": "min-width: 140px;",
             "index": 130
         },
         "vis_p_xaxis_label": {
