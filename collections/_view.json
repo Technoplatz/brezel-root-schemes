@@ -157,8 +157,8 @@
             },
             "title": "Excluded Columns",
             "description": "Excluded columns",
-            "width": 140,
-            "style": "min-width: 140px;",
+            "width": 170,
+            "style": "min-width: 170px;",
             "index": 90
         },
         "vie_function": {
@@ -182,8 +182,8 @@
                 "first",
                 "last"
             ],
-            "width": 80,
-            "style": "min-width: 80px;",
+            "width": 110,
+            "style": "min-width: 110px;",
             "index": 100
         },
         "vie_field": {
@@ -227,8 +227,8 @@
                 "Europe/Istanbul"
             ],
             "default": "Europe/Berlin",
-            "width": 140,
-            "style": "min-width: 140px;",
+            "width": 160,
+            "style": "min-width: 160px;",
             "index": 140
         },
         "vie_sched_days": {
@@ -243,8 +243,8 @@
             },
             "title": "Scheduled Days",
             "description": "Scheduled days",
-            "width": 180,
-            "style": "min-width: 180px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 150
         },
         "vie_sched_hours": {
@@ -259,8 +259,8 @@
             },
             "title": "Scheduled Hours",
             "description": "Scheduled hours",
-            "width": 130,
-            "style": "min-width: 130px;",
+            "width": 160,
+            "style": "min-width: 160px;",
             "index": 160
         },
         "vie_sched_minutes": {
@@ -275,8 +275,8 @@
             },
             "title": "Scheduled minutes",
             "description": "Scheduled Minutes",
-            "width": 130,
-            "style": "min-width: 130px;",
+            "width": 160,
+            "style": "min-width: 160px;",
             "index": 170
         },
         "vie_pivot_values": {
@@ -359,40 +359,40 @@
             },
             "title": "Pivot Columns",
             "description": "Pivot Columns",
-            "width": 130,
-            "style": "min-width: 130px;",
+            "width": 150,
+            "style": "min-width: 150px;",
             "index": 200
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
             "title": "Pivot Totals",
             "description": "Showing pivot totals",
-            "width": 80,
-            "style": "min-width: 80px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 210
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
             "title": "Attach Pivot",
             "description": "Attach Pivot?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 220
         },
         "vie_attach_csv": {
             "bsonType": "bool",
             "title": "Attach CSV",
             "description": "Attach CSV?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 230
         },
         "vie_attach_excel": {
             "bsonType": "bool",
             "title": "Attach Excel",
             "description": "Attach Excel?",
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 240
         },
         "vie_subscribers": {
@@ -406,8 +406,8 @@
             },
             "title": "Subscribers",
             "description": "Subscribers list",
-            "width": 130,
-            "style": "min-width: 130px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 250
         }
     },
