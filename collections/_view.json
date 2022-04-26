@@ -63,21 +63,6 @@
             "style": "min-width: 120px;",
             "index": 60
         },
-        "vie_subscribers": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 64
-            },
-            "title": "Subscribers",
-            "description": "Subscribers list",
-            "width": 130,
-            "style": "min-width: 130px;",
-            "index": 70
-        },
         "vie_filter": {
             "bsonType": "array",
             "minItems": 0,
@@ -140,7 +125,7 @@
             "description": "Datacard filter",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 80
+            "index": 70
         },
         "vie_projection": {
             "bsonType": "array",
@@ -157,7 +142,7 @@
             "description": "Selected columns",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 90
+            "index": 80
         },
         "vie_excluded_columns": {
             "bsonType": "array",
@@ -174,7 +159,7 @@
             "description": "Excluded columns",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 100
+            "index": 90
         },
         "vie_function": {
             "bsonType": "string",
@@ -199,7 +184,7 @@
             ],
             "width": 80,
             "style": "min-width: 80px;",
-            "index": 110
+            "index": 100
         },
         "vie_field": {
             "bsonType": "string",
@@ -210,7 +195,7 @@
             "description": "Field",
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 120
+            "index": 110
         },
         "vie_priority": {
             "bsonType": "number",
@@ -221,7 +206,7 @@
             "default": 1000,
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 130
+            "index": 120
         },
         "vie_scheduled": {
             "bsonType": "bool",
@@ -229,7 +214,7 @@
             "description": "Scheduled?",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 140
+            "index": 130
         },
         "vie_sched_timezone": {
             "bsonType": "string",
@@ -244,7 +229,7 @@
             "default": "Europe/Berlin",
             "width": 140,
             "style": "min-width: 140px;",
-            "index": 150
+            "index": 140
         },
         "vie_sched_days": {
             "bsonType": "array",
@@ -260,7 +245,7 @@
             "description": "Scheduled days",
             "width": 180,
             "style": "min-width: 180px;",
-            "index": 160
+            "index": 150
         },
         "vie_sched_hours": {
             "bsonType": "array",
@@ -276,7 +261,7 @@
             "description": "Scheduled hours",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 170
+            "index": 160
         },
         "vie_sched_minutes": {
             "bsonType": "array",
@@ -292,7 +277,7 @@
             "description": "Scheduled Minutes",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 180
+            "index": 170
         },
         "vie_pivot_values": {
             "bsonType": "array",
@@ -342,7 +327,7 @@
             "description": "Pivot Values",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 190
+            "index": 180
         },
         "vie_pivot_index": {
             "bsonType": "array",
@@ -359,7 +344,7 @@
             "description": "Pivot Indexes",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 200
+            "index": 190
         },
         "vie_pivot_columns": {
             "bsonType": "array",
@@ -376,7 +361,7 @@
             "description": "Pivot Columns",
             "width": 130,
             "style": "min-width: 130px;",
-            "index": 210
+            "index": 200
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
@@ -384,7 +369,7 @@
             "description": "Showing pivot totals",
             "width": 80,
             "style": "min-width: 80px;",
-            "index": 220
+            "index": 210
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
@@ -392,7 +377,7 @@
             "description": "Attach Pivot?",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 230
+            "index": 220
         },
         "vie_attach_csv": {
             "bsonType": "bool",
@@ -400,7 +385,7 @@
             "description": "Attach CSV?",
             "width": 120,
             "style": "min-width: 120px;",
-            "index": 240
+            "index": 230
         },
         "vie_attach_excel": {
             "bsonType": "bool",
@@ -408,6 +393,21 @@
             "description": "Attach Excel?",
             "width": 120,
             "style": "min-width: 120px;",
+            "index": 240
+        },
+        "vie_subscribers": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Subscribers",
+            "description": "Subscribers list",
+            "width": 130,
+            "style": "min-width: 130px;",
             "index": 250
         }
     },
