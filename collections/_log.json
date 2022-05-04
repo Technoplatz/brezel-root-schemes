@@ -13,15 +13,19 @@
                 "Denied",
                 "Announcement"
             ],
-            "style": "min-width: 120px;",
-            "index": 1
+            "required": true,
+            "width": 90,
+            "style": "min-width: 90px;",
+            "index": 10
         },
         "log_date": {
             "bsonType": "date",
             "title": "Date",
             "description": "Log date",
-            "style": "min-width: 100px;",
-            "index": 2
+            "required": true,
+            "width": 90,
+            "style": "min-width: 90px;",
+            "index": 20
         },
         "log_user_id": {
             "bsonType": "string",
@@ -29,8 +33,10 @@
             "maxLength": 64,
             "title": "User",
             "description": "User id",
-            "style": "min-width: 120px;",
-            "index": 3
+            "required": true,
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 30
         },
         "log_ip": {
             "bsonType": "string",
@@ -38,8 +44,9 @@
             "maxLength": 16,
             "title": "IP",
             "description": "IP address",
+            "width": 100,
             "style": "min-width: 100px;",
-            "index": 4
+            "index": 40
         },
         "log_collection_id": {
             "bsonType": "string",
@@ -49,8 +56,9 @@
             "title": "Collection",
             "description": "Collection ID",
             "collection": true,
+            "width": 120,
             "style": "min-width: 120px;",
-            "index": 5
+            "index": 50
         },
         "log_operation": {
             "bsonType": "string",
@@ -58,8 +66,10 @@
             "maxLength": 64,
             "title": "Operation",
             "description": "Operation",
+            "required": true,
+            "width": 120,
             "style": "min-width: 120px;",
-            "index": 6
+            "index": 60
         },
         "log_object_id": {
             "bsonType": "string",
@@ -67,15 +77,17 @@
             "maxLength": 64,
             "title": "Object Id",
             "description": "Object Id",
+            "width": 120,
             "style": "min-width: 120px;",
-            "index": 7
+            "index": 70
         },
         "log_document": {
             "bsonType": "object",
             "title": "Document",
             "description": "Document",
+            "width": 120,
             "style": "min-width: 120px;",
-            "index": 8
+            "index": 80
         }
     },
     "required": [
