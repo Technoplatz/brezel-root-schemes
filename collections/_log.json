@@ -56,8 +56,8 @@
             "title": "Collection",
             "description": "Collection ID",
             "collection": true,
-            "width": 120,
-            "style": "min-width: 120px;",
+            "width": 140,
+            "style": "min-width: 140px;",
             "index": 50
         },
         "log_operation": {
