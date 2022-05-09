@@ -68,29 +68,6 @@
             "width": 110,
             "style": "min-width: 110px;",
             "index": 60
-        },
-        "usr_country_code": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 5,
-            "pattern": "^[0-9-]{0,5}$",
-            "title": "Country",
-            "description": "Country code",
-            "default": "49",
-            "width": 140,
-            "style": "min-width: 140px;",
-            "index": 70
-        },
-        "usr_phone_no": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 13,
-            "pattern": "^[0-9-]{0,13}$",
-            "title": "Mobile",
-            "description": "Mobile number",
-            "width": 120,
-            "style": "min-width: 120px;",
-            "index": 80
         }
     },
     "required": [
@@ -102,10 +79,6 @@
     "unique": [
         [
             "usr_id"
-        ],
-        [
-            "usr_country_code",
-            "usr_phone_no"
         ]
     ],
     "sort": {
