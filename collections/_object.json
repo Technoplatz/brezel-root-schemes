@@ -91,6 +91,7 @@
         {
             "key": "obj_subscribers",
             "collection": "_user",
+            "button": "search users",
             "lookup": [
                 {
                     "local": "obj_subscribers",
