@@ -66,7 +66,7 @@
                 "maxLength": 64
             },
             "title": "Subscribers",
-            "description": "Subscribers list",
+            "description": "Subscribers",
             "width": 140,
             "style": "min-width: 140px;",
             "index": 60
@@ -86,6 +86,18 @@
         [
             "obj_type"
         ]
+    ],
+    "parents": [
+        {
+            "key": "obj_subscribers",
+            "collection": "_user",
+            "lookup": [
+                {
+                    "local": "obj_subscribers",
+                    "remote": "usr_id"
+                }
+            ]
+        }
     ],
     "sort": {
         "_modified_at": -1
