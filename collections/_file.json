@@ -2,13 +2,13 @@
     "properties": {
         "fil_id": {
             "bsonType": "string",
-            "minLength": 3,
-            "maxLength": 64,
-            "pattern": "^[a-zA-Z0-9-]{3,64}$",
+            "minLength": 5,
+            "maxLength": 128,
             "title": "ID",
             "description": "File ID",
             "permanent": true,
             "required": true,
+            "file": true,
             "width": 240,
             "style": "min-width: 240px;",
             "index": 10
@@ -48,23 +48,11 @@
             "width": 100,
             "style": "min-width: 100px;",
             "index": 40
-        },
-        "fil_file": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 128,
-            "file": true,
-            "title": "File",
-            "description": "File",
-            "width": 240,
-            "style": "min-width: 240px;",
-            "index": 50
         }
     },
     "required": [
         "fil_id",
-        "fil_type",
-        "fil_file"
+        "fil_type"
     ],
     "unique": [
         [
@@ -72,9 +60,6 @@
         ]
     ],
     "index": [
-        [
-            "fil_file"
-        ],
         [
             "fil_type"
         ]
