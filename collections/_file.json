@@ -4,13 +4,13 @@
             "bsonType": "string",
             "minLength": 5,
             "maxLength": 128,
-            "title": "ID",
-            "description": "File ID",
+            "title": "File",
+            "description": "File",
             "permanent": true,
             "required": true,
             "file": true,
-            "width": 300,
-            "style": "min-width: 300px;",
+            "width": 320,
+            "style": "min-width: 320px;",
             "index": 10
         },
         "fil_description": {
@@ -19,26 +19,9 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Description",
-            "width": 160,
-            "style": "min-width: 160px;",
+            "width": 240,
+            "style": "min-width: 240px;",
             "index": 20
-        },
-        "fil_type": {
-            "bsonType": "string",
-            "title": "Type",
-            "description": "File Type",
-            "enum": [
-                "pdf",
-                "image",
-                "spreadsheet"
-            ],
-            "minLength": 3,
-            "maxLength": 64,
-            "pattern": "^[a-z]{3,64}$",
-            "required": true,
-            "width": 100,
-            "style": "min-width: 100px;",
-            "index": 30
         },
         "fil_enabled": {
             "bsonType": "bool",
@@ -47,12 +30,11 @@
             "default": true,
             "width": 100,
             "style": "min-width: 100px;",
-            "index": 40
+            "index": 30
         }
     },
     "required": [
-        "fil_id",
-        "fil_type"
+        "fil_id"
     ],
     "unique": [
         [
@@ -61,7 +43,7 @@
     ],
     "index": [
         [
-            "fil_type"
+            "fil_enabled"
         ]
     ],
     "sort": {
