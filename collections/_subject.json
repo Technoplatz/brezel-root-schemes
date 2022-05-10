@@ -1,0 +1,142 @@
+{
+    "properties": {
+        "sub_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 64,
+            "pattern": "^[a-z0-9-]{3,64}$",
+            "title": "ID",
+            "description": "Subject ID",
+            "required": true,
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 10
+        },
+        "sub_type": {
+            "bsonType": "string",
+            "title": "Type",
+            "description": "Subject Type",
+            "enum": [
+                "Announcement",
+                "Campaign"
+            ],
+            "minLength": 3,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z]{3,64}$",
+            "required": true,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 20
+        },
+        "sub_name": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Name",
+            "description": "Name",
+            "width": 160,
+            "style": "min-width: 160px;",
+            "index": 30
+        },
+        "sub_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Description",
+            "width": 160,
+            "style": "min-width: 160px;",
+            "index": 40
+        },
+        "sub_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "Enabled?",
+            "default": true,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 50
+        },
+        "sub_teaser_html": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 4096,
+            "title": "Teaser",
+            "description": "Teaser HTML",
+            "html": true,
+            "width": 160,
+            "style": "min-width: 160px;",
+            "index": 60
+        },
+        "sub_body_html": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 4096,
+            "title": "Body",
+            "description": "Body HTML",
+            "html": true,
+            "width": 160,
+            "style": "min-width: 160px;",
+            "index": 70
+        },
+        "sub_files": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 256
+            },
+            "title": "Files",
+            "description": "Files",
+            "width": 90,
+            "style": "min-width: 90px;",
+            "index": 80
+        }
+    },
+    "required": [
+        "sub_id",
+        "sub_type"
+    ],
+    "unique": [
+        [
+            "sub_id"
+        ]
+    ],
+    "index": [
+        [
+            "sub_type"
+        ]
+    ],
+    "parents": [
+        {
+            "key": "sub_subscribers",
+            "collection": "_user",
+            "button": "search users",
+            "lookup": [
+                {
+                    "local": "sub_subscribers",
+                    "remote": "usr_id"
+                }
+            ]
+        }
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}

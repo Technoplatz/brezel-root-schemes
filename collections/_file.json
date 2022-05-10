@@ -1,0 +1,99 @@
+{
+    "properties": {
+        "fil_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 64,
+            "pattern": "^[a-zA-Z0-9-]{3,64}$",
+            "title": "ID",
+            "description": "File ID",
+            "permanent": true,
+            "required": true,
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 10
+        },
+        "fil_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Description",
+            "width": 160,
+            "style": "min-width: 160px;",
+            "index": 20
+        },
+        "fil_type": {
+            "bsonType": "string",
+            "title": "Type",
+            "description": "File Type",
+            "enum": [
+                "pdf",
+                "image",
+                "spreadsheet"
+            ],
+            "minLength": 3,
+            "maxLength": 64,
+            "pattern": "^[a-z]{3,64}$",
+            "required": true,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 30
+        },
+        "fil_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "Enabled?",
+            "default": true,
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 40
+        },
+        "fil_file": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "file": true,
+            "title": "File",
+            "description": "File",
+            "width": 100,
+            "style": "min-width: 100px;",
+            "index": 50
+        }
+    },
+    "required": [
+        "fil_id",
+        "fil_type",
+        "fil_file"
+    ],
+    "unique": [
+        [
+            "fil_id"
+        ]
+    ],
+    "index": [
+        [
+            "fil_file"
+        ],
+        [
+            "fil_type"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}
