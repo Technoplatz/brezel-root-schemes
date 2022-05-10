@@ -9,8 +9,8 @@
             "permanent": true,
             "required": true,
             "file": true,
-            "width": 240,
-            "style": "min-width: 240px;",
+            "width": 300,
+            "style": "min-width: 300px;",
             "index": 10
         },
         "fil_description": {
