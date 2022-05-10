@@ -36,8 +36,8 @@
             "maxLength": 64,
             "pattern": "^[a-z]{3,64}$",
             "required": true,
-            "width": 110,
-            "style": "min-width: 110px;",
+            "width": 100,
+            "style": "min-width: 100px;",
             "index": 30
         },
         "fil_enabled": {
@@ -45,8 +45,8 @@
             "title": "Enabled?",
             "description": "Enabled?",
             "default": true,
-            "width": 110,
-            "style": "min-width: 110px;",
+            "width": 100,
+            "style": "min-width: 100px;",
             "index": 40
         },
         "fil_file": {
@@ -56,8 +56,8 @@
             "file": true,
             "title": "File",
             "description": "File",
-            "width": 100,
-            "style": "min-width: 100px;",
+            "width": 240,
+            "style": "min-width: 240px;",
             "index": 50
         }
     },
