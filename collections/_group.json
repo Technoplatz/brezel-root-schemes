@@ -1,0 +1,74 @@
+{
+    "properties": {
+        "grp_id": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 64,
+            "pattern": "^.+@.+$",
+            "title": "ID",
+            "description": "Group ID",
+            "required": true,
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 10
+        },
+        "grp_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Description",
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 20
+        },
+        "grp_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "Enabled?",
+            "width": 110,
+            "style": "min-width: 110px;",
+            "index": 30
+        },
+        "grp_attributes": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Attributes",
+            "description": "Attributes",
+            "width": 140,
+            "style": "min-width: 140px;",
+            "index": 40
+        }
+    },
+    "required": [
+        "grp_id"
+    ],
+    "unique": [
+        [
+            "grp_id"
+        ]
+    ],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}
