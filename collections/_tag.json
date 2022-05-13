@@ -1,0 +1,53 @@
+{
+    "properties": {
+        "tag_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 64,
+            "pattern": "^[a-z]{3,64}$",
+            "title": "ID",
+            "description": "Tag ID",
+            "required": true,
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 10
+        },
+        "tag_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Description",
+            "width": 240,
+            "style": "min-width: 240px;",
+            "index": 20
+        }
+    },
+    "required": [
+        "tag_id"
+    ],
+    "unique": [
+        [
+            "tag_id"
+        ]
+    ],
+    "index": [],
+    "parents": [],
+    "sort": {
+        "_modified_at": -1
+    },
+    "permissions": [
+        {
+            "usr_level_id": "Manager",
+            "rank": 2
+        },
+        {
+            "usr_group_id": "Managers",
+            "rank": 2
+        },
+        {
+            "usr_level_id": "Administrator",
+            "rank": 2
+        }
+    ]
+}
