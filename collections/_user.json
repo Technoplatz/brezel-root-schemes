@@ -68,6 +68,17 @@
             "width": 110,
             "style": "min-width: 110px;",
             "index": 60
+        },
+        "usr_hashtags": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "pattern": "^[a-z# ]{0,128}$",
+            "title": "Hashtags",
+            "description": "Hashtags",
+            "width": 200,
+            "style": "min-width: 200px;",
+            "index": 70
         }
     },
     "required": [
