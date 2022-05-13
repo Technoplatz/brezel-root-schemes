@@ -4,7 +4,7 @@
             "bsonType": "string",
             "minLength": 3,
             "maxLength": 64,
-            "pattern": "^[a-z]{3,64}$",
+            "pattern": "^#[a-zA-Z]{3,64}$",
             "title": "ID",
             "description": "Tag ID",
             "required": true,

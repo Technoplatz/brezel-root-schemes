@@ -94,7 +94,7 @@
             "hashtag": true,
             "width": 90,
             "style": "min-width: 90px;",
-            "index": 90
+            "index": 80
         },
         "sub_files": {
             "bsonType": "array",
@@ -109,7 +109,7 @@
             "description": "Files",
             "width": 90,
             "style": "min-width: 90px;",
-            "index": 80
+            "index": 90
         }
     },
     "required": [
