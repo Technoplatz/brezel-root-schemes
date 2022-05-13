@@ -10,7 +10,6 @@
             "permanent": true,
             "required": true,
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 10
         },
         "fwa_user_id": {
@@ -22,7 +21,6 @@
             "description": "User ID",
             "required": true,
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 20
         },
         "fwa_ip": {
@@ -33,7 +31,6 @@
             "description": "IP Address",
             "required": true,
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 30
         },
         "fwa_description": {
@@ -43,7 +40,6 @@
             "title": "Description",
             "description": "Rule description",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 40
         },
         "fwa_enabled": {
@@ -52,7 +48,6 @@
             "default": true,
             "description": "Enabled or not",
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 50
         }
     },

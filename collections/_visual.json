@@ -9,7 +9,6 @@
             "description": "Visual ID",
             "required": true,
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 10
         },
         "vis_view_id": {
@@ -22,7 +21,6 @@
             "required": true,
             "view": true,
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 20
         },
         "vis_title": {
@@ -33,7 +31,6 @@
             "description": "Title",
             "required": true,
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 30
         },
         "vis_description": {
@@ -43,7 +40,6 @@
             "title": "Description",
             "description": "Description",
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 40
         },
         "vis_enabled": {
@@ -52,7 +48,6 @@
             "description": "Enabled?",
             "default": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 50
         },
         "vis_priority": {
@@ -63,7 +58,6 @@
             "maximum": 9999,
             "default": 1,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 60
         },
         "vis_type": {
@@ -76,7 +70,6 @@
             ],
             "required": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 70
         },
         "vis_chart_style": {
@@ -98,7 +91,6 @@
                 "Pie Chart"
             ],
             "width": 210,
-            "style": "min-width: 210px;",
             "index": 80
         },
         "vis_chart_xaxis": {
@@ -110,7 +102,6 @@
             "description": "Chart X-Axis Column",
             "property": true,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 90
         },
         "vis_chart_yaxis": {
@@ -122,7 +113,6 @@
             "description": "Y-Axis Column",
             "property": true,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 100
         },
         "vis_chart_legend": {
@@ -134,7 +124,6 @@
             "description": "Legend (Group) Column",
             "property": true,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 110
         },
         "vis_chart_function": {
@@ -154,7 +143,6 @@
                 "datediff"
             ],
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 120
         },
         "vis_kpi_um": {
@@ -165,7 +153,6 @@
             "title": "KPI Value UM",
             "description": "KPI value unit of measure",
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 130
         },
         "vis_p_xaxis_label": {
@@ -176,7 +163,6 @@
             "title": "X-Axis Label",
             "description": "X-Axis Label",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 140
         },
         "vis_p_yaxis_label": {
@@ -187,7 +173,6 @@
             "title": "Y-Axis Label",
             "description": "Y-Axis Label",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 150
         },
         "vis_p_legend_title": {
@@ -199,7 +184,6 @@
             "description": "Legend Title",
             "default": "Legend",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 160
         },
         "vis_p_legend_position": {
@@ -215,7 +199,6 @@
             ],
             "default": "right",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 170
         },
         "vis_target": {
@@ -224,7 +207,6 @@
             "description": "Target?",
             "default": false,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 180
         },
         "vis_target_value": {
@@ -233,7 +215,6 @@
             "description": "Target Value",
             "default": 0,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 190
         },
         "vis_chart_width": {
@@ -242,7 +223,6 @@
             "description": "Chart Width (px)",
             "default": 480,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 200
         },
         "vis_chart_height": {
@@ -251,7 +231,6 @@
             "description": "Chart Height (px)",
             "default": 280,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 210
         },
         "vis_p_xaxis_show": {
@@ -260,7 +239,6 @@
             "default": true,
             "description": "Show X-Axis",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 220
         },
         "vis_p_yaxis_show": {
@@ -269,7 +247,6 @@
             "default": true,
             "description": "Show Y-Axis",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 230
         },
         "vis_p_legend_show": {
@@ -278,7 +255,6 @@
             "default": true,
             "description": "Show Legend",
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 240
         },
         "vis_p_xaxis_label_show": {
@@ -287,7 +263,6 @@
             "default": true,
             "description": "Show X-Axis Label",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 250
         },
         "vis_p_yaxis_label_show": {
@@ -296,7 +271,6 @@
             "default": true,
             "description": "Show Y-Axis Label",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 260
         },
         "vis_p_datalabel_show": {
@@ -305,7 +279,6 @@
             "default": false,
             "description": "Show Data Label",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 270
         },
         "vis_p_grid_show": {
@@ -314,7 +287,6 @@
             "default": true,
             "description": "Show Grid",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 280
         },
         "vis_p_gradient": {
@@ -323,7 +295,6 @@
             "default": true,
             "description": "Gradient",
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 290
         },
         "vis_p_nobarwhenzero": {
@@ -332,7 +303,6 @@
             "default": true,
             "description": "No Bar When Zero",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 300
         },
         "vis_p_rounddomains": {
@@ -341,7 +311,6 @@
             "default": false,
             "description": "Round domains for aligned gridlines",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 310
         },
         "vis_p_doughnut": {
@@ -350,7 +319,6 @@
             "default": false,
             "description": "Show as Doughnut",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 320
         },
         "vis_p_tooltipdisabled": {
@@ -359,7 +327,6 @@
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 330
         },
         "vis_p_labels": {
@@ -368,7 +335,6 @@
             "default": false,
             "description": "Pie Labels",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 340
         },
         "vis_p_color_scheme": {
@@ -392,7 +358,6 @@
             ],
             "color": true,
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 350
         },
         "vis_subscribers": {
@@ -407,7 +372,6 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 360
         }
     },

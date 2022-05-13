@@ -10,7 +10,6 @@
             "permanent": true,
             "required": true,
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 10
         },
         "sto_collection_id": {
@@ -23,7 +22,6 @@
             "collection": true,
             "required": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 20
         },
         "sto_prefix": {
@@ -37,7 +35,6 @@
             "readonly": true,
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 30
         },
         "sto_file": {
@@ -48,7 +45,6 @@
             "title": "File",
             "description": "File name",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 40
         }
     },

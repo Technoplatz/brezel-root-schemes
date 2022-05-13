@@ -10,7 +10,7 @@
             "permanent": true,
             "readonly": true,
             "default": "database-dump",
-            "style": "min-width: 160px;",
+            "width": 160,
             "index": 1
         },
         "bak_description": {
@@ -20,7 +20,7 @@
             "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{0,128}$",
             "title": "Description",
             "description": "Description",
-            "style": "min-width: 160px;",
+            "width": 160,
             "index": 2
         },
         "bak_type": {
@@ -34,7 +34,7 @@
                 "gzip"
             ],
             "default": "gzip",
-            "style": "min-width: 50px;",
+            "width": 50,
             "index": 3
         },
         "bak_size": {
@@ -43,7 +43,7 @@
             "description": "File Size",
             "permanent": true,
             "readonly": true,
-            "style": "min-width: 80px;",
+            "width": 80,
             "index": 4
         }
     },

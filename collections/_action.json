@@ -8,7 +8,7 @@
             "title": "ID",
             "description": "Action ID",
             "required": true,
-            "style": "min-width: 190px;",
+            "width": 190,
             "index": 10
         },
         "act_collection_id": {
@@ -20,7 +20,7 @@
             "description": "Collection ID",
             "required": true,
             "collection": true,
-            "style": "min-width: 140px;",
+            "width": 140,
             "index": 20
         },
         "act_title": {
@@ -30,7 +30,7 @@
             "title": "Title",
             "description": "Action title",
             "required": true,
-            "style": "min-width: 140px;",
+            "width": 140,
             "index": 30
         },
         "act_description": {
@@ -39,28 +39,28 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Action description",
-            "style": "min-width: 140px;",
+            "width": 140,
             "index": 40
         },
         "act_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "style": "min-width: 110px;",
+            "width": 110,
             "index": 50
         },
         "act_one_click": {
             "bsonType": "bool",
             "title": "One Click",
             "description": "One Click",
-            "style": "min-width: 120px;",
+            "width": 120,
             "index": 60
         },
         "act_sort_no": {
             "bsonType": "number",
             "title": "Sort No",
             "description": "Sort No",
-            "style": "min-width: 120px;",
+            "width": 120,
             "index": 70
         },
         "act_filter": {
@@ -123,7 +123,7 @@
             },
             "title": "Filter",
             "description": "Action filter",
-            "style": "min-width: 120px;",
+            "width": 120,
             "index": 80
         },
         "act_fields": {
@@ -161,7 +161,7 @@
             },
             "title": "Field Values",
             "description": "Field Values",
-            "style": "min-width: 130px;",
+            "width": 130,
             "index": 90
         },
         "act_subscribers": {
@@ -175,7 +175,7 @@
             },
             "title": "Subscribers",
             "description": "Subscribers list",
-            "style": "min-width: 140px;",
+            "width": 140,
             "index": 100
         }
     },

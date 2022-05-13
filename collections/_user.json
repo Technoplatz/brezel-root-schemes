@@ -9,7 +9,6 @@
             "description": "Business E-mail",
             "required": true,
             "width": 200,
-            "style": "min-width: 200px;",
             "index": 10
         },
         "usr_name": {
@@ -20,7 +19,6 @@
             "description": "User Full Name",
             "required": true,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 20
         },
         "usr_group_id": {
@@ -32,7 +30,6 @@
             "description": "Group id",
             "required": true,
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 30
         },
         "usr_enabled": {
@@ -40,7 +37,6 @@
             "title": "Enabled",
             "description": "Enabled or not",
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 40
         },
         "usr_api_enabled": {
@@ -48,7 +44,6 @@
             "title": "API enabled",
             "description": "API enabled",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 50
         },
         "usr_level_id": {
@@ -66,7 +61,6 @@
             ],
             "required": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 60
         },
         "usr_hashtags": {
@@ -78,7 +72,6 @@
             "description": "Hashtags",
             "textarea": true,
             "width": 200,
-            "style": "min-width: 200px;",
             "index": 70
         }
     },

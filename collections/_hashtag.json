@@ -9,7 +9,6 @@
             "description": "Tag ID",
             "required": true,
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 10
         },
         "tag_description": {
@@ -19,7 +18,6 @@
             "title": "Description",
             "description": "Description",
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 20
         }
     },

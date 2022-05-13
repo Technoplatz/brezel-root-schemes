@@ -10,7 +10,6 @@
             "required": true,
             "file": true,
             "width": 320,
-            "style": "min-width: 320px;",
             "index": 10
         },
         "fil_description": {
@@ -20,7 +19,6 @@
             "title": "Description",
             "description": "Description",
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 20
         },
         "fil_enabled": {
@@ -29,7 +27,6 @@
             "description": "Enabled?",
             "default": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 30
         }
     },

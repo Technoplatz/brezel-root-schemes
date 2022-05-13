@@ -9,7 +9,6 @@
             "description": "Subject ID",
             "required": true,
             "width": 240,
-            "style": "min-width: 240px;",
             "index": 10
         },
         "sub_type": {
@@ -25,7 +24,6 @@
             "pattern": "^[a-zA-Z]{3,64}$",
             "required": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 20
         },
         "sub_name": {
@@ -35,7 +33,6 @@
             "title": "Name",
             "description": "Name",
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 30
         },
         "sub_description": {
@@ -45,7 +42,6 @@
             "title": "Description",
             "description": "Description",
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 40
         },
         "sub_enabled": {
@@ -54,7 +50,6 @@
             "description": "Enabled?",
             "default": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 50
         },
         "sub_teaser_html": {
@@ -65,7 +60,6 @@
             "description": "Teaser HTML",
             "html": true,
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 60
         },
         "sub_body_html": {
@@ -76,7 +70,6 @@
             "description": "Body HTML",
             "html": true,
             "width": 160,
-            "style": "min-width: 160px;",
             "index": 70
         },
         "sub_hashtags": {
@@ -87,13 +80,13 @@
             "items": {
                 "bsonType": "string",
                 "minLength": 0,
-                "maxLength": 64
+                "maxLength": 64,
+                "pattern": "^#[a-zA-Z]{0,64}$"
             },
             "title": "Hashtags",
             "description": "Hashtags",
             "hashtag": true,
             "width": 90,
-            "style": "min-width: 90px;",
             "index": 80
         },
         "sub_files": {
@@ -108,7 +101,6 @@
             "title": "Files",
             "description": "Files",
             "width": 90,
-            "style": "min-width: 90px;",
             "index": 90
         }
     },
@@ -126,19 +118,7 @@
             "sub_type"
         ]
     ],
-    "parents": [
-        {
-            "key": "sub_subscribers",
-            "collection": "_user",
-            "button": "search users",
-            "lookup": [
-                {
-                    "local": "sub_subscribers",
-                    "remote": "usr_id"
-                }
-            ]
-        }
-    ],
+    "parents": [],
     "sort": {
         "_modified_at": -1
     },

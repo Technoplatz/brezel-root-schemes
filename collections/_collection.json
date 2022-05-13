@@ -10,7 +10,6 @@
             "required": true,
             "permanent": true,
             "width": 150,
-            "style": "min-width: 150px;",
             "index": 10
         },
         "col_title": {
@@ -21,7 +20,6 @@
             "description": "Collection Title",
             "required": true,
             "width": 150,
-            "style": "min-width: 150px;",
             "index": 20
         },
         "col_description": {
@@ -31,7 +29,6 @@
             "title": "Description",
             "description": "Collection Description",
             "width": 150,
-            "style": "min-width: 150px;",
             "index": 30
         },
         "col_enabled": {
@@ -39,7 +36,6 @@
             "title": "Enabled?",
             "description": "Enabled?",
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 40
         },
         "col_protected": {
@@ -47,7 +43,6 @@
             "title": "Protected?",
             "description": "Protected?",
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 50
         },
         "col_barcode_enabled": {
@@ -56,7 +51,6 @@
             "default": false,
             "description": "Barcode Enabled?",
             "width": 180,
-            "style": "min-width: 180px;",
             "index": 60
         },
         "col_prefix": {
@@ -70,7 +64,6 @@
             "permanent": true,
             "readonly": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 70
         },
         "col_structure": {
@@ -79,7 +72,6 @@
             "description": "Collection Structure",
             "required": true,
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 80
         }
     },
