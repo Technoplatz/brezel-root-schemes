@@ -79,6 +79,23 @@
             "style": "min-width: 160px;",
             "index": 70
         },
+        "sub_hashtags": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 100,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 64
+            },
+            "title": "Hashtags",
+            "description": "Hashtags",
+            "hashtag": true,
+            "width": 90,
+            "style": "min-width: 90px;",
+            "index": 90
+        },
         "sub_files": {
             "bsonType": "array",
             "uniqueItems": true,
