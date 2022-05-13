@@ -10,7 +10,6 @@
             "required": true,
             "readonly": true,
             "width": 130,
-            "style": "min-width: 130px;",
             "index": 10
         },
         "acc_type": {
@@ -28,7 +27,6 @@
             "required": true,
             "default": "0-Company",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 20
         },
         "acc_no": {
@@ -40,7 +38,6 @@
             "required": true,
             "readonly": true,
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 30
         },
         "acc_legal_name": {
@@ -50,7 +47,6 @@
             "description": "Account Legal Name",
             "required": true,
             "width": 250,
-            "style": "min-width: 250px;",
             "index": 40
         },
         "acc_tax_no": {
@@ -62,7 +58,6 @@
             "readonly": true,
             "pattern": "^[A-Z0-9-.]{0,64}$",
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 50
         },
         "acc_is_enabled": {
@@ -70,7 +65,6 @@
             "title": "Enabled?",
             "description": "Is the account enabled?",
             "width": 130,
-            "style": "min-width: 130px;",
             "index": 60
         },
         "acc_is_customer": {
@@ -78,7 +72,6 @@
             "title": "Customer?",
             "description": "Is the account holder a customer?",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 70
         },
         "acc_is_supplier": {
@@ -86,7 +79,6 @@
             "title": "Supplier?",
             "description": "Is the account holder a supplier?",
             "width": 130,
-            "style": "min-width: 130px;",
             "index": 80
         },
         "acc_is_distributor": {
@@ -94,7 +86,6 @@
             "title": "Distributor?",
             "description": "Is the account holder a distributor?",
             "width": 150,
-            "style": "min-width: 150px;",
             "index": 90
         },
         "acc_is_dealer": {
@@ -102,7 +93,6 @@
             "title": "Dealer?",
             "description": "Is the account holder a dealer?",
             "width": 120,
-            "style": "min-width: 120px;",
             "index": 100
         },
         "acc_billing_address": {
@@ -113,7 +103,6 @@
             "description": "Billing Address",
             "required": true,
             "width": 240,
-            "style": "min-width: 340px;",
             "index": 110
         },
         "acc_shipping_address": {
@@ -124,7 +113,6 @@
             "description": "Shipping Address",
             "required": true,
             "width": 240,
-            "style": "min-width: 340px;",
             "index": 120
         },
         "acc_country": {
@@ -136,7 +124,6 @@
             "pattern": "^[A-Z]{2,3}$",
             "required": true,
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 130
         },
         "acc_notes": {
@@ -146,7 +133,6 @@
             "title": "Notes",
             "description": "Account Notes",
             "width": 140,
-            "style": "min-width: 140px;",
             "index": 140
         }
     },

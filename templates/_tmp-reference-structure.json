@@ -8,7 +8,6 @@
             "description": "ref_id column refers to the string type unique index key of the collection.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 10
         },
         "ref_type": {
@@ -27,7 +26,6 @@
             "default": "Type-0",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 20
         },
         "ref_title": {
@@ -38,7 +36,6 @@
             "description": "ref_title column refers to the string type data.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 30
         },
         "ref_enabled": {
@@ -46,7 +43,6 @@
             "title": "Enabled?",
             "description": "ref_enabled column refers to the boolean (true/false) type data.",
             "width": 110,
-            "style": "min-width: 110px;",
             "index": 40
         },
         "ref_notes": {
@@ -56,7 +52,6 @@
             "title": "Notes",
             "description": "ref_notes column refers to the long text type data.",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 50
         }
     },

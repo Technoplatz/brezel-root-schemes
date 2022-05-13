@@ -8,7 +8,6 @@
             "description": "gen_id column refers to the string type unique index key of the collection.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 10
         },
         "gen_status": {
@@ -26,7 +25,6 @@
             "required": true,
             "default": "0-Open",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 20
         },
         "gen_date": {
@@ -35,7 +33,6 @@
             "description": "gen_date column refers to the date type data.",
             "default": "$CURRENT_DATE",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 30
         },
         "gen_reference_id": {
@@ -46,7 +43,6 @@
             "description": "gen_reference_id column refers to the string type index key of the collection.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 40
         },
         "gen_quantity": {
@@ -57,7 +53,6 @@
             "description": "gen_quantity column refers to the numeric integer type data.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 50
         },
         "gen_amount": {
@@ -66,7 +61,6 @@
             "description": "gen_amount column refers to the numeric float type data.",
             "required": true,
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 60
         },
         "gen_enabled": {
@@ -74,7 +68,6 @@
             "title": "Enabled?",
             "description": "gen_enabled column refers to the boolean (true/false) type data.",
             "width": 100,
-            "style": "min-width: 110px;",
             "index": 70
         },
         "gen_notes": {
@@ -84,7 +77,6 @@
             "title": "Notes",
             "description": "gen_notes column refers to the long text type data.",
             "width": 100,
-            "style": "min-width: 100px;",
             "index": 80
         }
     },
