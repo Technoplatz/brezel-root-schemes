@@ -50,6 +50,7 @@
             "title": "Teaser",
             "description": "Teaser HTML",
             "html": true,
+            "textarea": true,
             "width": 160,
             "index": 50
         },
@@ -60,6 +61,7 @@
             "title": "Body",
             "description": "Body HTML",
             "html": true,
+            "textarea": true,
             "width": 160,
             "index": 60
         },
