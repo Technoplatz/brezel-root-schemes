@@ -20,6 +20,7 @@
             "pattern": "^[\\p{L}\\p{N}.,;?*_/()! -]{0,128}$",
             "title": "Description",
             "description": "Description",
+            "textarea": true,
             "width": 160,
             "index": 2
         },

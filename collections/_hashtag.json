@@ -17,6 +17,7 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Description",
+            "textarea": true,
             "width": 240,
             "index": 20
         }

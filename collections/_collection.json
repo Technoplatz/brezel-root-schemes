@@ -28,6 +28,7 @@
             "maxLength": 512,
             "title": "Description",
             "description": "Collection Description",
+            "textarea": true,
             "width": 150,
             "index": 30
         },

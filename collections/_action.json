@@ -39,6 +39,7 @@
             "maxLength": 128,
             "title": "Description",
             "description": "Action description",
+            "textarea": true,
             "width": 140,
             "index": 40
         },
