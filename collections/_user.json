@@ -79,7 +79,7 @@
             "hashtag": true,
             "width": 120,
             "index": 70
-        },
+        }
     },
     "required": [
         "usr_id",
