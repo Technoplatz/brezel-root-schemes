@@ -80,7 +80,7 @@
             "title": "Hashtags",
             "description": "Hashtags",
             "hashtag": true,
-            "width": 110,
+            "width": 120,
             "index": 70
         },
         "sub_files": {
@@ -94,7 +94,7 @@
             },
             "title": "Files",
             "description": "Files",
-            "width": 90,
+            "width": 120,
             "index": 80
         }
     },
