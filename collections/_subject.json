@@ -66,7 +66,7 @@
             "width": 160,
             "index": 60
         },
-        "sub_hashtags": {
+        "sub_tags": {
             "bsonType": "array",
             "uniqueItems": true,
             "minItems": 0,
@@ -77,9 +77,9 @@
                 "maxLength": 64,
                 "pattern": "^#[a-zA-Z]{0,64}$"
             },
-            "title": "Hashtags for Sharing",
-            "description": "Hashtags",
-            "hashtag": true,
+            "title": "Tags for Sharing",
+            "description": "Tags",
+            "chips": true,
             "width": 140,
             "index": 70
         },
