@@ -3,7 +3,7 @@
         "log_type": {
             "bsonType": "string",
             "minLength": 1,
-            "maxLength": 8,
+            "maxLength": 16,
             "title": "Type",
             "description": "Log type",
             "enum": [
@@ -13,6 +13,7 @@
                 "Denied",
                 "Announcement"
             ],
+            "pattern": "^[a-zA-Z]{1,16}$",
             "required": true,
             "width": 90,
             "index": 10

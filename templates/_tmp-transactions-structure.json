@@ -82,7 +82,7 @@
             "title": "Price",
             "description": "Unit Price",
             "required": true,
-            "width": 110,
+            "width": 130,
             "index": 80
         },
         "act_amount": {
@@ -90,7 +90,7 @@
             "title": "Amount",
             "description": "Transaction Amount",
             "required": true,
-            "width": 110,
+            "width": 130,
             "index": 90
         },
         "act_notes": {
@@ -99,7 +99,7 @@
             "maxLength": 512,
             "title": "Notes",
             "description": "act_notes column refers to the long text type data.",
-            "width": 100,
+            "width": 200,
             "index": 100
         }
     },
