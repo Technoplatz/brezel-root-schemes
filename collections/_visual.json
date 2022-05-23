@@ -11,68 +11,6 @@
             "width": 240,
             "index": 10
         },
-        "vis_view_id": {
-            "bsonType": "string",
-            "minLength": 3,
-            "maxLength": 32,
-            "pattern": "^[a-z0-9-_]{3,32}$",
-            "title": "View ID",
-            "description": "View ID",
-            "required": true,
-            "view": true,
-            "width": 240,
-            "index": 20
-        },
-        "vis_title": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "title": "Title",
-            "description": "Title",
-            "required": true,
-            "width": 240,
-            "index": 30
-        },
-        "vis_description": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 128,
-            "title": "Description",
-            "description": "Description",
-            "textarea": true,
-            "width": 160,
-            "index": 40
-        },
-        "vis_enabled": {
-            "bsonType": "bool",
-            "title": "Enabled?",
-            "description": "Enabled?",
-            "default": true,
-            "width": 110,
-            "index": 50
-        },
-        "vis_priority": {
-            "bsonType": "number",
-            "title": "Priority",
-            "description": "Priority",
-            "minimum": 1,
-            "maximum": 9999,
-            "default": 1,
-            "width": 110,
-            "index": 60
-        },
-        "vis_type": {
-            "bsonType": "string",
-            "title": "Type",
-            "description": "Type",
-            "enum": [
-                "chart",
-                "kpi"
-            ],
-            "required": true,
-            "width": 110,
-            "index": 70
-        },
         "vis_chart_style": {
             "bsonType": "string",
             "minLength": 1,
@@ -92,6 +30,68 @@
                 "Pie Chart"
             ],
             "width": 210,
+            "index": 20
+        },
+        "vis_view_id": {
+            "bsonType": "string",
+            "minLength": 3,
+            "maxLength": 32,
+            "pattern": "^[a-z0-9-_]{3,32}$",
+            "title": "View ID",
+            "description": "View ID",
+            "required": true,
+            "view": true,
+            "width": 240,
+            "index": 30
+        },
+        "vis_title": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Title",
+            "description": "Title",
+            "required": true,
+            "width": 240,
+            "index": 40
+        },
+        "vis_description": {
+            "bsonType": "string",
+            "minLength": 0,
+            "maxLength": 128,
+            "title": "Description",
+            "description": "Description",
+            "textarea": true,
+            "width": 160,
+            "index": 50
+        },
+        "vis_enabled": {
+            "bsonType": "bool",
+            "title": "Enabled?",
+            "description": "Enabled?",
+            "default": true,
+            "width": 110,
+            "index": 60
+        },
+        "vis_priority": {
+            "bsonType": "number",
+            "title": "Priority",
+            "description": "Priority",
+            "minimum": 1,
+            "maximum": 9999,
+            "default": 1,
+            "width": 110,
+            "index": 70
+        },
+        "vis_type": {
+            "bsonType": "string",
+            "title": "Type",
+            "description": "Type",
+            "enum": [
+                "chart",
+                "kpi"
+            ],
+            "required": true,
+            "width": 110,
             "index": 80
         },
         "vis_chart_xaxis": {
@@ -298,21 +298,13 @@
             "width": 180,
             "index": 290
         },
-        "vis_p_doughnut": {
-            "bsonType": "bool",
-            "title": "Show as Doughnut",
-            "default": false,
-            "description": "Show as Doughnut",
-            "width": 180,
-            "index": 300
-        },
         "vis_p_tooltipdisabled": {
             "bsonType": "bool",
             "title": "Tooltip Disabled",
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "index": 310
+            "index": 300
         },
         "vis_p_labels": {
             "bsonType": "bool",
@@ -320,7 +312,7 @@
             "default": false,
             "description": "Pie Labels",
             "width": 180,
-            "index": 320
+            "index": 310
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -343,7 +335,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 330
+            "index": 320
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -357,7 +349,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "width": 140,
-            "index": 340
+            "index": 330
         }
     },
     "required": [
