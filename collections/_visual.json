@@ -18,16 +18,17 @@
             "title": "Chart Style",
             "description": "Chart Style",
             "enum": [
-                "Vertical Bar Chart",
-                "Normalized Vertical Bar Chart",
-                "Stacked Vertical Bar Chart",
-                "Grouped Vertical Bar Chart",
-                "Horizontal Bar Chart",
-                "Normalized Horizontal Bar Chart",
-                "Stacked Horizontal Bar Chart",
-                "Grouped Horizontal Bar Chart",
-                "Line Chart",
-                "Pie Chart"
+                "Vertical Bar",
+                "Normalized Vertical Bar",
+                "Stacked Vertical Bar",
+                "Grouped Vertical Bar",
+                "Horizontal Bar",
+                "Normalized Horizontal Bar",
+                "Stacked Horizontal Bar",
+                "Grouped Horizontal Bar",
+                "Line",
+                "Pie",
+                "Doughnut"
             ],
             "width": 210,
             "index": 20
@@ -290,21 +291,13 @@
             "width": 180,
             "index": 280
         },
-        "vis_p_rounddomains": {
-            "bsonType": "bool",
-            "title": "Round Domains",
-            "default": false,
-            "description": "Round domains for aligned gridlines",
-            "width": 180,
-            "index": 290
-        },
         "vis_p_tooltipdisabled": {
             "bsonType": "bool",
             "title": "Tooltip Disabled",
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "index": 300
+            "index": 290
         },
         "vis_p_labels": {
             "bsonType": "bool",
@@ -312,7 +305,7 @@
             "default": false,
             "description": "Pie Labels",
             "width": 180,
-            "index": 310
+            "index": 300
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -335,7 +328,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 320
+            "index": 310
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -349,7 +342,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "width": 140,
-            "index": 330
+            "index": 320
         }
     },
     "required": [
