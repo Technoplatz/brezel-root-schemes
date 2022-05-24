@@ -174,21 +174,13 @@
             "width": 140,
             "index": 150
         },
-        "vis_target": {
-            "bsonType": "bool",
-            "title": "Target?",
-            "description": "Target?",
-            "default": false,
-            "width": 110,
-            "index": 160
-        },
         "vis_kpi_target_value": {
             "bsonType": "number",
             "title": "KPI Target Value",
             "description": "KPI Target Value",
             "default": 0,
             "width": 140,
-            "index": 170
+            "index": 160
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -196,7 +188,7 @@
             "default": true,
             "description": "Show X-Axis",
             "width": 140,
-            "index": 180
+            "index": 170
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -204,7 +196,7 @@
             "default": true,
             "description": "Show Y-Axis",
             "width": 140,
-            "index": 190
+            "index": 180
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -212,7 +204,7 @@
             "default": false,
             "description": "Show Data Label",
             "width": 180,
-            "index": 200
+            "index": 190
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -220,7 +212,7 @@
             "default": true,
             "description": "Show Grid",
             "width": 180,
-            "index": 210
+            "index": 200
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -228,7 +220,7 @@
             "default": true,
             "description": "Gradient",
             "width": 120,
-            "index": 220
+            "index": 210
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -236,7 +228,7 @@
             "default": true,
             "description": "No Bar When Zero",
             "width": 180,
-            "index": 230
+            "index": 220
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -259,7 +251,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 240
+            "index": 230
         }
     },
     "required": [
