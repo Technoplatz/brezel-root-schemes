@@ -305,20 +305,6 @@
             "color": true,
             "width": 180,
             "index": 280
-        },
-        "vis_subscribers": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 64
-            },
-            "title": "Subscribers",
-            "description": "Subscribers list",
-            "width": 140,
-            "index": 290
         }
     },
     "required": [
