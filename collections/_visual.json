@@ -235,37 +235,13 @@
             "width": 140,
             "index": 210
         },
-        "vis_p_legend_show": {
-            "bsonType": "bool",
-            "title": "Show Legend",
-            "default": true,
-            "description": "Show Legend",
-            "width": 160,
-            "index": 220
-        },
-        "vis_p_xaxis_label_show": {
-            "bsonType": "bool",
-            "title": "Show X-Axis Label",
-            "default": true,
-            "description": "Show X-Axis Label",
-            "width": 180,
-            "index": 230
-        },
-        "vis_p_yaxis_label_show": {
-            "bsonType": "bool",
-            "title": "Show Y-Axis Label",
-            "default": true,
-            "description": "Show Y-Axis Label",
-            "width": 180,
-            "index": 240
-        },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
             "title": "Show Data Label",
             "default": false,
             "description": "Show Data Label",
             "width": 180,
-            "index": 250
+            "index": 220
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -273,7 +249,7 @@
             "default": true,
             "description": "Show Grid",
             "width": 180,
-            "index": 260
+            "index": 230
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -281,7 +257,7 @@
             "default": true,
             "description": "Gradient",
             "width": 120,
-            "index": 270
+            "index": 240
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -289,7 +265,7 @@
             "default": true,
             "description": "No Bar When Zero",
             "width": 180,
-            "index": 280
+            "index": 250
         },
         "vis_p_tooltipdisabled": {
             "bsonType": "bool",
@@ -297,7 +273,7 @@
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "index": 290
+            "index": 260
         },
         "vis_p_labels": {
             "bsonType": "bool",
@@ -305,7 +281,7 @@
             "default": false,
             "description": "Pie Labels",
             "width": 180,
-            "index": 300
+            "index": 270
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -328,7 +304,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 310
+            "index": 280
         },
         "vis_subscribers": {
             "bsonType": "array",
@@ -342,7 +318,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "width": 140,
-            "index": 320
+            "index": 290
         }
     },
     "required": [
@@ -380,12 +356,8 @@
     },
     "permissions": [
         {
-            "usr_level_id": "User",
-            "rank": 0
-        },
-        {
             "usr_level_id": "Manager",
-            "rank": 1
+            "rank": 2
         },
         {
             "usr_group_id": "Managers",

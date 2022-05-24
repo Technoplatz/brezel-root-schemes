@@ -410,12 +410,8 @@
     },
     "permissions": [
         {
-            "usr_level_id": "User",
-            "rank": 0
-        },
-        {
             "usr_level_id": "Manager",
-            "rank": 1
+            "rank": 2
         },
         {
             "usr_group_id": "Managers",
