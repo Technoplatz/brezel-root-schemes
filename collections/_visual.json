@@ -88,8 +88,8 @@
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z_]{1,32}$",
-            "title": "X-Axis",
-            "description": "Chart X-Axis Column",
+            "title": "X Axis",
+            "description": "Chart X Axis",
             "property": true,
             "width": 140,
             "index": 80
@@ -99,8 +99,8 @@
             "minLength": 1,
             "maxLength": 32,
             "pattern": "^[a-z_]{1,32}$",
-            "title": "Y-Axis (Data)",
-            "description": "Y-Axis Column",
+            "title": "Y Axis (Data)",
+            "description": "Chart Y Axis",
             "property": true,
             "width": 140,
             "index": 90
@@ -140,8 +140,8 @@
             "minLength": 1,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
-            "title": "X-Axis Label",
-            "description": "X-Axis Label",
+            "title": "X Axis Label",
+            "description": "X Axis Label",
             "width": 140,
             "index": 120
         },
@@ -150,8 +150,8 @@
             "minLength": 1,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
-            "title": "Y-Axis Label",
-            "description": "Y-Axis Label",
+            "title": "Y Axis Label",
+            "description": "Y Axis Label",
             "width": 140,
             "index": 130
         },
@@ -166,28 +166,13 @@
             "width": 140,
             "index": 140
         },
-        "vis_p_legend_position": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 8,
-            "pattern": "^[a-z]{1,8}$",
-            "title": "Legend Position",
-            "description": "Legend Position",
-            "enum": [
-                "right",
-                "below"
-            ],
-            "default": "right",
-            "width": 180,
-            "index": 150
-        },
         "vis_target": {
             "bsonType": "bool",
             "title": "Target?",
             "description": "Target?",
             "default": false,
             "width": 110,
-            "index": 160
+            "index": 150
         },
         "vis_target_value": {
             "bsonType": "number",
@@ -195,7 +180,7 @@
             "description": "Target Value",
             "default": 0,
             "width": 140,
-            "index": 170
+            "index": 160
         },
         "vis_p_kpi": {
             "bsonType": "bool",
@@ -203,7 +188,7 @@
             "default": true,
             "description": "KPI",
             "width": 140,
-            "index": 180
+            "index": 170
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -211,7 +196,7 @@
             "default": true,
             "description": "Show X-Axis",
             "width": 140,
-            "index": 190
+            "index": 180
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -219,7 +204,7 @@
             "default": true,
             "description": "Show Y-Axis",
             "width": 140,
-            "index": 200
+            "index": 190
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -227,7 +212,7 @@
             "default": false,
             "description": "Show Data Label",
             "width": 180,
-            "index": 210
+            "index": 200
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -235,7 +220,7 @@
             "default": true,
             "description": "Show Grid",
             "width": 180,
-            "index": 220
+            "index": 210
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -243,7 +228,7 @@
             "default": true,
             "description": "Gradient",
             "width": 120,
-            "index": 230
+            "index": 220
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -251,7 +236,7 @@
             "default": true,
             "description": "No Bar When Zero",
             "width": 180,
-            "index": 240
+            "index": 230
         },
         "vis_p_tooltipdisabled": {
             "bsonType": "bool",
@@ -259,7 +244,7 @@
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "index": 250
+            "index": 240
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -282,7 +267,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 260
+            "index": 250
         }
     },
     "required": [
