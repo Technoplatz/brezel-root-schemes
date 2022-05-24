@@ -166,27 +166,27 @@
             "width": 140,
             "index": 140
         },
+        "vis_p_kpi": {
+            "bsonType": "bool",
+            "title": "KPI",
+            "default": true,
+            "description": "KPI",
+            "width": 140,
+            "index": 150
+        },
         "vis_target": {
             "bsonType": "bool",
             "title": "Target?",
             "description": "Target?",
             "default": false,
             "width": 110,
-            "index": 150
-        },
-        "vis_target_value": {
-            "bsonType": "number",
-            "title": "Target Value",
-            "description": "Target Value",
-            "default": 0,
-            "width": 140,
             "index": 160
         },
-        "vis_p_kpi": {
-            "bsonType": "bool",
-            "title": "KPI",
-            "default": true,
-            "description": "KPI",
+        "vis_kpi_target_value": {
+            "bsonType": "number",
+            "title": "KPI Target Value",
+            "description": "KPI Target Value",
+            "default": 0,
             "width": 140,
             "index": 170
         },
