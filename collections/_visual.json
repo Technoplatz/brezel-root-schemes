@@ -83,18 +83,6 @@
             "width": 110,
             "index": 70
         },
-        "vis_type": {
-            "bsonType": "string",
-            "title": "Type",
-            "description": "Type",
-            "enum": [
-                "chart",
-                "kpi"
-            ],
-            "required": true,
-            "width": 110,
-            "index": 80
-        },
         "vis_chart_xaxis": {
             "bsonType": "string",
             "minLength": 1,
@@ -104,7 +92,7 @@
             "description": "Chart X-Axis Column",
             "property": true,
             "width": 140,
-            "index": 90
+            "index": 80
         },
         "vis_chart_yaxis": {
             "bsonType": "string",
@@ -115,7 +103,7 @@
             "description": "Y-Axis Column",
             "property": true,
             "width": 140,
-            "index": 100
+            "index": 90
         },
         "vis_chart_legend": {
             "bsonType": "string",
@@ -126,7 +114,7 @@
             "description": "Legend (Group) Column",
             "property": true,
             "width": 140,
-            "index": 110
+            "index": 100
         },
         "vis_chart_function": {
             "bsonType": "string",
@@ -145,17 +133,7 @@
                 "datediff"
             ],
             "width": 160,
-            "index": 120
-        },
-        "vis_kpi_um": {
-            "bsonType": "string",
-            "minLength": 0,
-            "maxLength": 16,
-            "pattern": "^[a-zA-Z$€₺]{0,16}$",
-            "title": "KPI Value UM",
-            "description": "KPI value unit of measure",
-            "width": 110,
-            "index": 130
+            "index": 110
         },
         "vis_p_xaxis_label": {
             "bsonType": "string",
@@ -165,7 +143,7 @@
             "title": "X-Axis Label",
             "description": "X-Axis Label",
             "width": 140,
-            "index": 140
+            "index": 120
         },
         "vis_p_yaxis_label": {
             "bsonType": "string",
@@ -175,18 +153,18 @@
             "title": "Y-Axis Label",
             "description": "Y-Axis Label",
             "width": 140,
-            "index": 150
+            "index": 130
         },
         "vis_p_legend_title": {
             "bsonType": "string",
             "minLength": 1,
             "maxLength": 64,
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
-            "title": "Legend Title",
-            "description": "Legend Title",
+            "title": "Legend Label",
+            "description": "Legend Label",
             "default": "Legend",
             "width": 140,
-            "index": 160
+            "index": 140
         },
         "vis_p_legend_position": {
             "bsonType": "string",
@@ -201,7 +179,7 @@
             ],
             "default": "right",
             "width": 180,
-            "index": 170
+            "index": 150
         },
         "vis_target": {
             "bsonType": "bool",
@@ -209,7 +187,7 @@
             "description": "Target?",
             "default": false,
             "width": 110,
-            "index": 180
+            "index": 160
         },
         "vis_target_value": {
             "bsonType": "number",
@@ -217,7 +195,15 @@
             "description": "Target Value",
             "default": 0,
             "width": 140,
-            "index": 190
+            "index": 170
+        },
+        "vis_p_kpi": {
+            "bsonType": "bool",
+            "title": "KPI",
+            "default": true,
+            "description": "KPI",
+            "width": 140,
+            "index": 180
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
@@ -225,7 +211,7 @@
             "default": true,
             "description": "Show X-Axis",
             "width": 140,
-            "index": 200
+            "index": 190
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
@@ -233,7 +219,7 @@
             "default": true,
             "description": "Show Y-Axis",
             "width": 140,
-            "index": 210
+            "index": 200
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
@@ -241,7 +227,7 @@
             "default": false,
             "description": "Show Data Label",
             "width": 180,
-            "index": 220
+            "index": 210
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
@@ -249,7 +235,7 @@
             "default": true,
             "description": "Show Grid",
             "width": 180,
-            "index": 230
+            "index": 220
         },
         "vis_p_gradient": {
             "bsonType": "bool",
@@ -257,7 +243,7 @@
             "default": true,
             "description": "Gradient",
             "width": 120,
-            "index": 240
+            "index": 230
         },
         "vis_p_nobarwhenzero": {
             "bsonType": "bool",
@@ -265,7 +251,7 @@
             "default": true,
             "description": "No Bar When Zero",
             "width": 180,
-            "index": 250
+            "index": 240
         },
         "vis_p_tooltipdisabled": {
             "bsonType": "bool",
@@ -273,7 +259,7 @@
             "default": false,
             "description": "Tooltip Disabled",
             "width": 180,
-            "index": 260
+            "index": 250
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -296,12 +282,11 @@
             ],
             "color": true,
             "width": 180,
-            "index": 280
+            "index": 260
         }
     },
     "required": [
         "vis_id",
-        "vis_type",
         "vis_view_id",
         "vis_title",
         "vis_chart_style",
@@ -322,10 +307,6 @@
             "vis_view_id"
         ],
         [
-            "vis_type"
-        ],
-        [
-            "vis_type",
             "vis_enabled"
         ]
     ],
