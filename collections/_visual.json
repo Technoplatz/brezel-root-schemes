@@ -184,17 +184,17 @@
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
-            "title": "Show X-Axis",
+            "title": "Show X Axis",
             "default": true,
-            "description": "Show X-Axis",
+            "description": "Show X Axis",
             "width": 140,
             "index": 170
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
-            "title": "Show Y-Axis",
+            "title": "Show Y Axis",
             "default": true,
-            "description": "Show Y-Axis",
+            "description": "Show Y Axis",
             "width": 140,
             "index": 180
         },
