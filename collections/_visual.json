@@ -238,14 +238,6 @@
             "width": 180,
             "index": 230
         },
-        "vis_p_tooltipdisabled": {
-            "bsonType": "bool",
-            "title": "Tooltip Disabled",
-            "default": false,
-            "description": "Tooltip Disabled",
-            "width": 180,
-            "index": 240
-        },
         "vis_p_color_scheme": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -267,7 +259,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 250
+            "index": 240
         }
     },
     "required": [
