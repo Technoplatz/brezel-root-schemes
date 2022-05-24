@@ -275,14 +275,6 @@
             "width": 180,
             "index": 260
         },
-        "vis_p_labels": {
-            "bsonType": "bool",
-            "title": "Pie Labels",
-            "default": false,
-            "description": "Pie Labels",
-            "width": 180,
-            "index": 270
-        },
         "vis_p_color_scheme": {
             "bsonType": "array",
             "uniqueItems": true,
