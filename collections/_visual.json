@@ -177,7 +177,7 @@
             "bsonType": "number",
             "title": "KPI Target Value",
             "description": "KPI Target Value",
-            "default": 0,
+            "default": 1,
             "width": 140,
             "index": 160
         },
