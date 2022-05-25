@@ -162,7 +162,6 @@
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
             "title": "Legend Label",
             "description": "Legend Label",
-            "default": "Legend",
             "width": 140,
             "index": 140
         },
