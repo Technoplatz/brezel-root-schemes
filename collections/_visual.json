@@ -168,7 +168,7 @@
         "vis_p_kpi": {
             "bsonType": "bool",
             "title": "KPI",
-            "default": true,
+            "default": false,
             "description": "KPI",
             "width": 140,
             "index": 150
@@ -200,7 +200,7 @@
         "vis_p_datalabel_show": {
             "bsonType": "bool",
             "title": "Show Data Label",
-            "default": false,
+            "default": true,
             "description": "Show Data Label",
             "width": 180,
             "index": 190
