@@ -222,14 +222,6 @@
             "width": 120,
             "index": 210
         },
-        "vis_p_nobarwhenzero": {
-            "bsonType": "bool",
-            "title": "No Bar When Zero",
-            "default": true,
-            "description": "No Bar When Zero",
-            "width": 180,
-            "index": 220
-        },
         "vis_p_color_scheme": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -251,7 +243,7 @@
             ],
             "color": true,
             "width": 180,
-            "index": 230
+            "index": 220
         }
     },
     "required": [
