@@ -77,9 +77,9 @@
             "bsonType": "number",
             "title": "Priority",
             "description": "Priority",
-            "minimum": 1,
+            "minimum": 1000,
             "maximum": 9999,
-            "default": 1,
+            "default": 1000,
             "width": 110,
             "index": 70
         },
