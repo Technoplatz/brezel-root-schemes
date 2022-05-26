@@ -375,6 +375,7 @@
             "title": "Subscribers",
             "description": "Subscribers list",
             "subType": "subscriber",
+            "manualAdd": true,
             "width": 140,
             "index": 230
         }
