@@ -298,6 +298,7 @@
             },
             "title": "Pivot Values",
             "description": "Pivot Values",
+            "subType": "keyvalue",
             "width": 130,
             "index": 160
         },
