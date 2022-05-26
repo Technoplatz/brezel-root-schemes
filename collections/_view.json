@@ -117,7 +117,7 @@
             },
             "title": "Selected Columns",
             "description": "Selected columns",
-            "subType": "properties",
+            "subType": "property",
             "width": 140,
             "index": 60
         },
@@ -134,7 +134,7 @@
             },
             "title": "Excluded Columns",
             "description": "Excluded columns",
-            "subType": "properties",
+            "subType": "property",
             "width": 170,
             "index": 70
         },
