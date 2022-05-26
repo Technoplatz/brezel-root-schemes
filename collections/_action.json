@@ -177,6 +177,7 @@
             },
             "title": "Subscribers",
             "description": "Subscribers list",
+            "subType": "subscriber",
             "width": 140,
             "index": 100
         }
