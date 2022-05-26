@@ -208,6 +208,40 @@
             "width": 160,
             "index": 120
         },
+        "vie_pivot_index": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 16,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 32,
+                "pattern": "^[a-z_]{1,32}$"
+            },
+            "title": "Pivot Rows",
+            "description": "Pivot Rows",
+            "subType": "property",
+            "width": 130,
+            "index": 130
+        },
+        "vie_pivot_columns": {
+            "bsonType": "array",
+            "uniqueItems": true,
+            "minItems": 0,
+            "maxItems": 16,
+            "items": {
+                "bsonType": "string",
+                "minLength": 0,
+                "maxLength": 32,
+                "pattern": "^[a-z_]{1,32}$"
+            },
+            "title": "Pivot Columns",
+            "description": "Pivot Columns",
+            "subType": "property",
+            "width": 150,
+            "index": 140
+        },
         "vie_pivot_values": {
             "bsonType": "array",
             "minItems": 0,
@@ -256,40 +290,6 @@
             "description": "Pivot Values",
             "subType": "keyvalue",
             "width": 130,
-            "index": 130
-        },
-        "vie_pivot_index": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "maxItems": 16,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 32,
-                "pattern": "^[a-z_]{1,32}$"
-            },
-            "title": "Pivot Indexes",
-            "description": "Pivot Indexes",
-            "subType": "property",
-            "width": 130,
-            "index": 140
-        },
-        "vie_pivot_columns": {
-            "bsonType": "array",
-            "uniqueItems": true,
-            "minItems": 0,
-            "maxItems": 16,
-            "items": {
-                "bsonType": "string",
-                "minLength": 0,
-                "maxLength": 32,
-                "pattern": "^[a-z_]{1,32}$"
-            },
-            "title": "Pivot Columns",
-            "description": "Pivot Columns",
-            "subType": "property",
-            "width": 150,
             "index": 150
         },
         "vie_pivot_totals": {
