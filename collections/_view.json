@@ -101,6 +101,7 @@
             },
             "title": "Filter",
             "description": "Datacard filter",
+            "subType": "filter",
             "width": 120,
             "index": 50
         },
