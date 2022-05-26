@@ -139,56 +139,12 @@
             "width": 170,
             "index": 70
         },
-        "vie_function": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 8,
-            "pattern": "^[a-z]{1,8}$",
-            "title": "Function",
-            "description": "Function",
-            "enum": [
-                "count",
-                "unique",
-                "sum",
-                "avg",
-                "var",
-                "stdev",
-                "max",
-                "min",
-                "datediff",
-                "value",
-                "first",
-                "last"
-            ],
-            "width": 110,
-            "index": 80
-        },
-        "vie_field": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 32,
-            "pattern": "^[a-z_]{1,32}$",
-            "title": "Field",
-            "description": "Field",
-            "width": 100,
-            "index": 90
-        },
-        "vie_priority": {
-            "bsonType": "number",
-            "minimum": 0,
-            "maximum": 999999,
-            "title": "Priority",
-            "description": "Priority order",
-            "default": 1000,
-            "width": 100,
-            "index": 100
-        },
         "vie_scheduled": {
             "bsonType": "bool",
             "title": "Scheduled",
             "description": "Scheduled?",
             "width": 120,
-            "index": 110
+            "index": 80
         },
         "vie_sched_timezone": {
             "bsonType": "string",
@@ -202,7 +158,7 @@
             ],
             "default": "Europe/Berlin",
             "width": 170,
-            "index": 120
+            "index": 90
         },
         "vie_sched_days": {
             "bsonType": "array",
@@ -218,7 +174,7 @@
             "description": "Scheduled days",
             "subType": "day",
             "width": 140,
-            "index": 130
+            "index": 100
         },
         "vie_sched_hours": {
             "bsonType": "array",
@@ -234,7 +190,7 @@
             "description": "Scheduled hours",
             "subType": "hour",
             "width": 160,
-            "index": 140
+            "index": 110
         },
         "vie_sched_minutes": {
             "bsonType": "array",
@@ -250,7 +206,7 @@
             "description": "Scheduled Minutes",
             "subType": "minute",
             "width": 160,
-            "index": 150
+            "index": 120
         },
         "vie_pivot_values": {
             "bsonType": "array",
@@ -300,7 +256,7 @@
             "description": "Pivot Values",
             "subType": "keyvalue",
             "width": 130,
-            "index": 160
+            "index": 130
         },
         "vie_pivot_index": {
             "bsonType": "array",
@@ -317,7 +273,7 @@
             "description": "Pivot Indexes",
             "subType": "property",
             "width": 130,
-            "index": 170
+            "index": 140
         },
         "vie_pivot_columns": {
             "bsonType": "array",
@@ -334,35 +290,35 @@
             "description": "Pivot Columns",
             "subType": "property",
             "width": 150,
-            "index": 180
+            "index": 150
         },
         "vie_pivot_totals": {
             "bsonType": "bool",
             "title": "Pivot Totals",
             "description": "Showing pivot totals",
             "width": 140,
-            "index": 190
+            "index": 160
         },
         "vie_attach_pivot": {
             "bsonType": "bool",
             "title": "Attach Pivot",
             "description": "Attach Pivot?",
             "width": 140,
-            "index": 200
+            "index": 170
         },
         "vie_attach_csv": {
             "bsonType": "bool",
             "title": "Attach CSV",
             "description": "Attach CSV?",
             "width": 130,
-            "index": 210
+            "index": 180
         },
         "vie_attach_excel": {
             "bsonType": "bool",
             "title": "Attach Excel",
             "description": "Attach Excel?",
             "width": 140,
-            "index": 220
+            "index": 190
         },
         "vie_subscribers": {
             "bsonType": "array",
@@ -378,7 +334,7 @@
             "subType": "subscriber",
             "manualAdd": true,
             "width": 140,
-            "index": 230
+            "index": 200
         }
     },
     "required": [
