@@ -79,6 +79,7 @@
             },
             "title": "Tags for Sharing",
             "description": "Tags",
+            "subType": "tag",
             "chips": true,
             "width": 140,
             "index": 70

@@ -76,6 +76,7 @@
             },
             "title": "Tags",
             "description": "Tags",
+            "subType": "tag",
             "chips": true,
             "width": 120,
             "index": 70
