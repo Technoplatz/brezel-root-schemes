@@ -124,6 +124,7 @@
             },
             "title": "Filter",
             "description": "Action filter",
+            "subType": "filter",
             "width": 120,
             "index": 80
         },
