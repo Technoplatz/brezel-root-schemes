@@ -215,6 +215,7 @@
             },
             "title": "Scheduled Days",
             "description": "Scheduled days",
+            "subType": "day",
             "width": 140,
             "index": 130
         },
