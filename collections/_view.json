@@ -117,6 +117,7 @@
             },
             "title": "Selected Columns",
             "description": "Selected columns",
+            "subType": "properties",
             "width": 140,
             "index": 60
         },
@@ -133,6 +134,7 @@
             },
             "title": "Excluded Columns",
             "description": "Excluded columns",
+            "subType": "properties",
             "width": 170,
             "index": 70
         },
@@ -228,6 +230,7 @@
             },
             "title": "Scheduled Hours",
             "description": "Scheduled hours",
+            "subType": "hour",
             "width": 160,
             "index": 140
         },
@@ -243,6 +246,7 @@
             },
             "title": "Scheduled minutes",
             "description": "Scheduled Minutes",
+            "subType": "minute",
             "width": 160,
             "index": 150
         },
