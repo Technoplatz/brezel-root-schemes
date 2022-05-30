@@ -109,7 +109,7 @@
         {
             "id": "act-assign-to-group",
             "title": "ASSIGN A GROUP",
-            "description": "Assigns a group for selected records.",
+            "description": "Assigns a group to selected records.",
             "enabled": true,
             "filter": [],
             "fields": [

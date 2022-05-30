@@ -80,6 +80,7 @@
             "title": "Tags for Sharing",
             "description": "Tags",
             "subType": "tag",
+            "manualAdd": true,
             "chips": true,
             "width": 140,
             "index": 70
@@ -121,7 +122,7 @@
         {
             "id": "act-assign-tag",
             "title": "ASSIGN A TAG",
-            "description": "Assigns a tag for selected records.",
+            "description": "Assigns a tag to selected records.",
             "enabled": true,
             "filter": [],
             "fields": [
