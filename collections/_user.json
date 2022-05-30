@@ -105,6 +105,22 @@
     "sort": {
         "_modified_at": -1
     },
+    "actions": [
+        {
+            "id": "act-assign-to-group",
+            "title": "ASSIGN A GROUP",
+            "description": "Assigns a group for selected users",
+            "enabled": true,
+            "filter": [],
+            "fields": [
+              {
+                "key": "usr_group_id",
+                "value": null
+              }
+            ],
+            "one_click": false
+          }
+    ],
     "permissions": [
         {
             "usr_level_id": "Manager",
