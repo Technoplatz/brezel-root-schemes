@@ -117,6 +117,22 @@
     "sort": {
         "_modified_at": -1
     },
+    "actions": [
+        {
+            "id": "act-assign-tag",
+            "title": "ASSIGN A TAG",
+            "description": "Assigns a tag for selected records.",
+            "enabled": true,
+            "filter": [],
+            "fields": [
+                {
+                    "key": "sub_tags",
+                    "value": null
+                }
+            ],
+            "one_click": false
+        }
+    ],
     "permissions": [
         {
             "usr_level_id": "Manager",

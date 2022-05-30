@@ -109,17 +109,17 @@
         {
             "id": "act-assign-to-group",
             "title": "ASSIGN A GROUP",
-            "description": "Assigns a group for selected users",
+            "description": "Assigns a group for selected records.",
             "enabled": true,
             "filter": [],
             "fields": [
-              {
-                "key": "usr_group_id",
-                "value": null
-              }
+                {
+                    "key": "usr_group_id",
+                    "value": null
+                }
             ],
             "one_click": false
-          }
+        }
     ],
     "permissions": [
         {
