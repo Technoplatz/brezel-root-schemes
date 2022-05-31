@@ -28,7 +28,8 @@
             "maxLength": 64,
             "file": true,
             "title": "File",
-            "description": "File name",
+            "description": "File",
+            "required": true,
             "width": 100
         }
     },
