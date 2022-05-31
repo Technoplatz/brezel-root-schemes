@@ -22,18 +22,6 @@
             "required": true,
             "width": 110
         },
-        "sto_prefix": {
-            "bsonType": "string",
-            "minLength": 3,
-            "maxLength": 3,
-            "pattern": "^[a-z]{3,3}$",
-            "title": "Prefix",
-            "description": "Column prefix",
-            "permanent": true,
-            "readonly": true,
-            "required": true,
-            "width": 100
-        },
         "sto_file": {
             "bsonType": "string",
             "minLength": 0,
@@ -46,15 +34,11 @@
     },
     "required": [
         "sto_id",
-        "sto_collection_id",
-        "sto_prefix"
+        "sto_collection_id"
     ],
     "unique": [
         [
             "sto_id"
-        ],
-        [
-            "sto_prefix"
         ],
         [
             "sto_collection_id"
@@ -69,10 +53,6 @@
         "_modified_at": -1
     },
     "permissions": [
-        {
-            "usr_level_id": "User",
-            "rank": 0
-        },
         {
             "usr_level_id": "Manager",
             "rank": 1
