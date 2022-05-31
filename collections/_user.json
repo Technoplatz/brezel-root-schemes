@@ -8,8 +8,7 @@
             "title": "ID",
             "description": "Business E-mail",
             "required": true,
-            "width": 200,
-            "index": 10
+            "width": 200
         },
         "usr_name": {
             "bsonType": "string",
@@ -18,8 +17,7 @@
             "title": "Full Name",
             "description": "User Full Name",
             "required": true,
-            "width": 140,
-            "index": 20
+            "width": 140
         },
         "usr_group_id": {
             "bsonType": "string",
@@ -29,22 +27,19 @@
             "title": "Group ID",
             "description": "Group id",
             "required": true,
-            "width": 140,
-            "index": 30
+            "width": 140
         },
         "usr_enabled": {
             "bsonType": "bool",
             "title": "Enabled",
             "description": "Enabled or not",
-            "width": 110,
-            "index": 40
+            "width": 110
         },
         "usr_api_enabled": {
             "bsonType": "bool",
             "title": "API enabled",
             "description": "API enabled",
-            "width": 140,
-            "index": 50
+            "width": 140
         },
         "usr_level_id": {
             "bsonType": "string",
@@ -60,8 +55,7 @@
                 "Administrator"
             ],
             "required": true,
-            "width": 110,
-            "index": 60
+            "width": 110
         },
         "usr_tags": {
             "bsonType": "array",
@@ -79,8 +73,7 @@
             "subType": "tag",
             "manualAdd": true,
             "chips": true,
-            "width": 120,
-            "index": 70
+            "width": 120
         }
     },
     "required": [

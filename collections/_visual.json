@@ -8,8 +8,7 @@
             "title": "ID",
             "description": "Visual ID",
             "required": true,
-            "width": 240,
-            "index": 10
+            "width": 240
         },
         "vis_chart_style": {
             "bsonType": "string",
@@ -30,8 +29,7 @@
                 "Pie",
                 "Doughnut"
             ],
-            "width": 210,
-            "index": 20
+            "width": 210
         },
         "vis_view_id": {
             "bsonType": "string",
@@ -42,8 +40,7 @@
             "description": "View ID",
             "required": true,
             "view": true,
-            "width": 240,
-            "index": 30
+            "width": 240
         },
         "vis_title": {
             "bsonType": "string",
@@ -52,8 +49,7 @@
             "title": "Title",
             "description": "Title",
             "required": true,
-            "width": 240,
-            "index": 40
+            "width": 240
         },
         "vis_description": {
             "bsonType": "string",
@@ -62,16 +58,14 @@
             "title": "Description",
             "description": "Description",
             "textarea": true,
-            "width": 160,
-            "index": 50
+            "width": 160
         },
         "vis_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Enabled?",
             "default": true,
-            "width": 110,
-            "index": 60
+            "width": 110
         },
         "vis_priority": {
             "bsonType": "number",
@@ -80,8 +74,7 @@
             "minimum": 1000,
             "maximum": 9999,
             "default": 1000,
-            "width": 110,
-            "index": 70
+            "width": 110
         },
         "vis_chart_xaxis": {
             "bsonType": "string",
@@ -91,8 +84,7 @@
             "title": "X Axis",
             "description": "Chart X Axis",
             "property": true,
-            "width": 140,
-            "index": 80
+            "width": 140
         },
         "vis_chart_yaxis": {
             "bsonType": "string",
@@ -102,8 +94,7 @@
             "title": "Y Axis (Data)",
             "description": "Chart Y Axis",
             "property": true,
-            "width": 140,
-            "index": 90
+            "width": 140
         },
         "vis_chart_legend": {
             "bsonType": "string",
@@ -113,8 +104,7 @@
             "title": "Legend (Group)",
             "description": "Legend (Group) Column",
             "property": true,
-            "width": 140,
-            "index": 100
+            "width": 140
         },
         "vis_chart_function": {
             "bsonType": "string",
@@ -132,8 +122,7 @@
                 "stdev",
                 "datediff"
             ],
-            "width": 160,
-            "index": 110
+            "width": 160
         },
         "vis_p_xaxis_label": {
             "bsonType": "string",
@@ -142,8 +131,7 @@
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
             "title": "X Axis Label",
             "description": "X Axis Label",
-            "width": 140,
-            "index": 120
+            "width": 140
         },
         "vis_p_yaxis_label": {
             "bsonType": "string",
@@ -152,8 +140,7 @@
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
             "title": "Y Axis Label",
             "description": "Y Axis Label",
-            "width": 140,
-            "index": 130
+            "width": 140
         },
         "vis_p_legend_title": {
             "bsonType": "string",
@@ -162,64 +149,56 @@
             "pattern": "^[a-zA-Z0-9_() -]{1,64}$",
             "title": "Legend Label",
             "description": "Legend Label",
-            "width": 140,
-            "index": 140
+            "width": 140
         },
         "vis_p_kpi": {
             "bsonType": "bool",
             "title": "KPI",
             "default": false,
             "description": "KPI",
-            "width": 140,
-            "index": 150
+            "width": 140
         },
         "vis_kpi_target_value": {
             "bsonType": "number",
             "title": "KPI Target Value",
             "description": "KPI Target Value",
             "default": 1,
-            "width": 140,
-            "index": 160
+            "width": 140
         },
         "vis_p_xaxis_show": {
             "bsonType": "bool",
             "title": "Show X Axis",
             "default": true,
             "description": "Show X Axis",
-            "width": 140,
-            "index": 170
+            "width": 140
         },
         "vis_p_yaxis_show": {
             "bsonType": "bool",
             "title": "Show Y Axis",
             "default": true,
             "description": "Show Y Axis",
-            "width": 140,
-            "index": 180
+            "width": 140
         },
         "vis_p_datalabel_show": {
             "bsonType": "bool",
             "title": "Show Data Label",
             "default": true,
             "description": "Show Data Label",
-            "width": 180,
-            "index": 190
+            "width": 180
         },
         "vis_p_grid_show": {
             "bsonType": "bool",
             "title": "Show Grid",
             "default": true,
             "description": "Show Grid",
-            "width": 180,
-            "index": 200
+            "width": 180
         },
         "vis_p_gradient": {
             "bsonType": "bool",
             "title": "Gradient",
             "default": true,
             "description": "Gradient",
-            "width": 120,
-            "index": 210
+            "width": 120
         },
         "vis_p_color_scheme": {
             "bsonType": "array",
@@ -241,8 +220,7 @@
                 "YellowGreen"
             ],
             "color": true,
-            "width": 180,
-            "index": 220
+            "width": 180
         }
     },
     "required": [

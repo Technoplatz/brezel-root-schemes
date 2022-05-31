@@ -15,16 +15,14 @@
             ],
             "pattern": "^[a-zA-Z]{1,16}$",
             "required": true,
-            "width": 90,
-            "index": 10
+            "width": 90
         },
         "log_date": {
             "bsonType": "date",
             "title": "Date",
             "description": "Log date",
             "required": true,
-            "width": 90,
-            "index": 20
+            "width": 90
         },
         "log_user_id": {
             "bsonType": "string",
@@ -33,8 +31,7 @@
             "title": "User",
             "description": "User id",
             "required": true,
-            "width": 140,
-            "index": 30
+            "width": 140
         },
         "log_ip": {
             "bsonType": "string",
@@ -42,8 +39,7 @@
             "maxLength": 16,
             "title": "IP",
             "description": "IP address",
-            "width": 100,
-            "index": 40
+            "width": 100
         },
         "log_collection_id": {
             "bsonType": "string",
@@ -53,8 +49,7 @@
             "title": "Collection",
             "description": "Collection ID",
             "collection": true,
-            "width": 140,
-            "index": 50
+            "width": 140
         },
         "log_operation": {
             "bsonType": "string",
@@ -63,8 +58,7 @@
             "title": "Operation",
             "description": "Operation",
             "required": true,
-            "width": 120,
-            "index": 60
+            "width": 120
         },
         "log_object_id": {
             "bsonType": "string",
@@ -72,15 +66,13 @@
             "maxLength": 64,
             "title": "Object Id",
             "description": "Object Id",
-            "width": 120,
-            "index": 70
+            "width": 120
         },
         "log_document": {
             "bsonType": "object",
             "title": "Document",
             "description": "Document",
-            "width": 120,
-            "index": 80
+            "width": 120
         }
     },
     "required": [

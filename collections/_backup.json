@@ -10,8 +10,7 @@
             "permanent": true,
             "readonly": true,
             "default": "database-dump",
-            "width": 160,
-            "index": 1
+            "width": 160
         },
         "bak_description": {
             "bsonType": "string",
@@ -21,8 +20,7 @@
             "title": "Description",
             "description": "Description",
             "textarea": true,
-            "width": 160,
-            "index": 2
+            "width": 160
         },
         "bak_type": {
             "bsonType": "string",
@@ -35,8 +33,7 @@
                 "gzip"
             ],
             "default": "gzip",
-            "width": 50,
-            "index": 3
+            "width": 50
         },
         "bak_size": {
             "bsonType": "number",
@@ -44,8 +41,7 @@
             "description": "File Size",
             "permanent": true,
             "readonly": true,
-            "width": 80,
-            "index": 4
+            "width": 80
         }
     },
     "required": [

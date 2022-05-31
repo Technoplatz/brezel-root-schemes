@@ -9,8 +9,7 @@
             "permanent": true,
             "required": true,
             "file": true,
-            "width": 320,
-            "index": 10
+            "width": 320
         },
         "fil_description": {
             "bsonType": "string",
@@ -19,16 +18,14 @@
             "title": "Description",
             "description": "Description",
             "textarea": true,
-            "width": 240,
-            "index": 20
+            "width": 240
         },
         "fil_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Enabled?",
             "default": true,
-            "width": 100,
-            "index": 30
+            "width": 100
         }
     },
     "required": [

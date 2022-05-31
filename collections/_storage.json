@@ -9,8 +9,7 @@
             "description": "Storage ID",
             "permanent": true,
             "required": true,
-            "width": 160,
-            "index": 10
+            "width": 160
         },
         "sto_collection_id": {
             "bsonType": "string",
@@ -21,8 +20,7 @@
             "description": "Collection ID",
             "collection": true,
             "required": true,
-            "width": 110,
-            "index": 20
+            "width": 110
         },
         "sto_prefix": {
             "bsonType": "string",
@@ -34,8 +32,7 @@
             "permanent": true,
             "readonly": true,
             "required": true,
-            "width": 100,
-            "index": 30
+            "width": 100
         },
         "sto_file": {
             "bsonType": "string",
@@ -44,8 +41,7 @@
             "file": true,
             "title": "File",
             "description": "File name",
-            "width": 100,
-            "index": 40
+            "width": 100
         }
     },
     "required": [

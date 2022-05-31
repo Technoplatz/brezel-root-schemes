@@ -9,8 +9,7 @@
             "description": "Collection ID",
             "required": true,
             "permanent": true,
-            "width": 150,
-            "index": 10
+            "width": 150
         },
         "col_title": {
             "bsonType": "string",
@@ -19,8 +18,7 @@
             "title": "Title",
             "description": "Collection Title",
             "required": true,
-            "width": 150,
-            "index": 20
+            "width": 150
         },
         "col_description": {
             "bsonType": "string",
@@ -29,30 +27,26 @@
             "title": "Description",
             "description": "Collection Description",
             "textarea": true,
-            "width": 150,
-            "index": 30
+            "width": 150
         },
         "col_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Enabled?",
-            "width": 110,
-            "index": 40
+            "width": 110
         },
         "col_protected": {
             "bsonType": "bool",
             "title": "Protected?",
             "description": "Protected?",
-            "width": 120,
-            "index": 50
+            "width": 120
         },
         "col_barcode_enabled": {
             "bsonType": "bool",
             "title": "Barcode Enabled?",
             "default": false,
             "description": "Barcode Enabled?",
-            "width": 180,
-            "index": 60
+            "width": 180
         },
         "col_prefix": {
             "bsonType": "string",
@@ -64,16 +58,14 @@
             "required": true,
             "permanent": true,
             "readonly": true,
-            "width": 110,
-            "index": 70
+            "width": 110
         },
         "col_structure": {
             "bsonType": "object",
             "title": "Structure",
             "description": "Collection Structure",
             "required": true,
-            "width": 120,
-            "index": 80
+            "width": 120
         }
     },
     "required": [
