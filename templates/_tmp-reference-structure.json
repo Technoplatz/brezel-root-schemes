@@ -7,8 +7,7 @@
             "title": "ID",
             "description": "ref_id column refers to the string type unique index key of the collection.",
             "required": true,
-            "width": 100,
-            "index": 10
+            "width": 100
         },
         "ref_type": {
             "bsonType": "string",
@@ -25,8 +24,7 @@
             "description": "ref_status column refers to the string type data which includes selectable values.",
             "default": "Type-0",
             "required": true,
-            "width": 100,
-            "index": 20
+            "width": 100
         },
         "ref_title": {
             "bsonType": "string",
@@ -35,15 +33,13 @@
             "title": "Title",
             "description": "ref_title column refers to the string type data.",
             "required": true,
-            "width": 100,
-            "index": 30
+            "width": 100
         },
         "ref_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "ref_enabled column refers to the boolean (true/false) type data.",
-            "width": 110,
-            "index": 40
+            "width": 110
         },
         "ref_notes": {
             "bsonType": "string",
@@ -51,8 +47,7 @@
             "maxLength": 512,
             "title": "Notes",
             "description": "ref_notes column refers to the long text type data.",
-            "width": 100,
-            "index": 50
+            "width": 100
         }
     },
     "required": [

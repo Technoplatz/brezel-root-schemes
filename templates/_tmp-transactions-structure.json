@@ -7,8 +7,7 @@
             "title": "ID",
             "description": "Transaction ID",
             "required": true,
-            "width": 100,
-            "index": 10
+            "width": 100
         },
         "act_item_no": {
             "bsonType": "string",
@@ -16,8 +15,7 @@
             "maxLength": 64,
             "title": "Item No",
             "description": "Item No",
-            "width": 110,
-            "index": 20
+            "width": 110
         },
         "act_status": {
             "bsonType": "string",
@@ -33,16 +31,14 @@
             "description": "Transaction Status",
             "required": true,
             "default": "0-Open",
-            "width": 100,
-            "index": 30
+            "width": 100
         },
         "act_date": {
             "bsonType": "date",
             "title": "Date",
             "description": "Transaction Date",
             "default": "$CURRENT_DATE",
-            "width": 100,
-            "index": 40
+            "width": 100
         },
         "act_account_id": {
             "bsonType": "string",
@@ -53,8 +49,7 @@
             "pattern": "^[A-Za-z0-9ğüşıöçĞÜŞİÖÇß]{1,64}$",
             "required": true,
             "readonly": true,
-            "width": 130,
-            "index": 50
+            "width": 130
         },
         "act_product_id": {
             "bsonType": "string",
@@ -64,8 +59,7 @@
             "description": "Product ID",
             "pattern": "^[A-Za-z0-9-.]{1,64}$",
             "required": true,
-            "width": 140,
-            "index": 60
+            "width": 140
         },
         "act_qty": {
             "bsonType": "number",
@@ -74,24 +68,21 @@
             "title": "Quantity",
             "description": "Transaction Quantity",
             "required": true,
-            "width": 90,
-            "index": 70
+            "width": 90
         },
         "act_price": {
             "bsonType": "number",
             "title": "Price",
             "description": "Unit Price",
             "required": true,
-            "width": 130,
-            "index": 80
+            "width": 130
         },
         "act_amount": {
             "bsonType": "number",
             "title": "Amount",
             "description": "Transaction Amount",
             "required": true,
-            "width": 130,
-            "index": 90
+            "width": 130
         },
         "act_notes": {
             "bsonType": "string",
@@ -99,8 +90,7 @@
             "maxLength": 512,
             "title": "Notes",
             "description": "act_notes column refers to the long text type data.",
-            "width": 200,
-            "index": 100
+            "width": 200
         }
     },
     "required": [

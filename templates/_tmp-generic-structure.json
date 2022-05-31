@@ -7,8 +7,7 @@
             "title": "ID",
             "description": "gen_id column refers to the string type unique index key of the collection.",
             "required": true,
-            "width": 100,
-            "index": 10
+            "width": 100
         },
         "gen_status": {
             "bsonType": "string",
@@ -24,16 +23,14 @@
             "description": "gen_status column refers to the string type data which includes selectable values.",
             "required": true,
             "default": "0-Open",
-            "width": 100,
-            "index": 20
+            "width": 100
         },
         "gen_date": {
             "bsonType": "date",
             "title": "Date",
             "description": "gen_date column refers to the date type data.",
             "default": "$CURRENT_DATE",
-            "width": 100,
-            "index": 30
+            "width": 100
         },
         "gen_reference_id": {
             "bsonType": "string",
@@ -42,8 +39,7 @@
             "title": "reference ID",
             "description": "gen_reference_id column refers to the string type index key of the collection.",
             "required": true,
-            "width": 100,
-            "index": 40
+            "width": 100
         },
         "gen_quantity": {
             "bsonType": "int",
@@ -52,23 +48,20 @@
             "title": "Quantitiy",
             "description": "gen_quantity column refers to the numeric integer type data.",
             "required": true,
-            "width": 100,
-            "index": 50
+            "width": 100
         },
         "gen_amount": {
             "bsonType": "number",
             "title": "Amount",
             "description": "gen_amount column refers to the numeric float type data.",
             "required": true,
-            "width": 100,
-            "index": 60
+            "width": 100
         },
         "gen_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "gen_enabled column refers to the boolean (true/false) type data.",
-            "width": 100,
-            "index": 70
+            "width": 100
         },
         "gen_notes": {
             "bsonType": "string",
@@ -76,8 +69,7 @@
             "maxLength": 512,
             "title": "Notes",
             "description": "gen_notes column refers to the long text type data.",
-            "width": 100,
-            "index": 80
+            "width": 100
         }
     },
     "required": [

@@ -9,8 +9,7 @@
             "pattern": "^[A-Za-z0-9ğüşıöçĞÜŞİÖÇß]{1,64}$",
             "required": true,
             "readonly": true,
-            "width": 130,
-            "index": 10
+            "width": 130
         },
         "acc_type": {
             "bsonType": "string",
@@ -26,8 +25,7 @@
             "description": "Account Type",
             "required": true,
             "default": "0-Company",
-            "width": 100,
-            "index": 20
+            "width": 100
         },
         "acc_no": {
             "bsonType": "string",
@@ -37,8 +35,7 @@
             "description": "Secondary unique identifier of the account",
             "required": true,
             "readonly": true,
-            "width": 120,
-            "index": 30
+            "width": 120
         },
         "acc_legal_name": {
             "bsonType": "string",
@@ -46,8 +43,7 @@
             "title": "Legal Name",
             "description": "Account Legal Name",
             "required": true,
-            "width": 250,
-            "index": 40
+            "width": 250
         },
         "acc_tax_no": {
             "bsonType": "string",
@@ -57,43 +53,37 @@
             "description": "Tax number of the account holder",
             "readonly": true,
             "pattern": "^[A-Z0-9-.]{0,64}$",
-            "width": 110,
-            "index": 50
+            "width": 110
         },
         "acc_is_enabled": {
             "bsonType": "bool",
             "title": "Enabled?",
             "description": "Is the account enabled?",
-            "width": 130,
-            "index": 60
+            "width": 130
         },
         "acc_is_customer": {
             "bsonType": "bool",
             "title": "Customer?",
             "description": "Is the account holder a customer?",
-            "width": 140,
-            "index": 70
+            "width": 140
         },
         "acc_is_supplier": {
             "bsonType": "bool",
             "title": "Supplier?",
             "description": "Is the account holder a supplier?",
-            "width": 130,
-            "index": 80
+            "width": 130
         },
         "acc_is_distributor": {
             "bsonType": "bool",
             "title": "Distributor?",
             "description": "Is the account holder a distributor?",
-            "width": 150,
-            "index": 90
+            "width": 150
         },
         "acc_is_dealer": {
             "bsonType": "bool",
             "title": "Dealer?",
             "description": "Is the account holder a dealer?",
-            "width": 120,
-            "index": 100
+            "width": 120
         },
         "acc_billing_address": {
             "bsonType": "string",
@@ -102,8 +92,7 @@
             "title": "Billing Address",
             "description": "Billing Address",
             "required": true,
-            "width": 240,
-            "index": 110
+            "width": 240
         },
         "acc_shipping_address": {
             "bsonType": "string",
@@ -112,8 +101,7 @@
             "title": "Shipping Address",
             "description": "Shipping Address",
             "required": true,
-            "width": 240,
-            "index": 120
+            "width": 240
         },
         "acc_country": {
             "bsonType": "string",
@@ -123,8 +111,7 @@
             "description": "Country",
             "pattern": "^[A-Z]{2,3}$",
             "required": true,
-            "width": 110,
-            "index": 130
+            "width": 110
         },
         "acc_notes": {
             "bsonType": "string",
@@ -132,8 +119,7 @@
             "maxLength": 1024,
             "title": "Notes",
             "description": "Account Notes",
-            "width": 140,
-            "index": 140
+            "width": 140
         }
     },
     "required": [
