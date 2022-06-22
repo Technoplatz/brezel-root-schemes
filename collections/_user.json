@@ -59,7 +59,7 @@
         },
         "usr_tags": {
             "bsonType": "array",
-            "uniqueItems": false,
+            "uniqueItems": true,
             "minItems": 0,
             "maxItems": 100,
             "items": {
