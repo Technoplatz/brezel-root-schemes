@@ -67,6 +67,9 @@
     ],
     "unique": [
         [
+            "per_id"
+        ],
+        [
             "per_tag_id",
             "per_col_id"
         ]
