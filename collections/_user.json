@@ -109,7 +109,7 @@
         },
         {
             "id": "act-assign-tag",
-            "title": "ASSIGN",
+            "title": "ASSIGN TAGS",
             "description": "Assign TAG to users which are selected.",
             "enabled": true,
             "filter": [],
