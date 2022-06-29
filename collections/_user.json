@@ -35,12 +35,6 @@
             "description": "Enabled or not",
             "width": 110
         },
-        "usr_api_enabled": {
-            "bsonType": "bool",
-            "title": "API enabled",
-            "description": "API enabled",
-            "width": 140
-        },
         "usr_level_id": {
             "bsonType": "string",
             "minLength": 1,
