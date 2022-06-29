@@ -73,7 +73,7 @@
             "subType": "tag",
             "manualAdd": true,
             "chips": true,
-            "width": 240
+            "width": 300
         }
     },
     "required": [
