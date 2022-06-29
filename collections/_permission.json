@@ -28,6 +28,7 @@
             "title": "Collection ID",
             "description": "Collection ID",
             "required": true,
+            "collection": true,
             "width": 150
         },
         "per_create": {
