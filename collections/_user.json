@@ -106,6 +106,20 @@
                 }
             ],
             "one_click": false
+        },
+        {
+            "id": "act-assign-tag",
+            "title": "ASSIGN",
+            "description": "Assign TAG to users which are selected.",
+            "enabled": true,
+            "filter": [],
+            "fields": [
+                {
+                    "key": "usr_tags",
+                    "value": null
+                }
+            ],
+            "one_click": false
         }
     ],
     "permissions": [
