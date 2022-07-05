@@ -41,13 +41,6 @@
             "description": "Protected?",
             "width": 120
         },
-        "col_barcode_enabled": {
-            "bsonType": "bool",
-            "title": "Barcode Enabled?",
-            "default": false,
-            "description": "Barcode Enabled?",
-            "width": 180
-        },
         "col_prefix": {
             "bsonType": "string",
             "minLength": 3,
