@@ -70,19 +70,5 @@
     ],
     "sort": {
         "fwa_user_id": 1
-    },
-    "permissions": [
-        {
-            "usr_level_id": "User",
-            "rank": 0
-        },
-        {
-            "usr_level_id": "Manager",
-            "rank": 1
-        },
-        {
-            "usr_level_id": "Administrator",
-            "rank": 2
-        }
-    ]
+    }
 }

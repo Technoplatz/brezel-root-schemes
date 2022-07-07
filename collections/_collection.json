@@ -72,6 +72,10 @@
             "col_title"
         ],
         [
+            "col_id",
+            "col_enabled"
+        ],
+        [
             "col_enabled"
         ]
     ],
@@ -85,19 +89,5 @@
     ],
     "sort": {
         "_modified_at": -1
-    },
-    "permissions": [
-        {
-            "usr_level_id": "User",
-            "rank": 0
-        },
-        {
-            "usr_level_id": "Manager",
-            "rank": 1
-        },
-        {
-            "usr_level_id": "Administrator",
-            "rank": 2
-        }
-    ]
+    }
 }

@@ -94,19 +94,5 @@
         [
             "log_collection_id"
         ]
-    ],
-    "permissions": [
-        {
-            "usr_level_id": "User",
-            "rank": 0
-        },
-        {
-            "usr_level_id": "Manager",
-            "rank": 1
-        },
-        {
-            "usr_level_id": "Administrator",
-            "rank": 2
-        }
     ]
 }
