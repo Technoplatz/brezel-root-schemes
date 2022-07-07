@@ -35,22 +35,6 @@
             "description": "Enabled or not",
             "width": 110
         },
-        "usr_level_id": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 16,
-            "pattern": "^[a-zA-Z]{1,16}$",
-            "title": "Level ID",
-            "description": "User level id",
-            "enum": [
-                "Internal",
-                "External",
-                "Manager",
-                "Administrator"
-            ],
-            "required": true,
-            "width": 110
-        },
         "usr_tags": {
             "bsonType": "array",
             "uniqueItems": true,
@@ -73,8 +57,7 @@
     "required": [
         "usr_id",
         "usr_name",
-        "usr_group_id",
-        "usr_level_id"
+        "usr_group_id"
     ],
     "unique": [
         [
@@ -84,9 +67,6 @@
     "index": [
         [
             "usr_tags"
-        ],
-        [
-            "usr_level_id"
         ]
     ],
     "sort": {
