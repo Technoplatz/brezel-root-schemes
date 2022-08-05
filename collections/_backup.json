@@ -33,7 +33,7 @@
                 "gzip"
             ],
             "default": "gzip",
-            "width": 50
+            "width": 90
         },
         "bak_size": {
             "bsonType": "number",
@@ -41,7 +41,7 @@
             "description": "File Size",
             "permanent": true,
             "readonly": true,
-            "width": 80
+            "width": 90
         }
     },
     "required": [
