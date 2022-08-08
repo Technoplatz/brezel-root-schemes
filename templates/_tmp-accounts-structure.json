@@ -9,7 +9,7 @@
             "pattern": "^[A-Za-z0-9ğüşıöçĞÜŞİÖÇß]{1,64}$",
             "required": true,
             "readonly": true,
-            "width": 130
+            "width": 140
         },
         "acc_type": {
             "bsonType": "string",
