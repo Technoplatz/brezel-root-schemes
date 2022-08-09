@@ -49,7 +49,6 @@
             "title": "Collection",
             "description": "Collection ID",
             "permanent": true,
-            "readonly": true,
             "width": 140
         },
         "log_operation": {

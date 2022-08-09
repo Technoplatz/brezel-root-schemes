@@ -8,7 +8,7 @@
             "description": "Primary unique ID of the account",
             "pattern": "^[A-Za-z0-9ğüşıöçĞÜŞİÖÇß]{1,64}$",
             "required": true,
-            "readonly": true,
+            "permanent": true,
             "width": 140
         },
         "acc_type": {
@@ -34,7 +34,7 @@
             "title": "Account No",
             "description": "Secondary unique identifier of the account",
             "required": true,
-            "readonly": true,
+            "permanent": true,
             "width": 120
         },
         "acc_legal_name": {
@@ -51,7 +51,7 @@
             "maxLength": 64,
             "title": "Tax No",
             "description": "Tax number of the account holder",
-            "readonly": true,
+            "permanent": true,
             "pattern": "^[A-Z0-9-.]{0,64}$",
             "width": 110
         },

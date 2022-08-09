@@ -8,7 +8,6 @@
             "title": "ID",
             "description": "Backup ID",
             "permanent": true,
-            "readonly": true,
             "default": "database-dump",
             "width": 160
         },
@@ -40,7 +39,6 @@
             "title": "Size",
             "description": "File Size",
             "permanent": true,
-            "readonly": true,
             "width": 90
         }
     },

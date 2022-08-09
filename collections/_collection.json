@@ -50,7 +50,6 @@
             "description": "Column prefix",
             "required": true,
             "permanent": true,
-            "readonly": true,
             "width": 110
         },
         "col_structure": {
