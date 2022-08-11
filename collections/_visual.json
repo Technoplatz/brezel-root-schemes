@@ -250,5 +250,6 @@
     ],
     "sort": {
         "_modified_at": -1
-    }
+    },
+    "tags": true
 }
