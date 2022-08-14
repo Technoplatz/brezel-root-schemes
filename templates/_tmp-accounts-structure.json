@@ -150,5 +150,6 @@
     "parents": [],
     "sort": {
         "acc_id": 1
-    }
+    },
+    "tags": true
 }
