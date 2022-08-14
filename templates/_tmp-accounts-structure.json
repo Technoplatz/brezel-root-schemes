@@ -11,6 +11,16 @@
             "permanent": true,
             "width": 140
         },
+        "acc_no": {
+            "bsonType": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "title": "Account No",
+            "description": "Secondary unique identifier of the account",
+            "required": true,
+            "permanent": true,
+            "width": 120
+        },
         "acc_type": {
             "bsonType": "string",
             "minLength": 1,
@@ -26,16 +36,6 @@
             "required": true,
             "default": "0-Company",
             "width": 100
-        },
-        "acc_no": {
-            "bsonType": "string",
-            "minLength": 1,
-            "maxLength": 64,
-            "title": "Account No",
-            "description": "Secondary unique identifier of the account",
-            "required": true,
-            "permanent": true,
-            "width": 120
         },
         "acc_legal_name": {
             "bsonType": "string",

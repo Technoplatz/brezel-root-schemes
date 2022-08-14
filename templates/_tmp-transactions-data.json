@@ -9,7 +9,8 @@
         "act_qty": 2,
         "act_price": 435.07,
         "act_amount": 870.14,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "DN61065441",
@@ -21,7 +22,8 @@
         "act_qty": 1,
         "act_price": 2800.00,
         "act_amount": 2800.00,
-        "act_notes": "There are some missing items"
+        "act_notes": "There are some missing items",
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "DN87000320",
@@ -33,7 +35,8 @@
         "act_qty": 2,
         "act_price": 900.00,
         "act_amount": 1800.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "DN87000320",
@@ -45,7 +48,8 @@
         "act_qty": 4,
         "act_price": 90.00,
         "act_amount": 360.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "DN87000320",
@@ -57,7 +61,8 @@
         "act_qty": 1,
         "act_price": 84.00,
         "act_amount": 84.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "AA54776100",
@@ -69,7 +74,8 @@
         "act_qty": 2,
         "act_price": 500.00,
         "act_amount": 1000.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "AA54776100",
@@ -81,7 +87,8 @@
         "act_qty": 10,
         "act_price": 5410.00,
         "act_amount": 54100.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     },
     {
         "act_id": "JU40020027",
@@ -93,6 +100,7 @@
         "act_qty": 7,
         "act_price": 70.00,
         "act_amount": 490.00,
-        "act_notes": null
+        "act_notes": null,
+        "_tags": ["#Managers"]
     }
 ]
